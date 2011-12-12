@@ -1,10 +1,11 @@
-function startTraining(nAnts,nestLocation,foodSourceLocation,dt,steps)
+function startTraining(nAnts,nestLocation,foodSourceLocation,dt,steps,printFlag)
 if nargin == 0
-    nAnts = 1;
+    nAnts = 3;
     nestLocation = zeros(2,1);
-    foodSourceLocation = [7.5;7.5];
-    dt = 0.1;
-    steps = 40;
+    foodSourceLocation = [5;5];
+    dt = 5;
+    steps = 200;
+    printFlag = false;
 end
 
 ground = Ground;
@@ -25,9 +26,9 @@ ground.ants = ants;
 disp('Put landmarks!');
 for i = 1 : steps
     for j = 1 : length(ground.ants)
-        [a g] = ground.ants(j).performCompleteStep(ground);
+        [a g] = ground.ants(j).performCompleteStep(ground,dt);
         ground = g;
         ground.ants(j) = a;
     end
-    ground.updateGround(i);
+    updateGround(ground,i,dt,printFlag);
 end

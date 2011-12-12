@@ -51,5 +51,15 @@ classdef PheromoneParticle
             this.intensity = this.intensity + particle.intensity;
             particle = [];
         end
+        
+        % The pheromone intensity has to decay. This method handle this
+        % behaviour. The 240 implies that the intensity is reduced to half
+        % after 8 minutes.
+        function this = decay(this,dt)
+            this.intensity = this.intensity*exp(log(1/2)*dt/240);
+            if this.intensity < 50
+                this = [];
+            end
+        end
     end
 end

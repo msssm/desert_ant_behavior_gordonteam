@@ -43,43 +43,22 @@ classdef Ground
             i = 0;
         end
         
-        function updateGround(this,currentStep)
-            close all;
-            hold on;
-            axis([-15 15 -15 15]);
-            
-            % Update the pheromone pixels
-            for i = 1 : length(this.pheromoneParticles)
-                phPart = this.pheromoneParticles(i);
-                [r g b] = intensity2color(min(phPart.intensity,...
-                                            phPart.prev.intensity));
-                if ~isempty(this.pheromoneParticles(i).prev.location)
-                    plot([phPart.prev.location(1) phPart.location(1)],...
-                         [phPart.prev.location(2) phPart.location(2)],...
-                         'color',[r g b]);
+        function bool = isLocationAtNest(this,loc)
+            if norm(this.nestLocation-loc) == 0
+                bool = true;
+            else
+                bool = false;
+            end
+        end
+        
+        function bool = isLocationAtFoodSource(this,loc)
+            bool = false;
+            for i = 1 : size(this.foodSourceLocation,2)
+                if norm(this.foodSourceLocation(:,i)-loc) == 0
+                    bool = true;
+                    return;
                 end
             end
-            
-            % Update the ants pixels
-            for i = 1 : length(this.ants)
-                plot(this.ants(i).prevLocation(1),this.ants(i).prevLocation(2),'ko');
-            end
-            
-            % Update the landmark pixels
-            for i = 1 : length(this.landmarks)
-                plot(this.landmarks(i).location(1),this.landmarks(i).location(2),'bo');
-            end
-            
-            % Update the nest pixels
-            plot(this.nestLocation(1),this.nestLocation(2),'ro');
-            
-            % Update the food source pixels
-            plot(this.foodSourceLocation(1),this.foodSourceLocation(2),'go');
-            
-            print(strcat('trainingResults/currentResult/training_',...
-                    int2str(currentStep),'.png'),...
-                  '-dpng');
-            
         end
     end
 end

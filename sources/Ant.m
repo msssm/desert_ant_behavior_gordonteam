@@ -5,8 +5,7 @@ classdef Ant
         velocityVector % Vector composed from Vr Vc Vk.
         carryingFood % Bool
         followingPheromonePath % Bool
-        atNest %Bool
-        atFoodSource % Bool
+        goingToNestDirectly % Bool
         LandmarkRecognized % Bool
         viewRange % How far an ants can "see"
         pheromoneIntensityToFollow % From which intensity value the ant
@@ -18,7 +17,7 @@ classdef Ant
         globalVector % Vector pointing directly to the nest
         storedLandmarksMap % Struct containing Landamrks map,
                            % used to do a similarity check.
-        lookingFor % String witch says what the ant is looking for. 
+        lookingFor % String witch says what the ant is looking for.
     end
     
     %-- NOTE: the non static methods requires always an argument.
@@ -39,7 +38,9 @@ classdef Ant
         
         % Main behaviour, simply call this at each step.
         % It does all the things an ant should do automatically.
-        function [this ground] = performCompleteStep(this,ground)
+        function [this ground] = performCompleteStep(this,ground,deltaT)
+            global dt;
+            dt = deltaT;
             % normalize the velocity vector
             v = this.velocityVector(1:2);
             v = v./norm(v);
@@ -50,27 +51,30 @@ classdef Ant
             if ~isempty(this.lookingFor)
                 this = this.lookForSomething(ground);
             else
-                if this.atNest
+                if ground.isLocationAtNest(this.location)
                     this.carryingFood = 0;
+                    this.followingPheromonePath = 1;
                     this = this.stepBack;
-                elseif this.atFood
+                elseif ground.isLocationAtFoodSource(this.location)
                     this.carryingFood = 1;
-                    this.fallowingPheromonePath = 1;
-                    this = this.stepBack;
+                    this.goingToNestDirectly = true;
+                    this.lookingFor = 'nest';
+                    this = this.backToNestDirectly;
                 elseif this.followingPheromonePath
-                    this = this.followPheromone(ground);
+                    this = this.followPheromonePath(ground);
                 end
             end
-                    
+            this = this.updateGlobalVector;     
         end
         
         % This method update the location of the ant using velocity vector
         % information
         function this = updateLocation(this)
+            global dt;
             v = this.velocityVector(1:2);
             theta = vector2angle(v);
-            yPart = sin(theta)*this.velocityVector(3);
-            xPart = cos(theta)*this.velocityVector(3);
+            yPart = sin(theta)*this.velocityVector(3)*dt;
+            xPart = cos(theta)*this.velocityVector(3)*dt;
             this.prevLocation = this.location;
             this.location = this.location + [xPart;yPart];
         end
@@ -93,8 +97,13 @@ classdef Ant
         % This method makes the ant do a step directly straight to some
         % point. If the target is in range, it stops there.
         function this = stepStraightTo(this,point)
+            global dt;
             v = point - this.location;
-            if norm(v) < this.velocityVector(3)
+            if norm(v) < this.velocityVector(3)*dt
+                if strcmp(this.lookingFor,'nest')
+                    this.goingToNestDirectly = false;
+                end
+                this.lookingFor = '';
                 this.prevLocation = this.location;
                 this.location = point;
             else
@@ -108,10 +117,10 @@ classdef Ant
             if bool
                 if this.carryingFood
                     this.prevLocation = this.location;
-                    this.location = particle.prev.location;
+                    this.location = particle.next.location;
                 else
                     this.prevLocation = this.location;
-                    this.location = particle.next.location;
+                    this.location = particle.prev.location;
                 end
             else
                 this = this.randomWalkStep(ground);
@@ -139,21 +148,18 @@ classdef Ant
                 arr(positionInArray) = newPheromoneParticle;
                 ground.pheromoneParticles = arr;
             else
-                [bool prevParticle] = ground.hasPheromoneInLocation(this.prevLocation);
-                prevParticle.intensity = this.pheromoneIntensity;
+                [bool prevParticle positionInArray] = ground.hasPheromoneInLocation(this.prevLocation);
                 prevParticle = prevParticle.setNext(pheromoneParticle);
                 pheromoneParticle = pheromoneParticle.setPrev(prevParticle);
+                arr(positionInArray) = prevParticle;
                 ground.pheromoneParticles = [arr;pheromoneParticle];
             end
         end
         
         % This method updates the global vector after the ant moved.
         function this = updateGlobalVector(this)
-            notNormalizedGlobalvector = ...
-                this.globalVector + (this.location - this.prevLocation);
-            this.globalVector = ...
-                notNormalizedGlobalvector./norm(notNormalizedGlobalvector);
-            
+            v = this.location-this.prevLocation;
+            this.globalVector = this.globalVector-v;            
         end
         
         % This method tries to recognize a landmark, checking in the
@@ -165,8 +171,7 @@ classdef Ant
         % This method makes the ant go back to the nest directly using the
         % global vector.
         function this = backToNestDirectly(this)
-            this.velocityVector = ...
-                this.velocityVector+[this.globalVector;0];
+            this.velocityVector(1:2) = this.globalVector;
             this = this.updateLocation;
         end
         
@@ -181,20 +186,21 @@ classdef Ant
                 else
                      % also if the ant can't see the food source, maybe
                      % the ant can see a strong pheromone path
-                     auxPart = ground.getParticlesInRange(this);
-                     if ~isempty(auxPart) && auxPart(1).intensity >= this.pheromoneIntensityToFollow
-                        if norm(this.location-auxPart(1).location) <= this.velocityVector(3)
-                            this.lookingFor = '';
-                            this.followingPheromonePath = 1;
+                     auxParts = ground.getParticlesInRange(this);
+                     for i = 1 : length(auxParts)
+                        if norm(auxParts(i).location-ground.nestLocation)~=0 && ...
+                           auxParts(i).intensity >= this.pheromoneIntensityToFollow
+                            this = this.stepStraightTo(auxParts(i).location);
+                            return;
                         end
-                        this = this.stepStraightTo(auxPart(1).location);
-                     else
-                        this = this.randomWalkStep(ground);
                      end
+                     this = this.randomWalkStep(ground);
                 end
             elseif strcmp(this.lookingFor,'nest')
                 if norm(ground.nestLocation-this.location) < this.viewRange
                     this = this.stepStraightTo(ground.nestLocation);
+                elseif this.goingToNestDirectly
+                    this = this.backToNestDirectly;
                 else
                     this = this.randomWalkStep(ground);
                 end
@@ -204,7 +210,7 @@ classdef Ant
         % This method look for a landmark, if it founds some it stores them
         % in the landmark array.
         function this = learnLandmark(this,ground)
-            disp('learnLandmark to implement!');
+            %disp('learnLandmark to implement!');
         end
         
         % This method is a problem handler. If one of the other methods
@@ -218,22 +224,20 @@ classdef Ant
         function this = setUp(this,ground)
             v = ([rand;rand]).*2-1;
             v = v./norm(v);
-            v = [v;0.5+mod(rand,0.5)];
+            v = [v;0.125];
             this.velocityVector = v;
             this.carryingFood = 0;
             this.followingPheromonePath = 0;
-            this.atNest = 1;
-            this.atFoodSource = 0;
             this.LandmarkRecognized = 0;
-            this.viewRange = rand(1)*5;
-            this.pheromoneIntensity = 1;
+            this.viewRange = normrnd(3,0.1);
+            this.pheromoneIntensity = 150;
             this.problemEncoutered = '';
             this.globalVector = [0;0];
             this.storedLandmarksMap = [];
             this.lookingFor = 'food';
             this.prevLocation = nan;
             this.location = ground.nestLocation;
-            this.pheromoneIntensityToFollow = 10;
+            this.pheromoneIntensityToFollow = 300;
         end
         
     end

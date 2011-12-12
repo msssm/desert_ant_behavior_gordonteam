@@ -1,6 +1,5 @@
 classdef Ground
     properties
-        grid
         nestLocation
         foodSourceLocation
         pheromoneParticles

@@ -49,17 +49,14 @@ classdef PheromoneParticle
         % Merges 2 particles at same location.
         function [this particle] = mergeWhithParticle(this,particle)
             this.intensity = this.intensity + particle.intensity;
-            particle = [];
         end
         
         % The pheromone intensity has to decay. This method handle this
-        % behaviour. The 240 implies that the intensity is reduced to half
-        % after 8 minutes.
+        % behaviour. tc is the decay constant: smaller it is, faster the
+        % particles decay.
         function this = decay(this,dt)
-            this.intensity = this.intensity*exp(log(1/2)*dt/30);
-            if this.intensity < 50
-                this = [];
-            end
+            tc = 60;
+            this.intensity = this.intensity*exp(log(1/2)*dt/tc);
         end
     end
 end

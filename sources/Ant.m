@@ -145,6 +145,7 @@ classdef Ant
             if bool
                 newPheromoneParticle = ...
                     arr(positionInArray).mergeWhithParticle(pheromoneParticle);
+                clear pheromoneParticle;
                 arr(positionInArray) = newPheromoneParticle;
                 ground.pheromoneParticles = arr;
             else

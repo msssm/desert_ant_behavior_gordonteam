@@ -30,5 +30,5 @@ for i = 1 : steps
         ground = g;
         ground.ants(j) = a;
     end
-    updateGround(ground,i,dt,printFlag);
+    ground = updateGround(ground,i,dt,printFlag);
 end

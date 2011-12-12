@@ -1,7 +1,8 @@
-function updateGround(ground,currentStep,dt,printFlag)
+function ground = updateGround(ground,currentStep,dt,printFlag)
 cla;
 hold on;
 axis([-15 15 -15 15]);
+removeList = zeros(length(ground.pheromoneParticles),1);
 
 % Update the pheromone pixels
 for i = 1 : length(ground.pheromoneParticles)
@@ -14,7 +15,13 @@ for i = 1 : length(ground.pheromoneParticles)
              'color',[r g b]);
     end
     ground.pheromoneParticles(i) = phPart.decay(dt);
+    if ground.pheromoneParticles(i).intensity < 30
+        removeList(i) = i;
+    end
 end
+
+removeList(removeList == 0) = [];
+ground.pheromoneParticles(removeList) = [];
 
 % Update the ants pixels
 for i = 1 : length(ground.ants)

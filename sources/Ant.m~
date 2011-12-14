@@ -44,7 +44,9 @@ classdef Ant
         
         % Main behaviour, simply call this at each step.
         % It does all the things an ant should do automatically.
-        function [this ground] = performCompleteStep(this,ground,dt)
+        function [this ground] = performCompleteStep(this,ground,deltaT)
+            global dt;
+            dt = deltaT;
             % normalize the velocity vector
             v = this.velocityVector(1:2);
             v = v./norm(v);
@@ -54,7 +56,7 @@ classdef Ant
             ground = this.releasePheromone(ground);
             this = this.learnLandmark(ground);
             if ~isempty(this.lookingFor)
-                this = this.lookForSomething(ground,dt);
+                this = this.lookForSomething(ground);
             else
                 if ground.isLocationAtNest(this.location)
                     this.carryingFood = 0;
@@ -64,17 +66,18 @@ classdef Ant
                     this.carryingFood = 1;
                     this.goingToNestDirectly = true;
                     this.lookingFor = 'nest';
-                    this = this.backToNestDirectly(dt);
+                    this = this.backToNestDirectly;
                 elseif this.followingPheromonePath
                     this = this.followPheromonePath(ground);
                 end
             end
-            this = this.updateGlobalVector(dt);     
+            this = this.updateGlobalVector;     
         end
         
         % This method update the location of the ant using velocity vector
         % information
-        function this = updateLocation(this,dt)
+        function this = updateLocation(this)
+            global dt;
             v = this.velocityVector(1:2);
             theta = vector2angle(v);
             yPart = sin(theta)*this.velocityVector(3)*dt;
@@ -84,7 +87,7 @@ classdef Ant
         end
         
         % This method performs a single step in the random walk of an ant.
-        function this = randomWalkStep(this,ground,dt)
+        function this = randomWalkStep(this,ground)
             v = this.velocityVector(1:2);
             nd = ground.nestLocation-this.location;
             d = norm(nd)/50;
@@ -95,12 +98,13 @@ classdef Ant
             yPart = sin(angle);
             xPart = cos(angle);
             this.velocityVector(1:2) = [xPart;yPart];
-            this = this.updateLocation(dt);
+            this = this.updateLocation;
         end
         
         % This method makes the ant do a step directly straight to some
         % point. If the target is in range, it stops there.
-        function this = stepStraightTo(this,point,dt)
+        function this = stepStraightTo(this,point)
+            global dt;
             v = point - this.location;
             if norm(v) < this.velocityVector(3)*dt
                 if strcmp(this.lookingFor,'nest')
@@ -111,11 +115,11 @@ classdef Ant
                 this.location = point;
             else
                 this.velocityVector = this.velocityVector+[v;0];
-                this = this.updateLocation(dt);
+                this = this.updateLocation;
             end
         end
         
-        function this = followPheromonePath(this,ground,dt)
+        function this = followPheromonePath(this,ground)
             [bool particle] = ground.hasPheromoneInLocation(this.location);
             if bool
                 if this.carryingFood
@@ -126,7 +130,7 @@ classdef Ant
                     this.location = particle.prev.location;
                 end
             else
-                this = this.randomWalkStep(ground,dt);
+                this = this.randomWalkStep(ground);
             end
         end
         
@@ -161,24 +165,11 @@ classdef Ant
         end
         
         % This method updates the global vector after the ant moved.
-        function this = updateGlobalVector(this,dt)
+        function this = updateGlobalVector(this)
             v = this.location-this.prevLocation;
-            currentL = this.velocityVector(3)*dt;
             % Implementation using the global vector variable
-            %this.globalVector = this.globalVector-v; 
+            this.globalVector = this.globalVector-v; 
             
-            % Implementation using a more realist model
-            oldDir = this.pathDirection;
-            % Needed by the first step
-            if isnan(vector2angle(oldDir))
-                delta = 0;
-            else
-                delta = vector2angle(v)-vector2angle(oldDir);
-            end
-            this.phi = (this.l*this.phi-currentL*delta)/(this.l+currentL);
-            this.l = sqrt(this.l^2+currentL^2+this.l*currentL*cosd(this.phi));
-            this.globalVector = [cos(this.phi) -sin(this.phi);
-                                 sin(this.phi) cos(this.phi)]*v;
         end
         
         % This method tries to recognize a landmark, checking in the
@@ -189,19 +180,19 @@ classdef Ant
         
         % This method makes the ant go back to the nest directly using the
         % global vector.
-        function this = backToNestDirectly(this,dt)
+        function this = backToNestDirectly(this)
             this.velocityVector(1:2) = this.globalVector;
-            this = this.updateLocation(dt);
+            this = this.updateLocation;
         end
         
         % This method look for something. What is looked for is stored in
         % the "lookingFor" variable. Basically it performs a randomWalkStep
         % if the ant can't see what is looking for, else it changes
         % behaviour of the ant. The three options are 'food' or 'nest'.
-        function this = lookForSomething(this,ground,dt)
+        function this = lookForSomething(this,ground)
             if strcmp(this.lookingFor,'food')
                 if norm(ground.foodSourceLocation-this.location) < this.viewRange
-                    this = this.stepStraightTo(ground.foodSourceLocation,dt);
+                    this = this.stepStraightTo(ground.foodSourceLocation);
                 else
                      % also if the ant can't see the food source, maybe
                      % the ant can see a strong pheromone path
@@ -209,19 +200,19 @@ classdef Ant
                      for i = 1 : length(auxParts)
                         if norm(auxParts(i).location-ground.nestLocation)~=0 && ...
                            auxParts(i).intensity >= this.pheromoneIntensityToFollow
-                            this = this.stepStraightTo(auxParts(i).location,dt);
+                            this = this.stepStraightTo(auxParts(i).location);
                             return;
                         end
                      end
-                     this = this.randomWalkStep(ground,dt);
+                     this = this.randomWalkStep(ground);
                 end
             elseif strcmp(this.lookingFor,'nest')
                 if norm(ground.nestLocation-this.location) < this.viewRange
-                    this = this.stepStraightTo(ground.nestLocation,dt);
+                    this = this.stepStraightTo(ground.nestLocation);
                 elseif this.goingToNestDirectly
-                    this = this.backToNestDirectly(dt);
+                    this = this.backToNestDirectly;
                 else
-                    this = this.randomWalkStep(ground,dt);
+                    this = this.randomWalkStep(ground);
                 end
             end
         end
@@ -257,6 +248,7 @@ classdef Ant
             this.prevLocation = nan;
             this.location = ground.nestLocation;
             this.pheromoneIntensityToFollow = 300;
+            %
             this.phi = pi;
             this.l = 0;
             this.pathDirection = [0;0];

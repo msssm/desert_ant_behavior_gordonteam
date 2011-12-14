@@ -1,10 +1,10 @@
-function startTraining(nAnts,nestLocation,foodSourceLocation,dt,steps,printFlag)
+function pheromoneAnimation(nAnts,nestLocation,foodSourceLocation,dt,steps,printFlag)
 if nargin == 0
     nAnts = 3;
     nestLocation = zeros(2,1);
     foodSourceLocation = [5;5];
     dt = 5;
-    steps = 200;
+    steps = 100;
     printFlag = false;
 end
 
@@ -25,10 +25,19 @@ end
 ground.ants = ants;
 disp('Put landmarks!');
 for i = 1 : steps
+    if i == 15
+        breakPoint = 1;
+    end
     for j = 1 : length(ground.ants)
         [a g] = ground.ants(j).performCompleteStep(ground,dt);
         ground = g;
         ground.ants(j) = a;
     end
+    cla;
+    hold on;
+    axis([-15 15 -15 15]);
     ground = updateGround(ground,i,dt,printFlag);
+    drawnow;
 end
+
+brakPoint = 1;

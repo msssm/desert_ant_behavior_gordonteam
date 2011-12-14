@@ -1,5 +1,7 @@
 function ground = updateGround(ground,currentStep,dt,printFlag)
-
+cla;
+hold on;
+axis([-15 15 -15 15]);
 removeList = zeros(length(ground.pheromoneParticles),1);
 
 % Update the pheromone pixels
@@ -29,16 +31,10 @@ for i = 1 : length(ground.ants)
          'FontSize',10,...
          'HorizontalAlignment','center');
     plot(ground.ants(i).prevLocation(1),ground.ants(i).prevLocation(2),'ko');
-    
-    %-- Used For Debug --%
-    %--------------------%
-    
     % Plot the walk direction
     plot([ground.ants(i).prevLocation(1) ground.ants(i).prevLocation(1)+ground.ants(i).pathDirection(1)], ...
          [ground.ants(i).prevLocation(2) ground.ants(i).prevLocation(2)+ground.ants(i).pathDirection(2)],...
          'r');
-    % Plot the next position
-    plot(ground.ants(i).location(1),ground.ants(i).location(2),'r*');
 end
 
 % Update the landmark pixels
@@ -57,4 +53,5 @@ if printFlag
             int2str(currentStep),'.png'),...
           '-dpng');
 end
+drawnow;
 end

@@ -1,0 +1,4 @@
+alpha = deg2rad(60);
+    lengthArm1 = 10;
+    lengthArm2 = 5;
+    dt = 1;

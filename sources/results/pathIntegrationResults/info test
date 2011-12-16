@@ -1,0 +1,3 @@
+maxAngle = deg2rad(180);
+    minAngle = deg2rad(60);
+    nMesurements = 10;

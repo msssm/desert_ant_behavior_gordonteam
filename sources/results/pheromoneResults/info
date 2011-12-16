@@ -1,0 +1,6 @@
+nAnts = 4;
+    nestLocation = zeros(2,1);
+    foodSourceLocation = [7;7];
+    dt = 5;
+    steps = 500;
+    printFlag = true;

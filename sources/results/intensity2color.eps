@@ -1,0 +1,3594 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.12.0.635 (R2011a). Operating System: Linux 2.6.32-35-generic #78-Ubuntu SMP Tue Oct 11 16:11:24 UTC 2011 x86_64.
+%%Title: /home/vmegaro/Dropbox/gessMatlab/desert_ant_behavior_gordonteam/sources/results/intensity2color.eps
+%%CreationDate: 12/16/2011  16:13:38
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    81   227   529   564
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    81   227   529   564
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0972 6768 csm
+
+    0     0  5376  4033 rc
+1104 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 5377 4034 rf
+6 w
+0 3287 4166 0 0 -3287 699 3589 4 MP
+PP
+-4166 0 0 3287 4166 0 0 -3287 699 3589 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+ 699 3589 mt 4865 3589 L
+ 699 3589 mt  699  302 L
+ 699 3589 mt  699 3547 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 666 3734 mt 
+(0) s
+1352 3589 mt 1352 3547 L
+1252 3734 mt 
+(200) s
+2005 3589 mt 2005 3547 L
+1905 3734 mt 
+(400) s
+2659 3589 mt 2659 3547 L
+2559 3734 mt 
+(600) s
+3312 3589 mt 3312 3547 L
+3212 3734 mt 
+(800) s
+3966 3589 mt 3966 3547 L
+3833 3734 mt 
+(1000) s
+4619 3589 mt 4619 3547 L
+4486 3734 mt 
+(1200) s
+ 699 3589 mt  740 3589 L
+ 394 3633 mt 
+(-100) s
+ 699 3260 mt  740 3260 L
+ 461 3304 mt 
+(-80) s
+ 699 2931 mt  740 2931 L
+ 461 2975 mt 
+(-60) s
+ 699 2602 mt  740 2602 L
+ 461 2646 mt 
+(-40) s
+ 699 2274 mt  740 2274 L
+ 461 2318 mt 
+(-20) s
+ 699 1945 mt  740 1945 L
+ 598 1989 mt 
+(0) s
+ 699 1616 mt  740 1616 L
+ 531 1660 mt 
+(20) s
+ 699 1288 mt  740 1288 L
+ 531 1332 mt 
+(40) s
+ 699  959 mt  740  959 L
+ 531 1003 mt 
+(60) s
+ 699  630 mt  740  630 L
+ 531  674 mt 
+(80) s
+ 699  302 mt  740  302 L
+ 464  346 mt 
+(100) s
+2175  207 mt 
+(Intensity to color graph) s
+2561 3877 mt 
+(intensity) s
+gs 699 302 4167 3288 rc
+240 w
+/c8 { 0.000000 0.003922 1.000000 sr} bdef
+c8
+3 0 699 1945 2 MP stroke
+/c9 { 0.000000 0.007843 1.000000 sr} bdef
+c9
+3 0 702 1945 2 MP stroke
+/c10 { 0.000000 0.011765 1.000000 sr} bdef
+c10
+3 0 705 1945 2 MP stroke
+/c11 { 0.000000 0.015686 1.000000 sr} bdef
+c11
+4 0 708 1945 2 MP stroke
+/c12 { 0.000000 0.019608 1.000000 sr} bdef
+c12
+3 0 712 1945 2 MP stroke
+/c13 { 0.000000 0.023529 1.000000 sr} bdef
+c13
+3 0 715 1945 2 MP stroke
+/c14 { 0.000000 0.027451 1.000000 sr} bdef
+c14
+3 0 718 1945 2 MP stroke
+/c15 { 0.000000 0.031373 1.000000 sr} bdef
+c15
+4 0 721 1945 2 MP stroke
+/c16 { 0.000000 0.035294 1.000000 sr} bdef
+c16
+3 0 725 1945 2 MP stroke
+/c17 { 0.000000 0.039216 1.000000 sr} bdef
+c17
+3 0 728 1945 2 MP stroke
+/c18 { 0.000000 0.043137 1.000000 sr} bdef
+c18
+3 0 731 1945 2 MP stroke
+/c19 { 0.000000 0.047059 1.000000 sr} bdef
+c19
+4 0 734 1945 2 MP stroke
+/c20 { 0.000000 0.050980 1.000000 sr} bdef
+c20
+3 0 738 1945 2 MP stroke
+/c21 { 0.000000 0.054902 1.000000 sr} bdef
+c21
+3 0 741 1945 2 MP stroke
+/c22 { 0.000000 0.058824 1.000000 sr} bdef
+c22
+4 0 744 1945 2 MP stroke
+/c23 { 0.000000 0.062745 1.000000 sr} bdef
+c23
+3 0 748 1945 2 MP stroke
+/c24 { 0.000000 0.066667 1.000000 sr} bdef
+c24
+3 0 751 1945 2 MP stroke
+/c25 { 0.000000 0.070588 1.000000 sr} bdef
+c25
+3 0 754 1945 2 MP stroke
+/c26 { 0.000000 0.074510 1.000000 sr} bdef
+c26
+4 0 757 1945 2 MP stroke
+/c27 { 0.000000 0.078431 1.000000 sr} bdef
+c27
+3 0 761 1945 2 MP stroke
+/c28 { 0.000000 0.082353 1.000000 sr} bdef
+c28
+3 0 764 1945 2 MP stroke
+/c29 { 0.000000 0.086275 1.000000 sr} bdef
+c29
+3 0 767 1945 2 MP stroke
+/c30 { 0.000000 0.090196 1.000000 sr} bdef
+c30
+4 0 770 1945 2 MP stroke
+/c31 { 0.000000 0.094118 1.000000 sr} bdef
+c31
+3 0 774 1945 2 MP stroke
+/c32 { 0.000000 0.098039 1.000000 sr} bdef
+c32
+3 0 777 1945 2 MP stroke
+/c33 { 0.000000 0.101961 1.000000 sr} bdef
+c33
+3 0 780 1945 2 MP stroke
+/c34 { 0.000000 0.105882 1.000000 sr} bdef
+c34
+4 0 783 1945 2 MP stroke
+/c35 { 0.000000 0.109804 1.000000 sr} bdef
+c35
+3 0 787 1945 2 MP stroke
+/c36 { 0.000000 0.113725 1.000000 sr} bdef
+c36
+3 0 790 1945 2 MP stroke
+/c37 { 0.000000 0.117647 1.000000 sr} bdef
+c37
+4 0 793 1945 2 MP stroke
+/c38 { 0.000000 0.121569 1.000000 sr} bdef
+c38
+3 0 797 1945 2 MP stroke
+/c39 { 0.000000 0.125490 1.000000 sr} bdef
+c39
+3 0 800 1945 2 MP stroke
+/c40 { 0.000000 0.129412 1.000000 sr} bdef
+c40
+3 0 803 1945 2 MP stroke
+/c41 { 0.000000 0.133333 1.000000 sr} bdef
+c41
+4 0 806 1945 2 MP stroke
+/c42 { 0.000000 0.137255 1.000000 sr} bdef
+c42
+3 0 810 1945 2 MP stroke
+/c43 { 0.000000 0.141176 1.000000 sr} bdef
+c43
+3 0 813 1945 2 MP stroke
+/c44 { 0.000000 0.145098 1.000000 sr} bdef
+c44
+3 0 816 1945 2 MP stroke
+/c45 { 0.000000 0.149020 1.000000 sr} bdef
+c45
+4 0 819 1945 2 MP stroke
+/c46 { 0.000000 0.152941 1.000000 sr} bdef
+c46
+3 0 823 1945 2 MP stroke
+/c47 { 0.000000 0.156863 1.000000 sr} bdef
+c47
+3 0 826 1945 2 MP stroke
+/c48 { 0.000000 0.160784 1.000000 sr} bdef
+c48
+3 0 829 1945 2 MP stroke
+/c49 { 0.000000 0.164706 1.000000 sr} bdef
+c49
+4 0 832 1945 2 MP stroke
+/c50 { 0.000000 0.168627 1.000000 sr} bdef
+c50
+3 0 836 1945 2 MP stroke
+/c51 { 0.000000 0.172549 1.000000 sr} bdef
+c51
+3 0 839 1945 2 MP stroke
+/c52 { 0.000000 0.176471 1.000000 sr} bdef
+c52
+4 0 842 1945 2 MP stroke
+/c53 { 0.000000 0.180392 1.000000 sr} bdef
+c53
+3 0 846 1945 2 MP stroke
+/c54 { 0.000000 0.184314 1.000000 sr} bdef
+c54
+3 0 849 1945 2 MP stroke
+/c55 { 0.000000 0.188235 1.000000 sr} bdef
+c55
+3 0 852 1945 2 MP stroke
+/c56 { 0.000000 0.192157 1.000000 sr} bdef
+c56
+4 0 855 1945 2 MP stroke
+/c57 { 0.000000 0.196078 1.000000 sr} bdef
+c57
+3 0 859 1945 2 MP stroke
+/c58 { 0.000000 0.200000 1.000000 sr} bdef
+c58
+3 0 862 1945 2 MP stroke
+/c59 { 0.000000 0.203922 1.000000 sr} bdef
+c59
+3 0 865 1945 2 MP stroke
+/c60 { 0.000000 0.207843 1.000000 sr} bdef
+c60
+4 0 868 1945 2 MP stroke
+/c61 { 0.000000 0.211765 1.000000 sr} bdef
+c61
+3 0 872 1945 2 MP stroke
+/c62 { 0.000000 0.215686 1.000000 sr} bdef
+c62
+3 0 875 1945 2 MP stroke
+/c63 { 0.000000 0.219608 1.000000 sr} bdef
+c63
+3 0 878 1945 2 MP stroke
+/c64 { 0.000000 0.223529 1.000000 sr} bdef
+c64
+4 0 881 1945 2 MP stroke
+/c65 { 0.000000 0.227451 1.000000 sr} bdef
+c65
+3 0 885 1945 2 MP stroke
+/c66 { 0.000000 0.231373 1.000000 sr} bdef
+c66
+3 0 888 1945 2 MP stroke
+/c67 { 0.000000 0.235294 1.000000 sr} bdef
+c67
+4 0 891 1945 2 MP stroke
+/c68 { 0.000000 0.239216 1.000000 sr} bdef
+c68
+3 0 895 1945 2 MP stroke
+/c69 { 0.000000 0.243137 1.000000 sr} bdef
+c69
+3 0 898 1945 2 MP stroke
+/c70 { 0.000000 0.247059 1.000000 sr} bdef
+c70
+3 0 901 1945 2 MP stroke
+/c71 { 0.000000 0.250980 1.000000 sr} bdef
+c71
+4 0 904 1945 2 MP stroke
+/c72 { 0.000000 0.254902 1.000000 sr} bdef
+c72
+3 0 908 1945 2 MP stroke
+/c73 { 0.000000 0.258824 1.000000 sr} bdef
+c73
+3 0 911 1945 2 MP stroke
+/c74 { 0.000000 0.262745 1.000000 sr} bdef
+c74
+3 0 914 1945 2 MP stroke
+/c75 { 0.000000 0.266667 1.000000 sr} bdef
+c75
+4 0 917 1945 2 MP stroke
+/c76 { 0.000000 0.270588 1.000000 sr} bdef
+c76
+3 0 921 1945 2 MP stroke
+/c77 { 0.000000 0.274510 1.000000 sr} bdef
+c77
+3 0 924 1945 2 MP stroke
+/c78 { 0.000000 0.278431 1.000000 sr} bdef
+c78
+3 0 927 1945 2 MP stroke
+/c79 { 0.000000 0.282353 1.000000 sr} bdef
+c79
+4 0 930 1945 2 MP stroke
+/c80 { 0.000000 0.286275 1.000000 sr} bdef
+c80
+3 0 934 1945 2 MP stroke
+/c81 { 0.000000 0.290196 1.000000 sr} bdef
+c81
+3 0 937 1945 2 MP stroke
+/c82 { 0.000000 0.294118 1.000000 sr} bdef
+c82
+4 0 940 1945 2 MP stroke
+/c83 { 0.000000 0.298039 1.000000 sr} bdef
+c83
+3 0 944 1945 2 MP stroke
+/c84 { 0.000000 0.301961 1.000000 sr} bdef
+c84
+3 0 947 1945 2 MP stroke
+/c85 { 0.000000 0.305882 1.000000 sr} bdef
+c85
+3 0 950 1945 2 MP stroke
+/c86 { 0.000000 0.309804 1.000000 sr} bdef
+c86
+4 0 953 1945 2 MP stroke
+/c87 { 0.000000 0.313725 1.000000 sr} bdef
+c87
+3 0 957 1945 2 MP stroke
+/c88 { 0.000000 0.317647 1.000000 sr} bdef
+c88
+3 0 960 1945 2 MP stroke
+/c89 { 0.000000 0.321569 1.000000 sr} bdef
+c89
+3 0 963 1945 2 MP stroke
+/c90 { 0.000000 0.325490 1.000000 sr} bdef
+c90
+4 0 966 1945 2 MP stroke
+/c91 { 0.000000 0.329412 1.000000 sr} bdef
+c91
+3 0 970 1945 2 MP stroke
+/c92 { 0.000000 0.333333 1.000000 sr} bdef
+c92
+3 0 973 1945 2 MP stroke
+/c93 { 0.000000 0.337255 1.000000 sr} bdef
+c93
+4 0 976 1945 2 MP stroke
+/c94 { 0.000000 0.341176 1.000000 sr} bdef
+c94
+3 0 980 1945 2 MP stroke
+/c95 { 0.000000 0.345098 1.000000 sr} bdef
+c95
+3 0 983 1945 2 MP stroke
+/c96 { 0.000000 0.349020 1.000000 sr} bdef
+c96
+3 0 986 1945 2 MP stroke
+/c97 { 0.000000 0.352941 1.000000 sr} bdef
+c97
+4 0 989 1945 2 MP stroke
+/c98 { 0.000000 0.356863 1.000000 sr} bdef
+c98
+3 0 993 1945 2 MP stroke
+/c99 { 0.000000 0.360784 1.000000 sr} bdef
+c99
+3 0 996 1945 2 MP stroke
+/c100 { 0.000000 0.364706 1.000000 sr} bdef
+c100
+3 0 999 1945 2 MP stroke
+/c101 { 0.000000 0.368627 1.000000 sr} bdef
+c101
+4 0 1002 1945 2 MP stroke
+/c102 { 0.000000 0.372549 1.000000 sr} bdef
+c102
+3 0 1006 1945 2 MP stroke
+/c103 { 0.000000 0.376471 1.000000 sr} bdef
+c103
+3 0 1009 1945 2 MP stroke
+/c104 { 0.000000 0.380392 1.000000 sr} bdef
+c104
+3 0 1012 1945 2 MP stroke
+/c105 { 0.000000 0.384314 1.000000 sr} bdef
+c105
+4 0 1015 1945 2 MP stroke
+/c106 { 0.000000 0.388235 1.000000 sr} bdef
+c106
+3 0 1019 1945 2 MP stroke
+/c107 { 0.000000 0.392157 1.000000 sr} bdef
+c107
+3 0 1022 1945 2 MP stroke
+/c108 { 0.000000 0.396078 1.000000 sr} bdef
+c108
+4 0 1025 1945 2 MP stroke
+/c109 { 0.000000 0.400000 1.000000 sr} bdef
+c109
+3 0 1029 1945 2 MP stroke
+/c110 { 0.000000 0.403922 1.000000 sr} bdef
+c110
+3 0 1032 1945 2 MP stroke
+/c111 { 0.000000 0.407843 1.000000 sr} bdef
+c111
+3 0 1035 1945 2 MP stroke
+/c112 { 0.000000 0.411765 1.000000 sr} bdef
+c112
+4 0 1038 1945 2 MP stroke
+/c113 { 0.000000 0.415686 1.000000 sr} bdef
+c113
+3 0 1042 1945 2 MP stroke
+/c114 { 0.000000 0.419608 1.000000 sr} bdef
+c114
+3 0 1045 1945 2 MP stroke
+/c115 { 0.000000 0.423529 1.000000 sr} bdef
+c115
+3 0 1048 1945 2 MP stroke
+/c116 { 0.000000 0.427451 1.000000 sr} bdef
+c116
+4 0 1051 1945 2 MP stroke
+/c117 { 0.000000 0.431373 1.000000 sr} bdef
+c117
+3 0 1055 1945 2 MP stroke
+/c118 { 0.000000 0.435294 1.000000 sr} bdef
+c118
+3 0 1058 1945 2 MP stroke
+/c119 { 0.000000 0.439216 1.000000 sr} bdef
+c119
+3 0 1061 1945 2 MP stroke
+/c120 { 0.000000 0.443137 1.000000 sr} bdef
+c120
+4 0 1064 1945 2 MP stroke
+/c121 { 0.000000 0.447059 1.000000 sr} bdef
+c121
+3 0 1068 1945 2 MP stroke
+/c122 { 0.000000 0.450980 1.000000 sr} bdef
+c122
+3 0 1071 1945 2 MP stroke
+/c123 { 0.000000 0.454902 1.000000 sr} bdef
+c123
+4 0 1074 1945 2 MP stroke
+/c124 { 0.000000 0.458824 1.000000 sr} bdef
+c124
+3 0 1078 1945 2 MP stroke
+/c125 { 0.000000 0.462745 1.000000 sr} bdef
+c125
+3 0 1081 1945 2 MP stroke
+/c126 { 0.000000 0.466667 1.000000 sr} bdef
+c126
+3 0 1084 1945 2 MP stroke
+/c127 { 0.000000 0.470588 1.000000 sr} bdef
+c127
+4 0 1087 1945 2 MP stroke
+/c128 { 0.000000 0.474510 1.000000 sr} bdef
+c128
+3 0 1091 1945 2 MP stroke
+/c129 { 0.000000 0.478431 1.000000 sr} bdef
+c129
+3 0 1094 1945 2 MP stroke
+/c130 { 0.000000 0.482353 1.000000 sr} bdef
+c130
+3 0 1097 1945 2 MP stroke
+/c131 { 0.000000 0.486275 1.000000 sr} bdef
+c131
+4 0 1100 1945 2 MP stroke
+/c132 { 0.000000 0.490196 1.000000 sr} bdef
+c132
+3 0 1104 1945 2 MP stroke
+/c133 { 0.000000 0.494118 1.000000 sr} bdef
+c133
+3 0 1107 1945 2 MP stroke
+/c134 { 0.000000 0.498039 1.000000 sr} bdef
+c134
+3 0 1110 1945 2 MP stroke
+/c135 { 0.000000 0.501961 1.000000 sr} bdef
+c135
+4 0 1113 1945 2 MP stroke
+/c136 { 0.000000 0.505882 1.000000 sr} bdef
+c136
+3 0 1117 1945 2 MP stroke
+/c137 { 0.000000 0.509804 1.000000 sr} bdef
+c137
+3 0 1120 1945 2 MP stroke
+/c138 { 0.000000 0.513725 1.000000 sr} bdef
+c138
+4 0 1123 1945 2 MP stroke
+/c139 { 0.000000 0.517647 1.000000 sr} bdef
+c139
+3 0 1127 1945 2 MP stroke
+/c140 { 0.000000 0.521569 1.000000 sr} bdef
+c140
+3 0 1130 1945 2 MP stroke
+/c141 { 0.000000 0.525490 1.000000 sr} bdef
+c141
+3 0 1133 1945 2 MP stroke
+/c142 { 0.000000 0.529412 1.000000 sr} bdef
+c142
+4 0 1136 1945 2 MP stroke
+/c143 { 0.000000 0.533333 1.000000 sr} bdef
+c143
+3 0 1140 1945 2 MP stroke
+/c144 { 0.000000 0.537255 1.000000 sr} bdef
+c144
+3 0 1143 1945 2 MP stroke
+/c145 { 0.000000 0.541176 1.000000 sr} bdef
+c145
+3 0 1146 1945 2 MP stroke
+/c146 { 0.000000 0.545098 1.000000 sr} bdef
+c146
+4 0 1149 1945 2 MP stroke
+/c147 { 0.000000 0.549020 1.000000 sr} bdef
+c147
+3 0 1153 1945 2 MP stroke
+/c148 { 0.000000 0.552941 1.000000 sr} bdef
+c148
+3 0 1156 1945 2 MP stroke
+/c149 { 0.000000 0.556863 1.000000 sr} bdef
+c149
+3 0 1159 1945 2 MP stroke
+/c150 { 0.000000 0.560784 1.000000 sr} bdef
+c150
+4 0 1162 1945 2 MP stroke
+/c151 { 0.000000 0.564706 1.000000 sr} bdef
+c151
+3 0 1166 1945 2 MP stroke
+/c152 { 0.000000 0.568627 1.000000 sr} bdef
+c152
+3 0 1169 1945 2 MP stroke
+/c153 { 0.000000 0.572549 1.000000 sr} bdef
+c153
+4 0 1172 1945 2 MP stroke
+/c154 { 0.000000 0.576471 1.000000 sr} bdef
+c154
+3 0 1176 1945 2 MP stroke
+/c155 { 0.000000 0.580392 1.000000 sr} bdef
+c155
+3 0 1179 1945 2 MP stroke
+/c156 { 0.000000 0.584314 1.000000 sr} bdef
+c156
+3 0 1182 1945 2 MP stroke
+/c157 { 0.000000 0.588235 1.000000 sr} bdef
+c157
+4 0 1185 1945 2 MP stroke
+/c158 { 0.000000 0.592157 1.000000 sr} bdef
+c158
+3 0 1189 1945 2 MP stroke
+/c159 { 0.000000 0.596078 1.000000 sr} bdef
+c159
+3 0 1192 1945 2 MP stroke
+/c160 { 0.000000 0.600000 1.000000 sr} bdef
+c160
+3 0 1195 1945 2 MP stroke
+/c161 { 0.000000 0.603922 1.000000 sr} bdef
+c161
+4 0 1198 1945 2 MP stroke
+/c162 { 0.000000 0.607843 1.000000 sr} bdef
+c162
+3 0 1202 1945 2 MP stroke
+/c163 { 0.000000 0.611765 1.000000 sr} bdef
+c163
+3 0 1205 1945 2 MP stroke
+/c164 { 0.000000 0.615686 1.000000 sr} bdef
+c164
+3 0 1208 1945 2 MP stroke
+/c165 { 0.000000 0.619608 1.000000 sr} bdef
+c165
+4 0 1211 1945 2 MP stroke
+/c166 { 0.000000 0.623529 1.000000 sr} bdef
+c166
+3 0 1215 1945 2 MP stroke
+/c167 { 0.000000 0.627451 1.000000 sr} bdef
+c167
+3 0 1218 1945 2 MP stroke
+/c168 { 0.000000 0.631373 1.000000 sr} bdef
+c168
+4 0 1221 1945 2 MP stroke
+/c169 { 0.000000 0.635294 1.000000 sr} bdef
+c169
+3 0 1225 1945 2 MP stroke
+/c170 { 0.000000 0.639216 1.000000 sr} bdef
+c170
+3 0 1228 1945 2 MP stroke
+/c171 { 0.000000 0.643137 1.000000 sr} bdef
+c171
+3 0 1231 1945 2 MP stroke
+/c172 { 0.000000 0.647059 1.000000 sr} bdef
+c172
+4 0 1234 1945 2 MP stroke
+/c173 { 0.000000 0.650980 1.000000 sr} bdef
+c173
+3 0 1238 1945 2 MP stroke
+/c174 { 0.000000 0.654902 1.000000 sr} bdef
+c174
+3 0 1241 1945 2 MP stroke
+/c175 { 0.000000 0.658824 1.000000 sr} bdef
+c175
+3 0 1244 1945 2 MP stroke
+/c176 { 0.000000 0.662745 1.000000 sr} bdef
+c176
+4 0 1247 1945 2 MP stroke
+/c177 { 0.000000 0.666667 1.000000 sr} bdef
+c177
+3 0 1251 1945 2 MP stroke
+/c178 { 0.000000 0.670588 1.000000 sr} bdef
+c178
+3 0 1254 1945 2 MP stroke
+/c179 { 0.000000 0.674510 1.000000 sr} bdef
+c179
+4 0 1257 1945 2 MP stroke
+/c180 { 0.000000 0.678431 1.000000 sr} bdef
+c180
+3 0 1261 1945 2 MP stroke
+/c181 { 0.000000 0.682353 1.000000 sr} bdef
+c181
+3 0 1264 1945 2 MP stroke
+/c182 { 0.000000 0.686275 1.000000 sr} bdef
+c182
+3 0 1267 1945 2 MP stroke
+/c183 { 0.000000 0.690196 1.000000 sr} bdef
+c183
+4 0 1270 1945 2 MP stroke
+/c184 { 0.000000 0.694118 1.000000 sr} bdef
+c184
+3 0 1274 1945 2 MP stroke
+/c185 { 0.000000 0.698039 1.000000 sr} bdef
+c185
+3 0 1277 1945 2 MP stroke
+/c186 { 0.000000 0.701961 1.000000 sr} bdef
+c186
+3 0 1280 1945 2 MP stroke
+/c187 { 0.000000 0.705882 1.000000 sr} bdef
+c187
+4 0 1283 1945 2 MP stroke
+/c188 { 0.000000 0.709804 1.000000 sr} bdef
+c188
+3 0 1287 1945 2 MP stroke
+/c189 { 0.000000 0.713725 1.000000 sr} bdef
+c189
+3 0 1290 1945 2 MP stroke
+/c190 { 0.000000 0.717647 1.000000 sr} bdef
+c190
+3 0 1293 1945 2 MP stroke
+/c191 { 0.000000 0.721569 1.000000 sr} bdef
+c191
+4 0 1296 1945 2 MP stroke
+/c192 { 0.000000 0.725490 1.000000 sr} bdef
+c192
+3 0 1300 1945 2 MP stroke
+/c193 { 0.000000 0.729412 1.000000 sr} bdef
+c193
+3 0 1303 1945 2 MP stroke
+/c194 { 0.000000 0.733333 1.000000 sr} bdef
+c194
+4 0 1306 1945 2 MP stroke
+/c195 { 0.000000 0.737255 1.000000 sr} bdef
+c195
+3 0 1310 1945 2 MP stroke
+/c196 { 0.000000 0.741176 1.000000 sr} bdef
+c196
+3 0 1313 1945 2 MP stroke
+/c197 { 0.000000 0.745098 1.000000 sr} bdef
+c197
+3 0 1316 1945 2 MP stroke
+/c198 { 0.000000 0.749020 1.000000 sr} bdef
+c198
+4 0 1319 1945 2 MP stroke
+/c199 { 0.000000 0.752941 1.000000 sr} bdef
+c199
+3 0 1323 1945 2 MP stroke
+/c200 { 0.000000 0.756863 1.000000 sr} bdef
+c200
+3 0 1326 1945 2 MP stroke
+/c201 { 0.000000 0.760784 1.000000 sr} bdef
+c201
+3 0 1329 1945 2 MP stroke
+/c202 { 0.000000 0.764706 1.000000 sr} bdef
+c202
+4 0 1332 1945 2 MP stroke
+/c203 { 0.000000 0.768627 1.000000 sr} bdef
+c203
+3 0 1336 1945 2 MP stroke
+/c204 { 0.000000 0.772549 1.000000 sr} bdef
+c204
+3 0 1339 1945 2 MP stroke
+/c205 { 0.000000 0.776471 1.000000 sr} bdef
+c205
+3 0 1342 1945 2 MP stroke
+/c206 { 0.000000 0.780392 1.000000 sr} bdef
+c206
+4 0 1345 1945 2 MP stroke
+/c207 { 0.000000 0.784314 1.000000 sr} bdef
+c207
+3 0 1349 1945 2 MP stroke
+/c208 { 0.000000 0.788235 1.000000 sr} bdef
+c208
+3 0 1352 1945 2 MP stroke
+/c209 { 0.000000 0.792157 1.000000 sr} bdef
+c209
+4 0 1355 1945 2 MP stroke
+/c210 { 0.000000 0.796078 1.000000 sr} bdef
+c210
+3 0 1359 1945 2 MP stroke
+/c211 { 0.000000 0.800000 1.000000 sr} bdef
+c211
+3 0 1362 1945 2 MP stroke
+/c212 { 0.000000 0.803922 1.000000 sr} bdef
+c212
+3 0 1365 1945 2 MP stroke
+/c213 { 0.000000 0.807843 1.000000 sr} bdef
+c213
+4 0 1368 1945 2 MP stroke
+/c214 { 0.000000 0.811765 1.000000 sr} bdef
+c214
+3 0 1372 1945 2 MP stroke
+/c215 { 0.000000 0.815686 1.000000 sr} bdef
+c215
+3 0 1375 1945 2 MP stroke
+/c216 { 0.000000 0.819608 1.000000 sr} bdef
+c216
+3 0 1378 1945 2 MP stroke
+/c217 { 0.000000 0.823529 1.000000 sr} bdef
+c217
+4 0 1381 1945 2 MP stroke
+/c218 { 0.000000 0.827451 1.000000 sr} bdef
+c218
+3 0 1385 1945 2 MP stroke
+/c219 { 0.000000 0.831373 1.000000 sr} bdef
+c219
+3 0 1388 1945 2 MP stroke
+/c220 { 0.000000 0.835294 1.000000 sr} bdef
+c220
+3 0 1391 1945 2 MP stroke
+/c221 { 0.000000 0.839216 1.000000 sr} bdef
+c221
+4 0 1394 1945 2 MP stroke
+/c222 { 0.000000 0.843137 1.000000 sr} bdef
+c222
+3 0 1398 1945 2 MP stroke
+/c223 { 0.000000 0.847059 1.000000 sr} bdef
+c223
+3 0 1401 1945 2 MP stroke
+/c224 { 0.000000 0.850980 1.000000 sr} bdef
+c224
+4 0 1404 1945 2 MP stroke
+/c225 { 0.000000 0.854902 1.000000 sr} bdef
+c225
+3 0 1408 1945 2 MP stroke
+/c226 { 0.000000 0.858824 1.000000 sr} bdef
+c226
+3 0 1411 1945 2 MP stroke
+/c227 { 0.000000 0.862745 1.000000 sr} bdef
+c227
+3 0 1414 1945 2 MP stroke
+/c228 { 0.000000 0.866667 1.000000 sr} bdef
+c228
+4 0 1417 1945 2 MP stroke
+/c229 { 0.000000 0.870588 1.000000 sr} bdef
+c229
+3 0 1421 1945 2 MP stroke
+/c230 { 0.000000 0.874510 1.000000 sr} bdef
+c230
+3 0 1424 1945 2 MP stroke
+/c231 { 0.000000 0.878431 1.000000 sr} bdef
+c231
+3 0 1427 1945 2 MP stroke
+/c232 { 0.000000 0.882353 1.000000 sr} bdef
+c232
+4 0 1430 1945 2 MP stroke
+/c233 { 0.000000 0.886275 1.000000 sr} bdef
+c233
+3 0 1434 1945 2 MP stroke
+/c234 { 0.000000 0.890196 1.000000 sr} bdef
+c234
+3 0 1437 1945 2 MP stroke
+/c235 { 0.000000 0.894118 1.000000 sr} bdef
+c235
+3 0 1440 1945 2 MP stroke
+/c236 { 0.000000 0.898039 1.000000 sr} bdef
+c236
+4 0 1443 1945 2 MP stroke
+/c237 { 0.000000 0.901961 1.000000 sr} bdef
+c237
+3 0 1447 1945 2 MP stroke
+/c238 { 0.000000 0.905882 1.000000 sr} bdef
+c238
+3 0 1450 1945 2 MP stroke
+/c239 { 0.000000 0.909804 1.000000 sr} bdef
+c239
+4 0 1453 1945 2 MP stroke
+/c240 { 0.000000 0.913725 1.000000 sr} bdef
+c240
+3 0 1457 1945 2 MP stroke
+/c241 { 0.000000 0.917647 1.000000 sr} bdef
+c241
+3 0 1460 1945 2 MP stroke
+/c242 { 0.000000 0.921569 1.000000 sr} bdef
+c242
+3 0 1463 1945 2 MP stroke
+/c243 { 0.000000 0.925490 1.000000 sr} bdef
+c243
+4 0 1466 1945 2 MP stroke
+/c244 { 0.000000 0.929412 1.000000 sr} bdef
+c244
+3 0 1470 1945 2 MP stroke
+/c245 { 0.000000 0.933333 1.000000 sr} bdef
+c245
+3 0 1473 1945 2 MP stroke
+/c246 { 0.000000 0.937255 1.000000 sr} bdef
+c246
+3 0 1476 1945 2 MP stroke
+/c247 { 0.000000 0.941176 1.000000 sr} bdef
+c247
+4 0 1479 1945 2 MP stroke
+/c248 { 0.000000 0.945098 1.000000 sr} bdef
+c248
+3 0 1483 1945 2 MP stroke
+/c249 { 0.000000 0.949020 1.000000 sr} bdef
+c249
+3 0 1486 1945 2 MP stroke
+/c250 { 0.000000 0.952941 1.000000 sr} bdef
+c250
+3 0 1489 1945 2 MP stroke
+/c251 { 0.000000 0.956863 1.000000 sr} bdef
+c251
+4 0 1492 1945 2 MP stroke
+/c252 { 0.000000 0.960784 1.000000 sr} bdef
+c252
+3 0 1496 1945 2 MP stroke
+/c253 { 0.000000 0.964706 1.000000 sr} bdef
+c253
+3 0 1499 1945 2 MP stroke
+/c254 { 0.000000 0.968627 1.000000 sr} bdef
+c254
+4 0 1502 1945 2 MP stroke
+/c255 { 0.000000 0.972549 1.000000 sr} bdef
+c255
+3 0 1506 1945 2 MP stroke
+/c256 { 0.000000 0.976471 1.000000 sr} bdef
+c256
+3 0 1509 1945 2 MP stroke
+/c257 { 0.000000 0.980392 1.000000 sr} bdef
+c257
+3 0 1512 1945 2 MP stroke
+/c258 { 0.000000 0.984314 1.000000 sr} bdef
+c258
+4 0 1515 1945 2 MP stroke
+/c259 { 0.000000 0.988235 1.000000 sr} bdef
+c259
+3 0 1519 1945 2 MP stroke
+/c260 { 0.000000 0.992157 1.000000 sr} bdef
+c260
+3 0 1522 1945 2 MP stroke
+/c261 { 0.000000 0.996078 1.000000 sr} bdef
+c261
+3 0 1525 1945 2 MP stroke
+/c262 { 0.000000 1.000000 1.000000 sr} bdef
+c262
+4 0 1528 1945 2 MP stroke
+/c263 { 0.000000 1.000000 0.996078 sr} bdef
+c263
+3 0 1532 1945 2 MP stroke
+/c264 { 0.000000 1.000000 0.992157 sr} bdef
+c264
+3 0 1535 1945 2 MP stroke
+/c265 { 0.000000 1.000000 0.988235 sr} bdef
+c265
+4 0 1538 1945 2 MP stroke
+/c266 { 0.000000 1.000000 0.984314 sr} bdef
+c266
+3 0 1542 1945 2 MP stroke
+/c267 { 0.000000 1.000000 0.980392 sr} bdef
+c267
+3 0 1545 1945 2 MP stroke
+/c268 { 0.000000 1.000000 0.976471 sr} bdef
+c268
+3 0 1548 1945 2 MP stroke
+/c269 { 0.000000 1.000000 0.972549 sr} bdef
+c269
+4 0 1551 1945 2 MP stroke
+/c270 { 0.000000 1.000000 0.968627 sr} bdef
+c270
+3 0 1555 1945 2 MP stroke
+/c271 { 0.000000 1.000000 0.964706 sr} bdef
+c271
+3 0 1558 1945 2 MP stroke
+/c272 { 0.000000 1.000000 0.960784 sr} bdef
+c272
+3 0 1561 1945 2 MP stroke
+/c273 { 0.000000 1.000000 0.956863 sr} bdef
+c273
+4 0 1564 1945 2 MP stroke
+/c274 { 0.000000 1.000000 0.952941 sr} bdef
+c274
+3 0 1568 1945 2 MP stroke
+/c275 { 0.000000 1.000000 0.949020 sr} bdef
+c275
+3 0 1571 1945 2 MP stroke
+/c276 { 0.000000 1.000000 0.945098 sr} bdef
+c276
+3 0 1574 1945 2 MP stroke
+/c277 { 0.000000 1.000000 0.941176 sr} bdef
+c277
+4 0 1577 1945 2 MP stroke
+/c278 { 0.000000 1.000000 0.937255 sr} bdef
+c278
+3 0 1581 1945 2 MP stroke
+/c279 { 0.000000 1.000000 0.933333 sr} bdef
+c279
+3 0 1584 1945 2 MP stroke
+/c280 { 0.000000 1.000000 0.929412 sr} bdef
+c280
+4 0 1587 1945 2 MP stroke
+/c281 { 0.000000 1.000000 0.925490 sr} bdef
+c281
+3 0 1591 1945 2 MP stroke
+/c282 { 0.000000 1.000000 0.921569 sr} bdef
+c282
+3 0 1594 1945 2 MP stroke
+/c283 { 0.000000 1.000000 0.917647 sr} bdef
+c283
+3 0 1597 1945 2 MP stroke
+/c284 { 0.000000 1.000000 0.913725 sr} bdef
+c284
+4 0 1600 1945 2 MP stroke
+/c285 { 0.000000 1.000000 0.909804 sr} bdef
+c285
+3 0 1604 1945 2 MP stroke
+/c286 { 0.000000 1.000000 0.905882 sr} bdef
+c286
+3 0 1607 1945 2 MP stroke
+/c287 { 0.000000 1.000000 0.901961 sr} bdef
+c287
+3 0 1610 1945 2 MP stroke
+/c288 { 0.000000 1.000000 0.898039 sr} bdef
+c288
+4 0 1613 1945 2 MP stroke
+/c289 { 0.000000 1.000000 0.894118 sr} bdef
+c289
+3 0 1617 1945 2 MP stroke
+/c290 { 0.000000 1.000000 0.890196 sr} bdef
+c290
+3 0 1620 1945 2 MP stroke
+/c291 { 0.000000 1.000000 0.886275 sr} bdef
+c291
+3 0 1623 1945 2 MP stroke
+/c292 { 0.000000 1.000000 0.882353 sr} bdef
+c292
+4 0 1626 1945 2 MP stroke
+/c293 { 0.000000 1.000000 0.878431 sr} bdef
+c293
+3 0 1630 1945 2 MP stroke
+/c294 { 0.000000 1.000000 0.874510 sr} bdef
+c294
+3 0 1633 1945 2 MP stroke
+/c295 { 0.000000 1.000000 0.870588 sr} bdef
+c295
+4 0 1636 1945 2 MP stroke
+/c296 { 0.000000 1.000000 0.866667 sr} bdef
+c296
+3 0 1640 1945 2 MP stroke
+/c297 { 0.000000 1.000000 0.862745 sr} bdef
+c297
+3 0 1643 1945 2 MP stroke
+/c298 { 0.000000 1.000000 0.858824 sr} bdef
+c298
+3 0 1646 1945 2 MP stroke
+/c299 { 0.000000 1.000000 0.854902 sr} bdef
+c299
+4 0 1649 1945 2 MP stroke
+/c300 { 0.000000 1.000000 0.850980 sr} bdef
+c300
+3 0 1653 1945 2 MP stroke
+/c301 { 0.000000 1.000000 0.847059 sr} bdef
+c301
+3 0 1656 1945 2 MP stroke
+/c302 { 0.000000 1.000000 0.843137 sr} bdef
+c302
+3 0 1659 1945 2 MP stroke
+/c303 { 0.000000 1.000000 0.839216 sr} bdef
+c303
+4 0 1662 1945 2 MP stroke
+/c304 { 0.000000 1.000000 0.835294 sr} bdef
+c304
+3 0 1666 1945 2 MP stroke
+/c305 { 0.000000 1.000000 0.831373 sr} bdef
+c305
+3 0 1669 1945 2 MP stroke
+/c306 { 0.000000 1.000000 0.827451 sr} bdef
+c306
+3 0 1672 1945 2 MP stroke
+/c307 { 0.000000 1.000000 0.823529 sr} bdef
+c307
+4 0 1675 1945 2 MP stroke
+/c308 { 0.000000 1.000000 0.819608 sr} bdef
+c308
+3 0 1679 1945 2 MP stroke
+/c309 { 0.000000 1.000000 0.815686 sr} bdef
+c309
+3 0 1682 1945 2 MP stroke
+/c310 { 0.000000 1.000000 0.811765 sr} bdef
+c310
+4 0 1685 1945 2 MP stroke
+/c311 { 0.000000 1.000000 0.807843 sr} bdef
+c311
+3 0 1689 1945 2 MP stroke
+/c312 { 0.000000 1.000000 0.803922 sr} bdef
+c312
+3 0 1692 1945 2 MP stroke
+/c313 { 0.000000 1.000000 0.800000 sr} bdef
+c313
+3 0 1695 1945 2 MP stroke
+/c314 { 0.000000 1.000000 0.796078 sr} bdef
+c314
+4 0 1698 1945 2 MP stroke
+/c315 { 0.000000 1.000000 0.792157 sr} bdef
+c315
+3 0 1702 1945 2 MP stroke
+/c316 { 0.000000 1.000000 0.788235 sr} bdef
+c316
+3 0 1705 1945 2 MP stroke
+/c317 { 0.000000 1.000000 0.784314 sr} bdef
+c317
+3 0 1708 1945 2 MP stroke
+/c318 { 0.000000 1.000000 0.780392 sr} bdef
+c318
+4 0 1711 1945 2 MP stroke
+/c319 { 0.000000 1.000000 0.776471 sr} bdef
+c319
+3 0 1715 1945 2 MP stroke
+/c320 { 0.000000 1.000000 0.772549 sr} bdef
+c320
+3 0 1718 1945 2 MP stroke
+/c321 { 0.000000 1.000000 0.768627 sr} bdef
+c321
+3 0 1721 1945 2 MP stroke
+/c322 { 0.000000 1.000000 0.764706 sr} bdef
+c322
+4 0 1724 1945 2 MP stroke
+/c323 { 0.000000 1.000000 0.760784 sr} bdef
+c323
+3 0 1728 1945 2 MP stroke
+/c324 { 0.000000 1.000000 0.756863 sr} bdef
+c324
+3 0 1731 1945 2 MP stroke
+/c325 { 0.000000 1.000000 0.752941 sr} bdef
+c325
+4 0 1734 1945 2 MP stroke
+/c326 { 0.000000 1.000000 0.749020 sr} bdef
+c326
+3 0 1738 1945 2 MP stroke
+/c327 { 0.000000 1.000000 0.745098 sr} bdef
+c327
+3 0 1741 1945 2 MP stroke
+/c328 { 0.000000 1.000000 0.741176 sr} bdef
+c328
+3 0 1744 1945 2 MP stroke
+/c329 { 0.000000 1.000000 0.737255 sr} bdef
+c329
+4 0 1747 1945 2 MP stroke
+/c330 { 0.000000 1.000000 0.733333 sr} bdef
+c330
+3 0 1751 1945 2 MP stroke
+/c331 { 0.000000 1.000000 0.729412 sr} bdef
+c331
+3 0 1754 1945 2 MP stroke
+/c332 { 0.000000 1.000000 0.725490 sr} bdef
+c332
+3 0 1757 1945 2 MP stroke
+/c333 { 0.000000 1.000000 0.721569 sr} bdef
+c333
+4 0 1760 1945 2 MP stroke
+/c334 { 0.000000 1.000000 0.717647 sr} bdef
+c334
+3 0 1764 1945 2 MP stroke
+/c335 { 0.000000 1.000000 0.713725 sr} bdef
+c335
+3 0 1767 1945 2 MP stroke
+/c336 { 0.000000 1.000000 0.709804 sr} bdef
+c336
+3 0 1770 1945 2 MP stroke
+/c337 { 0.000000 1.000000 0.705882 sr} bdef
+c337
+4 0 1773 1945 2 MP stroke
+/c338 { 0.000000 1.000000 0.701961 sr} bdef
+c338
+3 0 1777 1945 2 MP stroke
+/c339 { 0.000000 1.000000 0.698039 sr} bdef
+c339
+3 0 1780 1945 2 MP stroke
+/c340 { 0.000000 1.000000 0.694118 sr} bdef
+c340
+4 0 1783 1945 2 MP stroke
+/c341 { 0.000000 1.000000 0.690196 sr} bdef
+c341
+3 0 1787 1945 2 MP stroke
+/c342 { 0.000000 1.000000 0.686275 sr} bdef
+c342
+3 0 1790 1945 2 MP stroke
+/c343 { 0.000000 1.000000 0.682353 sr} bdef
+c343
+3 0 1793 1945 2 MP stroke
+/c344 { 0.000000 1.000000 0.678431 sr} bdef
+c344
+4 0 1796 1945 2 MP stroke
+/c345 { 0.000000 1.000000 0.674510 sr} bdef
+c345
+3 0 1800 1945 2 MP stroke
+/c346 { 0.000000 1.000000 0.670588 sr} bdef
+c346
+3 0 1803 1945 2 MP stroke
+/c347 { 0.000000 1.000000 0.666667 sr} bdef
+c347
+3 0 1806 1945 2 MP stroke
+/c348 { 0.000000 1.000000 0.662745 sr} bdef
+c348
+4 0 1809 1945 2 MP stroke
+/c349 { 0.000000 1.000000 0.658824 sr} bdef
+c349
+3 0 1813 1945 2 MP stroke
+/c350 { 0.000000 1.000000 0.654902 sr} bdef
+c350
+3 0 1816 1945 2 MP stroke
+/c351 { 0.000000 1.000000 0.650980 sr} bdef
+c351
+4 0 1819 1945 2 MP stroke
+/c352 { 0.000000 1.000000 0.647059 sr} bdef
+c352
+3 0 1823 1945 2 MP stroke
+/c353 { 0.000000 1.000000 0.643137 sr} bdef
+c353
+3 0 1826 1945 2 MP stroke
+/c354 { 0.000000 1.000000 0.639216 sr} bdef
+c354
+3 0 1829 1945 2 MP stroke
+/c355 { 0.000000 1.000000 0.635294 sr} bdef
+c355
+4 0 1832 1945 2 MP stroke
+/c356 { 0.000000 1.000000 0.631373 sr} bdef
+c356
+3 0 1836 1945 2 MP stroke
+/c357 { 0.000000 1.000000 0.627451 sr} bdef
+c357
+3 0 1839 1945 2 MP stroke
+/c358 { 0.000000 1.000000 0.623529 sr} bdef
+c358
+3 0 1842 1945 2 MP stroke
+/c359 { 0.000000 1.000000 0.619608 sr} bdef
+c359
+4 0 1845 1945 2 MP stroke
+/c360 { 0.000000 1.000000 0.615686 sr} bdef
+c360
+3 0 1849 1945 2 MP stroke
+/c361 { 0.000000 1.000000 0.611765 sr} bdef
+c361
+3 0 1852 1945 2 MP stroke
+/c362 { 0.000000 1.000000 0.607843 sr} bdef
+c362
+3 0 1855 1945 2 MP stroke
+/c363 { 0.000000 1.000000 0.603922 sr} bdef
+c363
+4 0 1858 1945 2 MP stroke
+/c364 { 0.000000 1.000000 0.600000 sr} bdef
+c364
+3 0 1862 1945 2 MP stroke
+/c365 { 0.000000 1.000000 0.596078 sr} bdef
+c365
+3 0 1865 1945 2 MP stroke
+/c366 { 0.000000 1.000000 0.592157 sr} bdef
+c366
+4 0 1868 1945 2 MP stroke
+/c367 { 0.000000 1.000000 0.588235 sr} bdef
+c367
+3 0 1872 1945 2 MP stroke
+/c368 { 0.000000 1.000000 0.584314 sr} bdef
+c368
+3 0 1875 1945 2 MP stroke
+/c369 { 0.000000 1.000000 0.580392 sr} bdef
+c369
+3 0 1878 1945 2 MP stroke
+/c370 { 0.000000 1.000000 0.576471 sr} bdef
+c370
+4 0 1881 1945 2 MP stroke
+/c371 { 0.000000 1.000000 0.572549 sr} bdef
+c371
+3 0 1885 1945 2 MP stroke
+/c372 { 0.000000 1.000000 0.568627 sr} bdef
+c372
+3 0 1888 1945 2 MP stroke
+/c373 { 0.000000 1.000000 0.564706 sr} bdef
+c373
+3 0 1891 1945 2 MP stroke
+/c374 { 0.000000 1.000000 0.560784 sr} bdef
+c374
+4 0 1894 1945 2 MP stroke
+/c375 { 0.000000 1.000000 0.556863 sr} bdef
+c375
+3 0 1898 1945 2 MP stroke
+/c376 { 0.000000 1.000000 0.552941 sr} bdef
+c376
+3 0 1901 1945 2 MP stroke
+/c377 { 0.000000 1.000000 0.549020 sr} bdef
+c377
+3 0 1904 1945 2 MP stroke
+/c378 { 0.000000 1.000000 0.545098 sr} bdef
+c378
+4 0 1907 1945 2 MP stroke
+/c379 { 0.000000 1.000000 0.541176 sr} bdef
+c379
+3 0 1911 1945 2 MP stroke
+/c380 { 0.000000 1.000000 0.537255 sr} bdef
+c380
+3 0 1914 1945 2 MP stroke
+/c381 { 0.000000 1.000000 0.533333 sr} bdef
+c381
+4 0 1917 1945 2 MP stroke
+/c382 { 0.000000 1.000000 0.529412 sr} bdef
+c382
+3 0 1921 1945 2 MP stroke
+/c383 { 0.000000 1.000000 0.525490 sr} bdef
+c383
+3 0 1924 1945 2 MP stroke
+/c384 { 0.000000 1.000000 0.521569 sr} bdef
+c384
+3 0 1927 1945 2 MP stroke
+/c385 { 0.000000 1.000000 0.517647 sr} bdef
+c385
+4 0 1930 1945 2 MP stroke
+/c386 { 0.000000 1.000000 0.513725 sr} bdef
+c386
+3 0 1934 1945 2 MP stroke
+/c387 { 0.000000 1.000000 0.509804 sr} bdef
+c387
+3 0 1937 1945 2 MP stroke
+/c388 { 0.000000 1.000000 0.505882 sr} bdef
+c388
+3 0 1940 1945 2 MP stroke
+/c389 { 0.000000 1.000000 0.501961 sr} bdef
+c389
+4 0 1943 1945 2 MP stroke
+/c390 { 0.000000 1.000000 0.498039 sr} bdef
+c390
+3 0 1947 1945 2 MP stroke
+/c391 { 0.000000 1.000000 0.494118 sr} bdef
+c391
+3 0 1950 1945 2 MP stroke
+/c392 { 0.000000 1.000000 0.490196 sr} bdef
+c392
+3 0 1953 1945 2 MP stroke
+/c393 { 0.000000 1.000000 0.486275 sr} bdef
+c393
+4 0 1956 1945 2 MP stroke
+/c394 { 0.000000 1.000000 0.482353 sr} bdef
+c394
+3 0 1960 1945 2 MP stroke
+/c395 { 0.000000 1.000000 0.478431 sr} bdef
+c395
+3 0 1963 1945 2 MP stroke
+/c396 { 0.000000 1.000000 0.474510 sr} bdef
+c396
+4 0 1966 1945 2 MP stroke
+/c397 { 0.000000 1.000000 0.470588 sr} bdef
+c397
+3 0 1970 1945 2 MP stroke
+/c398 { 0.000000 1.000000 0.466667 sr} bdef
+c398
+3 0 1973 1945 2 MP stroke
+/c399 { 0.000000 1.000000 0.462745 sr} bdef
+c399
+3 0 1976 1945 2 MP stroke
+/c400 { 0.000000 1.000000 0.458824 sr} bdef
+c400
+4 0 1979 1945 2 MP stroke
+/c401 { 0.000000 1.000000 0.454902 sr} bdef
+c401
+3 0 1983 1945 2 MP stroke
+/c402 { 0.000000 1.000000 0.450980 sr} bdef
+c402
+3 0 1986 1945 2 MP stroke
+/c403 { 0.000000 1.000000 0.447059 sr} bdef
+c403
+3 0 1989 1945 2 MP stroke
+/c404 { 0.000000 1.000000 0.443137 sr} bdef
+c404
+4 0 1992 1945 2 MP stroke
+/c405 { 0.000000 1.000000 0.439216 sr} bdef
+c405
+3 0 1996 1945 2 MP stroke
+/c406 { 0.000000 1.000000 0.435294 sr} bdef
+c406
+3 0 1999 1945 2 MP stroke
+/c407 { 0.000000 1.000000 0.431373 sr} bdef
+c407
+3 0 2002 1945 2 MP stroke
+/c408 { 0.000000 1.000000 0.427451 sr} bdef
+c408
+4 0 2005 1945 2 MP stroke
+/c409 { 0.000000 1.000000 0.423529 sr} bdef
+c409
+3 0 2009 1945 2 MP stroke
+/c410 { 0.000000 1.000000 0.419608 sr} bdef
+c410
+3 0 2012 1945 2 MP stroke
+/c411 { 0.000000 1.000000 0.415686 sr} bdef
+c411
+4 0 2015 1945 2 MP stroke
+/c412 { 0.000000 1.000000 0.411765 sr} bdef
+c412
+3 0 2019 1945 2 MP stroke
+/c413 { 0.000000 1.000000 0.407843 sr} bdef
+c413
+3 0 2022 1945 2 MP stroke
+/c414 { 0.000000 1.000000 0.403922 sr} bdef
+c414
+3 0 2025 1945 2 MP stroke
+/c415 { 0.000000 1.000000 0.400000 sr} bdef
+c415
+4 0 2028 1945 2 MP stroke
+/c416 { 0.000000 1.000000 0.396078 sr} bdef
+c416
+3 0 2032 1945 2 MP stroke
+/c417 { 0.000000 1.000000 0.392157 sr} bdef
+c417
+3 0 2035 1945 2 MP stroke
+/c418 { 0.000000 1.000000 0.388235 sr} bdef
+c418
+3 0 2038 1945 2 MP stroke
+/c419 { 0.000000 1.000000 0.384314 sr} bdef
+c419
+4 0 2041 1945 2 MP stroke
+/c420 { 0.000000 1.000000 0.380392 sr} bdef
+c420
+3 0 2045 1945 2 MP stroke
+/c421 { 0.000000 1.000000 0.376471 sr} bdef
+c421
+3 0 2048 1945 2 MP stroke
+/c422 { 0.000000 1.000000 0.372549 sr} bdef
+c422
+3 0 2051 1945 2 MP stroke
+/c423 { 0.000000 1.000000 0.368627 sr} bdef
+c423
+4 0 2054 1945 2 MP stroke
+/c424 { 0.000000 1.000000 0.364706 sr} bdef
+c424
+3 0 2058 1945 2 MP stroke
+/c425 { 0.000000 1.000000 0.360784 sr} bdef
+c425
+3 0 2061 1945 2 MP stroke
+/c426 { 0.000000 1.000000 0.356863 sr} bdef
+c426
+4 0 2064 1945 2 MP stroke
+/c427 { 0.000000 1.000000 0.352941 sr} bdef
+c427
+3 0 2068 1945 2 MP stroke
+/c428 { 0.000000 1.000000 0.349020 sr} bdef
+c428
+3 0 2071 1945 2 MP stroke
+/c429 { 0.000000 1.000000 0.345098 sr} bdef
+c429
+3 0 2074 1945 2 MP stroke
+/c430 { 0.000000 1.000000 0.341176 sr} bdef
+c430
+4 0 2077 1945 2 MP stroke
+/c431 { 0.000000 1.000000 0.337255 sr} bdef
+c431
+3 0 2081 1945 2 MP stroke
+/c432 { 0.000000 1.000000 0.333333 sr} bdef
+c432
+3 0 2084 1945 2 MP stroke
+/c433 { 0.000000 1.000000 0.329412 sr} bdef
+c433
+3 0 2087 1945 2 MP stroke
+/c434 { 0.000000 1.000000 0.325490 sr} bdef
+c434
+4 0 2090 1945 2 MP stroke
+/c435 { 0.000000 1.000000 0.321569 sr} bdef
+c435
+3 0 2094 1945 2 MP stroke
+/c436 { 0.000000 1.000000 0.317647 sr} bdef
+c436
+3 0 2097 1945 2 MP stroke
+/c437 { 0.000000 1.000000 0.313725 sr} bdef
+c437
+4 0 2100 1945 2 MP stroke
+/c438 { 0.000000 1.000000 0.309804 sr} bdef
+c438
+3 0 2104 1945 2 MP stroke
+/c439 { 0.000000 1.000000 0.305882 sr} bdef
+c439
+3 0 2107 1945 2 MP stroke
+/c440 { 0.000000 1.000000 0.301961 sr} bdef
+c440
+3 0 2110 1945 2 MP stroke
+/c441 { 0.000000 1.000000 0.298039 sr} bdef
+c441
+4 0 2113 1945 2 MP stroke
+/c442 { 0.000000 1.000000 0.294118 sr} bdef
+c442
+3 0 2117 1945 2 MP stroke
+/c443 { 0.000000 1.000000 0.290196 sr} bdef
+c443
+3 0 2120 1945 2 MP stroke
+/c444 { 0.000000 1.000000 0.286275 sr} bdef
+c444
+3 0 2123 1945 2 MP stroke
+/c445 { 0.000000 1.000000 0.282353 sr} bdef
+c445
+4 0 2126 1945 2 MP stroke
+/c446 { 0.000000 1.000000 0.278431 sr} bdef
+c446
+3 0 2130 1945 2 MP stroke
+/c447 { 0.000000 1.000000 0.274510 sr} bdef
+c447
+3 0 2133 1945 2 MP stroke
+/c448 { 0.000000 1.000000 0.270588 sr} bdef
+c448
+3 0 2136 1945 2 MP stroke
+/c449 { 0.000000 1.000000 0.266667 sr} bdef
+c449
+4 0 2139 1945 2 MP stroke
+/c450 { 0.000000 1.000000 0.262745 sr} bdef
+c450
+3 0 2143 1945 2 MP stroke
+/c451 { 0.000000 1.000000 0.258824 sr} bdef
+c451
+3 0 2146 1945 2 MP stroke
+/c452 { 0.000000 1.000000 0.254902 sr} bdef
+c452
+4 0 2149 1945 2 MP stroke
+/c453 { 0.000000 1.000000 0.250980 sr} bdef
+c453
+3 0 2153 1945 2 MP stroke
+/c454 { 0.000000 1.000000 0.247059 sr} bdef
+c454
+3 0 2156 1945 2 MP stroke
+/c455 { 0.000000 1.000000 0.243137 sr} bdef
+c455
+3 0 2159 1945 2 MP stroke
+/c456 { 0.000000 1.000000 0.239216 sr} bdef
+c456
+4 0 2162 1945 2 MP stroke
+/c457 { 0.000000 1.000000 0.235294 sr} bdef
+c457
+3 0 2166 1945 2 MP stroke
+/c458 { 0.000000 1.000000 0.231373 sr} bdef
+c458
+3 0 2169 1945 2 MP stroke
+/c459 { 0.000000 1.000000 0.227451 sr} bdef
+c459
+3 0 2172 1945 2 MP stroke
+/c460 { 0.000000 1.000000 0.223529 sr} bdef
+c460
+4 0 2175 1945 2 MP stroke
+/c461 { 0.000000 1.000000 0.219608 sr} bdef
+c461
+3 0 2179 1945 2 MP stroke
+/c462 { 0.000000 1.000000 0.215686 sr} bdef
+c462
+3 0 2182 1945 2 MP stroke
+/c463 { 0.000000 1.000000 0.211765 sr} bdef
+c463
+3 0 2185 1945 2 MP stroke
+/c464 { 0.000000 1.000000 0.207843 sr} bdef
+c464
+4 0 2188 1945 2 MP stroke
+/c465 { 0.000000 1.000000 0.203922 sr} bdef
+c465
+3 0 2192 1945 2 MP stroke
+/c466 { 0.000000 1.000000 0.200000 sr} bdef
+c466
+3 0 2195 1945 2 MP stroke
+/c467 { 0.000000 1.000000 0.196078 sr} bdef
+c467
+4 0 2198 1945 2 MP stroke
+/c468 { 0.000000 1.000000 0.192157 sr} bdef
+c468
+3 0 2202 1945 2 MP stroke
+/c469 { 0.000000 1.000000 0.188235 sr} bdef
+c469
+3 0 2205 1945 2 MP stroke
+/c470 { 0.000000 1.000000 0.184314 sr} bdef
+c470
+3 0 2208 1945 2 MP stroke
+/c471 { 0.000000 1.000000 0.180392 sr} bdef
+c471
+4 0 2211 1945 2 MP stroke
+/c472 { 0.000000 1.000000 0.176471 sr} bdef
+c472
+3 0 2215 1945 2 MP stroke
+/c473 { 0.000000 1.000000 0.172549 sr} bdef
+c473
+3 0 2218 1945 2 MP stroke
+/c474 { 0.000000 1.000000 0.168627 sr} bdef
+c474
+3 0 2221 1945 2 MP stroke
+/c475 { 0.000000 1.000000 0.164706 sr} bdef
+c475
+4 0 2224 1945 2 MP stroke
+/c476 { 0.000000 1.000000 0.160784 sr} bdef
+c476
+3 0 2228 1945 2 MP stroke
+/c477 { 0.000000 1.000000 0.156863 sr} bdef
+c477
+3 0 2231 1945 2 MP stroke
+/c478 { 0.000000 1.000000 0.152941 sr} bdef
+c478
+3 0 2234 1945 2 MP stroke
+/c479 { 0.000000 1.000000 0.149020 sr} bdef
+c479
+4 0 2237 1945 2 MP stroke
+/c480 { 0.000000 1.000000 0.145098 sr} bdef
+c480
+3 0 2241 1945 2 MP stroke
+/c481 { 0.000000 1.000000 0.141176 sr} bdef
+c481
+3 0 2244 1945 2 MP stroke
+/c482 { 0.000000 1.000000 0.137255 sr} bdef
+c482
+4 0 2247 1945 2 MP stroke
+/c483 { 0.000000 1.000000 0.133333 sr} bdef
+c483
+3 0 2251 1945 2 MP stroke
+/c484 { 0.000000 1.000000 0.129412 sr} bdef
+c484
+3 0 2254 1945 2 MP stroke
+/c485 { 0.000000 1.000000 0.125490 sr} bdef
+c485
+3 0 2257 1945 2 MP stroke
+/c486 { 0.000000 1.000000 0.121569 sr} bdef
+c486
+4 0 2260 1945 2 MP stroke
+/c487 { 0.000000 1.000000 0.117647 sr} bdef
+c487
+3 0 2264 1945 2 MP stroke
+/c488 { 0.000000 1.000000 0.113725 sr} bdef
+c488
+3 0 2267 1945 2 MP stroke
+/c489 { 0.000000 1.000000 0.109804 sr} bdef
+c489
+3 0 2270 1945 2 MP stroke
+/c490 { 0.000000 1.000000 0.105882 sr} bdef
+c490
+4 0 2273 1945 2 MP stroke
+/c491 { 0.000000 1.000000 0.101961 sr} bdef
+c491
+3 0 2277 1945 2 MP stroke
+/c492 { 0.000000 1.000000 0.098039 sr} bdef
+c492
+3 0 2280 1945 2 MP stroke
+/c493 { 0.000000 1.000000 0.094118 sr} bdef
+c493
+3 0 2283 1945 2 MP stroke
+/c494 { 0.000000 1.000000 0.090196 sr} bdef
+c494
+4 0 2286 1945 2 MP stroke
+/c495 { 0.000000 1.000000 0.086275 sr} bdef
+c495
+3 0 2290 1945 2 MP stroke
+/c496 { 0.000000 1.000000 0.082353 sr} bdef
+c496
+3 0 2293 1945 2 MP stroke
+/c497 { 0.000000 1.000000 0.078431 sr} bdef
+c497
+4 0 2296 1945 2 MP stroke
+/c498 { 0.000000 1.000000 0.074510 sr} bdef
+c498
+3 0 2300 1945 2 MP stroke
+/c499 { 0.000000 1.000000 0.070588 sr} bdef
+c499
+3 0 2303 1945 2 MP stroke
+/c500 { 0.000000 1.000000 0.066667 sr} bdef
+c500
+3 0 2306 1945 2 MP stroke
+/c501 { 0.000000 1.000000 0.062745 sr} bdef
+c501
+4 0 2309 1945 2 MP stroke
+/c502 { 0.000000 1.000000 0.058824 sr} bdef
+c502
+3 0 2313 1945 2 MP stroke
+/c503 { 0.000000 1.000000 0.054902 sr} bdef
+c503
+3 0 2316 1945 2 MP stroke
+/c504 { 0.000000 1.000000 0.050980 sr} bdef
+c504
+3 0 2319 1945 2 MP stroke
+/c505 { 0.000000 1.000000 0.047059 sr} bdef
+c505
+4 0 2322 1945 2 MP stroke
+/c506 { 0.000000 1.000000 0.043137 sr} bdef
+c506
+3 0 2326 1945 2 MP stroke
+/c507 { 0.000000 1.000000 0.039216 sr} bdef
+c507
+3 0 2329 1945 2 MP stroke
+/c508 { 0.000000 1.000000 0.035294 sr} bdef
+c508
+3 0 2332 1945 2 MP stroke
+/c509 { 0.000000 1.000000 0.031373 sr} bdef
+c509
+4 0 2335 1945 2 MP stroke
+/c510 { 0.000000 1.000000 0.027451 sr} bdef
+c510
+3 0 2339 1945 2 MP stroke
+/c511 { 0.000000 1.000000 0.023529 sr} bdef
+c511
+3 0 2342 1945 2 MP stroke
+/c512 { 0.000000 1.000000 0.019608 sr} bdef
+c512
+4 0 2345 1945 2 MP stroke
+/c513 { 0.000000 1.000000 0.015686 sr} bdef
+c513
+3 0 2349 1945 2 MP stroke
+/c514 { 0.000000 1.000000 0.011765 sr} bdef
+c514
+3 0 2352 1945 2 MP stroke
+/c515 { 0.000000 1.000000 0.007843 sr} bdef
+c515
+3 0 2355 1945 2 MP stroke
+/c516 { 0.000000 1.000000 0.003922 sr} bdef
+c516
+4 0 2358 1945 2 MP stroke
+/c517 { 0.000000 1.000000 0.000000 sr} bdef
+c517
+3 0 2362 1945 2 MP stroke
+/c518 { 0.003922 1.000000 0.000000 sr} bdef
+c518
+3 0 2365 1945 2 MP stroke
+/c519 { 0.007843 1.000000 0.000000 sr} bdef
+c519
+3 0 2368 1945 2 MP stroke
+/c520 { 0.011765 1.000000 0.000000 sr} bdef
+c520
+4 0 2371 1945 2 MP stroke
+/c521 { 0.015686 1.000000 0.000000 sr} bdef
+c521
+3 0 2375 1945 2 MP stroke
+/c522 { 0.019608 1.000000 0.000000 sr} bdef
+c522
+3 0 2378 1945 2 MP stroke
+/c523 { 0.023529 1.000000 0.000000 sr} bdef
+c523
+4 0 2381 1945 2 MP stroke
+/c524 { 0.027451 1.000000 0.000000 sr} bdef
+c524
+3 0 2385 1945 2 MP stroke
+/c525 { 0.031373 1.000000 0.000000 sr} bdef
+c525
+3 0 2388 1945 2 MP stroke
+/c526 { 0.035294 1.000000 0.000000 sr} bdef
+c526
+3 0 2391 1945 2 MP stroke
+/c527 { 0.039216 1.000000 0.000000 sr} bdef
+c527
+4 0 2394 1945 2 MP stroke
+/c528 { 0.043137 1.000000 0.000000 sr} bdef
+c528
+3 0 2398 1945 2 MP stroke
+/c529 { 0.047059 1.000000 0.000000 sr} bdef
+c529
+3 0 2401 1945 2 MP stroke
+/c530 { 0.050980 1.000000 0.000000 sr} bdef
+c530
+3 0 2404 1945 2 MP stroke
+/c531 { 0.054902 1.000000 0.000000 sr} bdef
+c531
+4 0 2407 1945 2 MP stroke
+/c532 { 0.058824 1.000000 0.000000 sr} bdef
+c532
+3 0 2411 1945 2 MP stroke
+/c533 { 0.062745 1.000000 0.000000 sr} bdef
+c533
+3 0 2414 1945 2 MP stroke
+/c534 { 0.066667 1.000000 0.000000 sr} bdef
+c534
+3 0 2417 1945 2 MP stroke
+/c535 { 0.070588 1.000000 0.000000 sr} bdef
+c535
+4 0 2420 1945 2 MP stroke
+/c536 { 0.074510 1.000000 0.000000 sr} bdef
+c536
+3 0 2424 1945 2 MP stroke
+/c537 { 0.078431 1.000000 0.000000 sr} bdef
+c537
+3 0 2427 1945 2 MP stroke
+/c538 { 0.082353 1.000000 0.000000 sr} bdef
+c538
+4 0 2430 1945 2 MP stroke
+/c539 { 0.086275 1.000000 0.000000 sr} bdef
+c539
+3 0 2434 1945 2 MP stroke
+/c540 { 0.090196 1.000000 0.000000 sr} bdef
+c540
+3 0 2437 1945 2 MP stroke
+/c541 { 0.094118 1.000000 0.000000 sr} bdef
+c541
+3 0 2440 1945 2 MP stroke
+/c542 { 0.098039 1.000000 0.000000 sr} bdef
+c542
+4 0 2443 1945 2 MP stroke
+/c543 { 0.101961 1.000000 0.000000 sr} bdef
+c543
+3 0 2447 1945 2 MP stroke
+/c544 { 0.105882 1.000000 0.000000 sr} bdef
+c544
+3 0 2450 1945 2 MP stroke
+/c545 { 0.109804 1.000000 0.000000 sr} bdef
+c545
+3 0 2453 1945 2 MP stroke
+/c546 { 0.113725 1.000000 0.000000 sr} bdef
+c546
+4 0 2456 1945 2 MP stroke
+/c547 { 0.117647 1.000000 0.000000 sr} bdef
+c547
+3 0 2460 1945 2 MP stroke
+/c548 { 0.121569 1.000000 0.000000 sr} bdef
+c548
+3 0 2463 1945 2 MP stroke
+/c549 { 0.125490 1.000000 0.000000 sr} bdef
+c549
+3 0 2466 1945 2 MP stroke
+/c550 { 0.129412 1.000000 0.000000 sr} bdef
+c550
+4 0 2469 1945 2 MP stroke
+/c551 { 0.133333 1.000000 0.000000 sr} bdef
+c551
+3 0 2473 1945 2 MP stroke
+/c552 { 0.137255 1.000000 0.000000 sr} bdef
+c552
+3 0 2476 1945 2 MP stroke
+/c553 { 0.141176 1.000000 0.000000 sr} bdef
+c553
+4 0 2479 1945 2 MP stroke
+/c554 { 0.145098 1.000000 0.000000 sr} bdef
+c554
+3 0 2483 1945 2 MP stroke
+/c555 { 0.149020 1.000000 0.000000 sr} bdef
+c555
+3 0 2486 1945 2 MP stroke
+/c556 { 0.152941 1.000000 0.000000 sr} bdef
+c556
+3 0 2489 1945 2 MP stroke
+/c557 { 0.156863 1.000000 0.000000 sr} bdef
+c557
+4 0 2492 1945 2 MP stroke
+/c558 { 0.160784 1.000000 0.000000 sr} bdef
+c558
+3 0 2496 1945 2 MP stroke
+/c559 { 0.164706 1.000000 0.000000 sr} bdef
+c559
+3 0 2499 1945 2 MP stroke
+/c560 { 0.168627 1.000000 0.000000 sr} bdef
+c560
+3 0 2502 1945 2 MP stroke
+/c561 { 0.172549 1.000000 0.000000 sr} bdef
+c561
+4 0 2505 1945 2 MP stroke
+/c562 { 0.176471 1.000000 0.000000 sr} bdef
+c562
+3 0 2509 1945 2 MP stroke
+/c563 { 0.180392 1.000000 0.000000 sr} bdef
+c563
+3 0 2512 1945 2 MP stroke
+/c564 { 0.184314 1.000000 0.000000 sr} bdef
+c564
+3 0 2515 1945 2 MP stroke
+/c565 { 0.188235 1.000000 0.000000 sr} bdef
+c565
+4 0 2518 1945 2 MP stroke
+/c566 { 0.192157 1.000000 0.000000 sr} bdef
+c566
+3 0 2522 1945 2 MP stroke
+/c567 { 0.196078 1.000000 0.000000 sr} bdef
+c567
+3 0 2525 1945 2 MP stroke
+/c568 { 0.200000 1.000000 0.000000 sr} bdef
+c568
+4 0 2528 1945 2 MP stroke
+/c569 { 0.203922 1.000000 0.000000 sr} bdef
+c569
+3 0 2532 1945 2 MP stroke
+/c570 { 0.207843 1.000000 0.000000 sr} bdef
+c570
+3 0 2535 1945 2 MP stroke
+/c571 { 0.211765 1.000000 0.000000 sr} bdef
+c571
+3 0 2538 1945 2 MP stroke
+/c572 { 0.215686 1.000000 0.000000 sr} bdef
+c572
+4 0 2541 1945 2 MP stroke
+/c573 { 0.219608 1.000000 0.000000 sr} bdef
+c573
+3 0 2545 1945 2 MP stroke
+/c574 { 0.223529 1.000000 0.000000 sr} bdef
+c574
+3 0 2548 1945 2 MP stroke
+/c575 { 0.227451 1.000000 0.000000 sr} bdef
+c575
+3 0 2551 1945 2 MP stroke
+/c576 { 0.231373 1.000000 0.000000 sr} bdef
+c576
+4 0 2554 1945 2 MP stroke
+/c577 { 0.235294 1.000000 0.000000 sr} bdef
+c577
+3 0 2558 1945 2 MP stroke
+/c578 { 0.239216 1.000000 0.000000 sr} bdef
+c578
+3 0 2561 1945 2 MP stroke
+/c579 { 0.243137 1.000000 0.000000 sr} bdef
+c579
+3 0 2564 1945 2 MP stroke
+/c580 { 0.247059 1.000000 0.000000 sr} bdef
+c580
+4 0 2567 1945 2 MP stroke
+/c581 { 0.250980 1.000000 0.000000 sr} bdef
+c581
+3 0 2571 1945 2 MP stroke
+/c582 { 0.254902 1.000000 0.000000 sr} bdef
+c582
+3 0 2574 1945 2 MP stroke
+/c583 { 0.258824 1.000000 0.000000 sr} bdef
+c583
+4 0 2577 1945 2 MP stroke
+/c584 { 0.262745 1.000000 0.000000 sr} bdef
+c584
+3 0 2581 1945 2 MP stroke
+/c585 { 0.266667 1.000000 0.000000 sr} bdef
+c585
+3 0 2584 1945 2 MP stroke
+/c586 { 0.270588 1.000000 0.000000 sr} bdef
+c586
+3 0 2587 1945 2 MP stroke
+/c587 { 0.274510 1.000000 0.000000 sr} bdef
+c587
+4 0 2590 1945 2 MP stroke
+/c588 { 0.278431 1.000000 0.000000 sr} bdef
+c588
+3 0 2594 1945 2 MP stroke
+/c589 { 0.282353 1.000000 0.000000 sr} bdef
+c589
+3 0 2597 1945 2 MP stroke
+/c590 { 0.286275 1.000000 0.000000 sr} bdef
+c590
+3 0 2600 1945 2 MP stroke
+/c591 { 0.290196 1.000000 0.000000 sr} bdef
+c591
+4 0 2603 1945 2 MP stroke
+/c592 { 0.294118 1.000000 0.000000 sr} bdef
+c592
+3 0 2607 1945 2 MP stroke
+/c593 { 0.298039 1.000000 0.000000 sr} bdef
+c593
+3 0 2610 1945 2 MP stroke
+/c594 { 0.301961 1.000000 0.000000 sr} bdef
+c594
+3 0 2613 1945 2 MP stroke
+/c595 { 0.305882 1.000000 0.000000 sr} bdef
+c595
+4 0 2616 1945 2 MP stroke
+/c596 { 0.309804 1.000000 0.000000 sr} bdef
+c596
+3 0 2620 1945 2 MP stroke
+/c597 { 0.313725 1.000000 0.000000 sr} bdef
+c597
+3 0 2623 1945 2 MP stroke
+/c598 { 0.317647 1.000000 0.000000 sr} bdef
+c598
+4 0 2626 1945 2 MP stroke
+/c599 { 0.321569 1.000000 0.000000 sr} bdef
+c599
+3 0 2630 1945 2 MP stroke
+/c600 { 0.325490 1.000000 0.000000 sr} bdef
+c600
+3 0 2633 1945 2 MP stroke
+/c601 { 0.329412 1.000000 0.000000 sr} bdef
+c601
+3 0 2636 1945 2 MP stroke
+/c602 { 0.333333 1.000000 0.000000 sr} bdef
+c602
+4 0 2639 1945 2 MP stroke
+/c603 { 0.337255 1.000000 0.000000 sr} bdef
+c603
+3 0 2643 1945 2 MP stroke
+/c604 { 0.341176 1.000000 0.000000 sr} bdef
+c604
+3 0 2646 1945 2 MP stroke
+/c605 { 0.345098 1.000000 0.000000 sr} bdef
+c605
+3 0 2649 1945 2 MP stroke
+/c606 { 0.349020 1.000000 0.000000 sr} bdef
+c606
+4 0 2652 1945 2 MP stroke
+/c607 { 0.352941 1.000000 0.000000 sr} bdef
+c607
+3 0 2656 1945 2 MP stroke
+/c608 { 0.356863 1.000000 0.000000 sr} bdef
+c608
+3 0 2659 1945 2 MP stroke
+/c609 { 0.360784 1.000000 0.000000 sr} bdef
+c609
+4 0 2662 1945 2 MP stroke
+/c610 { 0.364706 1.000000 0.000000 sr} bdef
+c610
+3 0 2666 1945 2 MP stroke
+/c611 { 0.368627 1.000000 0.000000 sr} bdef
+c611
+3 0 2669 1945 2 MP stroke
+/c612 { 0.372549 1.000000 0.000000 sr} bdef
+c612
+3 0 2672 1945 2 MP stroke
+/c613 { 0.376471 1.000000 0.000000 sr} bdef
+c613
+4 0 2675 1945 2 MP stroke
+/c614 { 0.380392 1.000000 0.000000 sr} bdef
+c614
+3 0 2679 1945 2 MP stroke
+/c615 { 0.384314 1.000000 0.000000 sr} bdef
+c615
+3 0 2682 1945 2 MP stroke
+/c616 { 0.388235 1.000000 0.000000 sr} bdef
+c616
+3 0 2685 1945 2 MP stroke
+/c617 { 0.392157 1.000000 0.000000 sr} bdef
+c617
+4 0 2688 1945 2 MP stroke
+/c618 { 0.396078 1.000000 0.000000 sr} bdef
+c618
+3 0 2692 1945 2 MP stroke
+/c619 { 0.400000 1.000000 0.000000 sr} bdef
+c619
+3 0 2695 1945 2 MP stroke
+/c620 { 0.403922 1.000000 0.000000 sr} bdef
+c620
+3 0 2698 1945 2 MP stroke
+/c621 { 0.407843 1.000000 0.000000 sr} bdef
+c621
+4 0 2701 1945 2 MP stroke
+/c622 { 0.411765 1.000000 0.000000 sr} bdef
+c622
+3 0 2705 1945 2 MP stroke
+/c623 { 0.415686 1.000000 0.000000 sr} bdef
+c623
+3 0 2708 1945 2 MP stroke
+/c624 { 0.419608 1.000000 0.000000 sr} bdef
+c624
+4 0 2711 1945 2 MP stroke
+/c625 { 0.423529 1.000000 0.000000 sr} bdef
+c625
+3 0 2715 1945 2 MP stroke
+/c626 { 0.427451 1.000000 0.000000 sr} bdef
+c626
+3 0 2718 1945 2 MP stroke
+/c627 { 0.431373 1.000000 0.000000 sr} bdef
+c627
+3 0 2721 1945 2 MP stroke
+/c628 { 0.435294 1.000000 0.000000 sr} bdef
+c628
+4 0 2724 1945 2 MP stroke
+/c629 { 0.439216 1.000000 0.000000 sr} bdef
+c629
+3 0 2728 1945 2 MP stroke
+/c630 { 0.443137 1.000000 0.000000 sr} bdef
+c630
+3 0 2731 1945 2 MP stroke
+/c631 { 0.447059 1.000000 0.000000 sr} bdef
+c631
+3 0 2734 1945 2 MP stroke
+/c632 { 0.450980 1.000000 0.000000 sr} bdef
+c632
+4 0 2737 1945 2 MP stroke
+/c633 { 0.454902 1.000000 0.000000 sr} bdef
+c633
+3 0 2741 1945 2 MP stroke
+/c634 { 0.458824 1.000000 0.000000 sr} bdef
+c634
+3 0 2744 1945 2 MP stroke
+/c635 { 0.462745 1.000000 0.000000 sr} bdef
+c635
+3 0 2747 1945 2 MP stroke
+/c636 { 0.466667 1.000000 0.000000 sr} bdef
+c636
+4 0 2750 1945 2 MP stroke
+/c637 { 0.470588 1.000000 0.000000 sr} bdef
+c637
+3 0 2754 1945 2 MP stroke
+/c638 { 0.474510 1.000000 0.000000 sr} bdef
+c638
+3 0 2757 1945 2 MP stroke
+/c639 { 0.478431 1.000000 0.000000 sr} bdef
+c639
+4 0 2760 1945 2 MP stroke
+/c640 { 0.482353 1.000000 0.000000 sr} bdef
+c640
+3 0 2764 1945 2 MP stroke
+/c641 { 0.486275 1.000000 0.000000 sr} bdef
+c641
+3 0 2767 1945 2 MP stroke
+/c642 { 0.490196 1.000000 0.000000 sr} bdef
+c642
+3 0 2770 1945 2 MP stroke
+/c643 { 0.494118 1.000000 0.000000 sr} bdef
+c643
+4 0 2773 1945 2 MP stroke
+/c644 { 0.498039 1.000000 0.000000 sr} bdef
+c644
+3 0 2777 1945 2 MP stroke
+/c645 { 0.501961 1.000000 0.000000 sr} bdef
+c645
+3 0 2780 1945 2 MP stroke
+/c646 { 0.505882 1.000000 0.000000 sr} bdef
+c646
+3 0 2783 1945 2 MP stroke
+/c647 { 0.509804 1.000000 0.000000 sr} bdef
+c647
+4 0 2786 1945 2 MP stroke
+/c648 { 0.513725 1.000000 0.000000 sr} bdef
+c648
+3 0 2790 1945 2 MP stroke
+/c649 { 0.517647 1.000000 0.000000 sr} bdef
+c649
+3 0 2793 1945 2 MP stroke
+/c650 { 0.521569 1.000000 0.000000 sr} bdef
+c650
+3 0 2796 1945 2 MP stroke
+/c651 { 0.525490 1.000000 0.000000 sr} bdef
+c651
+4 0 2799 1945 2 MP stroke
+/c652 { 0.529412 1.000000 0.000000 sr} bdef
+c652
+3 0 2803 1945 2 MP stroke
+/c653 { 0.533333 1.000000 0.000000 sr} bdef
+c653
+3 0 2806 1945 2 MP stroke
+/c654 { 0.537255 1.000000 0.000000 sr} bdef
+c654
+4 0 2809 1945 2 MP stroke
+/c655 { 0.541176 1.000000 0.000000 sr} bdef
+c655
+3 0 2813 1945 2 MP stroke
+/c656 { 0.545098 1.000000 0.000000 sr} bdef
+c656
+3 0 2816 1945 2 MP stroke
+/c657 { 0.549020 1.000000 0.000000 sr} bdef
+c657
+3 0 2819 1945 2 MP stroke
+/c658 { 0.552941 1.000000 0.000000 sr} bdef
+c658
+4 0 2822 1945 2 MP stroke
+/c659 { 0.556863 1.000000 0.000000 sr} bdef
+c659
+3 0 2826 1945 2 MP stroke
+/c660 { 0.560784 1.000000 0.000000 sr} bdef
+c660
+3 0 2829 1945 2 MP stroke
+/c661 { 0.564706 1.000000 0.000000 sr} bdef
+c661
+3 0 2832 1945 2 MP stroke
+/c662 { 0.568627 1.000000 0.000000 sr} bdef
+c662
+4 0 2835 1945 2 MP stroke
+/c663 { 0.572549 1.000000 0.000000 sr} bdef
+c663
+3 0 2839 1945 2 MP stroke
+/c664 { 0.576471 1.000000 0.000000 sr} bdef
+c664
+3 0 2842 1945 2 MP stroke
+/c665 { 0.580392 1.000000 0.000000 sr} bdef
+c665
+3 0 2845 1945 2 MP stroke
+/c666 { 0.584314 1.000000 0.000000 sr} bdef
+c666
+4 0 2848 1945 2 MP stroke
+/c667 { 0.588235 1.000000 0.000000 sr} bdef
+c667
+3 0 2852 1945 2 MP stroke
+/c668 { 0.592157 1.000000 0.000000 sr} bdef
+c668
+3 0 2855 1945 2 MP stroke
+/c669 { 0.596078 1.000000 0.000000 sr} bdef
+c669
+4 0 2858 1945 2 MP stroke
+/c670 { 0.600000 1.000000 0.000000 sr} bdef
+c670
+3 0 2862 1945 2 MP stroke
+/c671 { 0.603922 1.000000 0.000000 sr} bdef
+c671
+3 0 2865 1945 2 MP stroke
+/c672 { 0.607843 1.000000 0.000000 sr} bdef
+c672
+3 0 2868 1945 2 MP stroke
+/c673 { 0.611765 1.000000 0.000000 sr} bdef
+c673
+4 0 2871 1945 2 MP stroke
+/c674 { 0.615686 1.000000 0.000000 sr} bdef
+c674
+3 0 2875 1945 2 MP stroke
+/c675 { 0.619608 1.000000 0.000000 sr} bdef
+c675
+3 0 2878 1945 2 MP stroke
+/c676 { 0.623529 1.000000 0.000000 sr} bdef
+c676
+3 0 2881 1945 2 MP stroke
+/c677 { 0.627451 1.000000 0.000000 sr} bdef
+c677
+4 0 2884 1945 2 MP stroke
+/c678 { 0.631373 1.000000 0.000000 sr} bdef
+c678
+3 0 2888 1945 2 MP stroke
+/c679 { 0.635294 1.000000 0.000000 sr} bdef
+c679
+3 0 2891 1945 2 MP stroke
+/c680 { 0.639216 1.000000 0.000000 sr} bdef
+c680
+3 0 2894 1945 2 MP stroke
+/c681 { 0.643137 1.000000 0.000000 sr} bdef
+c681
+4 0 2897 1945 2 MP stroke
+/c682 { 0.647059 1.000000 0.000000 sr} bdef
+c682
+3 0 2901 1945 2 MP stroke
+/c683 { 0.650980 1.000000 0.000000 sr} bdef
+c683
+3 0 2904 1945 2 MP stroke
+/c684 { 0.654902 1.000000 0.000000 sr} bdef
+c684
+4 0 2907 1945 2 MP stroke
+/c685 { 0.658824 1.000000 0.000000 sr} bdef
+c685
+3 0 2911 1945 2 MP stroke
+/c686 { 0.662745 1.000000 0.000000 sr} bdef
+c686
+3 0 2914 1945 2 MP stroke
+/c687 { 0.666667 1.000000 0.000000 sr} bdef
+c687
+3 0 2917 1945 2 MP stroke
+/c688 { 0.670588 1.000000 0.000000 sr} bdef
+c688
+4 0 2920 1945 2 MP stroke
+/c689 { 0.674510 1.000000 0.000000 sr} bdef
+c689
+3 0 2924 1945 2 MP stroke
+/c690 { 0.678431 1.000000 0.000000 sr} bdef
+c690
+3 0 2927 1945 2 MP stroke
+/c691 { 0.682353 1.000000 0.000000 sr} bdef
+c691
+3 0 2930 1945 2 MP stroke
+/c692 { 0.686275 1.000000 0.000000 sr} bdef
+c692
+4 0 2933 1945 2 MP stroke
+/c693 { 0.690196 1.000000 0.000000 sr} bdef
+c693
+3 0 2937 1945 2 MP stroke
+/c694 { 0.694118 1.000000 0.000000 sr} bdef
+c694
+3 0 2940 1945 2 MP stroke
+/c695 { 0.698039 1.000000 0.000000 sr} bdef
+c695
+4 0 2943 1945 2 MP stroke
+/c696 { 0.701961 1.000000 0.000000 sr} bdef
+c696
+3 0 2947 1945 2 MP stroke
+/c697 { 0.705882 1.000000 0.000000 sr} bdef
+c697
+3 0 2950 1945 2 MP stroke
+/c698 { 0.709804 1.000000 0.000000 sr} bdef
+c698
+3 0 2953 1945 2 MP stroke
+/c699 { 0.713725 1.000000 0.000000 sr} bdef
+c699
+4 0 2956 1945 2 MP stroke
+/c700 { 0.717647 1.000000 0.000000 sr} bdef
+c700
+3 0 2960 1945 2 MP stroke
+/c701 { 0.721569 1.000000 0.000000 sr} bdef
+c701
+3 0 2963 1945 2 MP stroke
+/c702 { 0.725490 1.000000 0.000000 sr} bdef
+c702
+3 0 2966 1945 2 MP stroke
+/c703 { 0.729412 1.000000 0.000000 sr} bdef
+c703
+4 0 2969 1945 2 MP stroke
+/c704 { 0.733333 1.000000 0.000000 sr} bdef
+c704
+3 0 2973 1945 2 MP stroke
+/c705 { 0.737255 1.000000 0.000000 sr} bdef
+c705
+3 0 2976 1945 2 MP stroke
+/c706 { 0.741176 1.000000 0.000000 sr} bdef
+c706
+3 0 2979 1945 2 MP stroke
+/c707 { 0.745098 1.000000 0.000000 sr} bdef
+c707
+4 0 2982 1945 2 MP stroke
+/c708 { 0.749020 1.000000 0.000000 sr} bdef
+c708
+3 0 2986 1945 2 MP stroke
+/c709 { 0.752941 1.000000 0.000000 sr} bdef
+c709
+3 0 2989 1945 2 MP stroke
+/c710 { 0.756863 1.000000 0.000000 sr} bdef
+c710
+4 0 2992 1945 2 MP stroke
+/c711 { 0.760784 1.000000 0.000000 sr} bdef
+c711
+3 0 2996 1945 2 MP stroke
+/c712 { 0.764706 1.000000 0.000000 sr} bdef
+c712
+3 0 2999 1945 2 MP stroke
+/c713 { 0.768627 1.000000 0.000000 sr} bdef
+c713
+3 0 3002 1945 2 MP stroke
+/c714 { 0.772549 1.000000 0.000000 sr} bdef
+c714
+4 0 3005 1945 2 MP stroke
+/c715 { 0.776471 1.000000 0.000000 sr} bdef
+c715
+3 0 3009 1945 2 MP stroke
+/c716 { 0.780392 1.000000 0.000000 sr} bdef
+c716
+3 0 3012 1945 2 MP stroke
+/c717 { 0.784314 1.000000 0.000000 sr} bdef
+c717
+3 0 3015 1945 2 MP stroke
+/c718 { 0.788235 1.000000 0.000000 sr} bdef
+c718
+4 0 3018 1945 2 MP stroke
+/c719 { 0.792157 1.000000 0.000000 sr} bdef
+c719
+3 0 3022 1945 2 MP stroke
+/c720 { 0.796078 1.000000 0.000000 sr} bdef
+c720
+3 0 3025 1945 2 MP stroke
+/c721 { 0.800000 1.000000 0.000000 sr} bdef
+c721
+3 0 3028 1945 2 MP stroke
+/c722 { 0.803922 1.000000 0.000000 sr} bdef
+c722
+4 0 3031 1945 2 MP stroke
+/c723 { 0.807843 1.000000 0.000000 sr} bdef
+c723
+3 0 3035 1945 2 MP stroke
+/c724 { 0.811765 1.000000 0.000000 sr} bdef
+c724
+3 0 3038 1945 2 MP stroke
+/c725 { 0.815686 1.000000 0.000000 sr} bdef
+c725
+4 0 3041 1945 2 MP stroke
+/c726 { 0.819608 1.000000 0.000000 sr} bdef
+c726
+3 0 3045 1945 2 MP stroke
+/c727 { 0.823529 1.000000 0.000000 sr} bdef
+c727
+3 0 3048 1945 2 MP stroke
+/c728 { 0.827451 1.000000 0.000000 sr} bdef
+c728
+3 0 3051 1945 2 MP stroke
+/c729 { 0.831373 1.000000 0.000000 sr} bdef
+c729
+4 0 3054 1945 2 MP stroke
+/c730 { 0.835294 1.000000 0.000000 sr} bdef
+c730
+3 0 3058 1945 2 MP stroke
+/c731 { 0.839216 1.000000 0.000000 sr} bdef
+c731
+3 0 3061 1945 2 MP stroke
+/c732 { 0.843137 1.000000 0.000000 sr} bdef
+c732
+3 0 3064 1945 2 MP stroke
+/c733 { 0.847059 1.000000 0.000000 sr} bdef
+c733
+4 0 3067 1945 2 MP stroke
+/c734 { 0.850980 1.000000 0.000000 sr} bdef
+c734
+3 0 3071 1945 2 MP stroke
+/c735 { 0.854902 1.000000 0.000000 sr} bdef
+c735
+3 0 3074 1945 2 MP stroke
+/c736 { 0.858824 1.000000 0.000000 sr} bdef
+c736
+3 0 3077 1945 2 MP stroke
+/c737 { 0.862745 1.000000 0.000000 sr} bdef
+c737
+4 0 3080 1945 2 MP stroke
+/c738 { 0.866667 1.000000 0.000000 sr} bdef
+c738
+3 0 3084 1945 2 MP stroke
+/c739 { 0.870588 1.000000 0.000000 sr} bdef
+c739
+3 0 3087 1945 2 MP stroke
+/c740 { 0.874510 1.000000 0.000000 sr} bdef
+c740
+4 0 3090 1945 2 MP stroke
+/c741 { 0.878431 1.000000 0.000000 sr} bdef
+c741
+3 0 3094 1945 2 MP stroke
+/c742 { 0.882353 1.000000 0.000000 sr} bdef
+c742
+3 0 3097 1945 2 MP stroke
+/c743 { 0.886275 1.000000 0.000000 sr} bdef
+c743
+3 0 3100 1945 2 MP stroke
+/c744 { 0.890196 1.000000 0.000000 sr} bdef
+c744
+4 0 3103 1945 2 MP stroke
+/c745 { 0.894118 1.000000 0.000000 sr} bdef
+c745
+3 0 3107 1945 2 MP stroke
+/c746 { 0.898039 1.000000 0.000000 sr} bdef
+c746
+3 0 3110 1945 2 MP stroke
+/c747 { 0.901961 1.000000 0.000000 sr} bdef
+c747
+3 0 3113 1945 2 MP stroke
+/c748 { 0.905882 1.000000 0.000000 sr} bdef
+c748
+4 0 3116 1945 2 MP stroke
+/c749 { 0.909804 1.000000 0.000000 sr} bdef
+c749
+3 0 3120 1945 2 MP stroke
+/c750 { 0.913725 1.000000 0.000000 sr} bdef
+c750
+3 0 3123 1945 2 MP stroke
+/c751 { 0.917647 1.000000 0.000000 sr} bdef
+c751
+3 0 3126 1945 2 MP stroke
+/c752 { 0.921569 1.000000 0.000000 sr} bdef
+c752
+4 0 3129 1945 2 MP stroke
+/c753 { 0.925490 1.000000 0.000000 sr} bdef
+c753
+3 0 3133 1945 2 MP stroke
+/c754 { 0.929412 1.000000 0.000000 sr} bdef
+c754
+3 0 3136 1945 2 MP stroke
+/c755 { 0.933333 1.000000 0.000000 sr} bdef
+c755
+4 0 3139 1945 2 MP stroke
+/c756 { 0.937255 1.000000 0.000000 sr} bdef
+c756
+3 0 3143 1945 2 MP stroke
+/c757 { 0.941176 1.000000 0.000000 sr} bdef
+c757
+3 0 3146 1945 2 MP stroke
+/c758 { 0.945098 1.000000 0.000000 sr} bdef
+c758
+3 0 3149 1945 2 MP stroke
+/c759 { 0.949020 1.000000 0.000000 sr} bdef
+c759
+4 0 3152 1945 2 MP stroke
+/c760 { 0.952941 1.000000 0.000000 sr} bdef
+c760
+3 0 3156 1945 2 MP stroke
+/c761 { 0.956863 1.000000 0.000000 sr} bdef
+c761
+3 0 3159 1945 2 MP stroke
+/c762 { 0.960784 1.000000 0.000000 sr} bdef
+c762
+3 0 3162 1945 2 MP stroke
+/c763 { 0.964706 1.000000 0.000000 sr} bdef
+c763
+4 0 3165 1945 2 MP stroke
+/c764 { 0.968627 1.000000 0.000000 sr} bdef
+c764
+3 0 3169 1945 2 MP stroke
+/c765 { 0.972549 1.000000 0.000000 sr} bdef
+c765
+3 0 3172 1945 2 MP stroke
+/c766 { 0.976471 1.000000 0.000000 sr} bdef
+c766
+3 0 3175 1945 2 MP stroke
+/c767 { 0.980392 1.000000 0.000000 sr} bdef
+c767
+4 0 3178 1945 2 MP stroke
+/c768 { 0.984314 1.000000 0.000000 sr} bdef
+c768
+3 0 3182 1945 2 MP stroke
+/c769 { 0.988235 1.000000 0.000000 sr} bdef
+c769
+3 0 3185 1945 2 MP stroke
+/c770 { 0.992157 1.000000 0.000000 sr} bdef
+c770
+4 0 3188 1945 2 MP stroke
+/c771 { 0.996078 1.000000 0.000000 sr} bdef
+c771
+3 0 3192 1945 2 MP stroke
+/c772 { 1.000000 1.000000 0.000000 sr} bdef
+c772
+3 0 3195 1945 2 MP stroke
+/c773 { 1.000000 0.996078 0.000000 sr} bdef
+c773
+3 0 3198 1945 2 MP stroke
+/c774 { 1.000000 0.992157 0.000000 sr} bdef
+c774
+4 0 3201 1945 2 MP stroke
+/c775 { 1.000000 0.988235 0.000000 sr} bdef
+c775
+3 0 3205 1945 2 MP stroke
+/c776 { 1.000000 0.984314 0.000000 sr} bdef
+c776
+3 0 3208 1945 2 MP stroke
+/c777 { 1.000000 0.980392 0.000000 sr} bdef
+c777
+3 0 3211 1945 2 MP stroke
+/c778 { 1.000000 0.976471 0.000000 sr} bdef
+c778
+4 0 3214 1945 2 MP stroke
+/c779 { 1.000000 0.972549 0.000000 sr} bdef
+c779
+3 0 3218 1945 2 MP stroke
+/c780 { 1.000000 0.968627 0.000000 sr} bdef
+c780
+3 0 3221 1945 2 MP stroke
+/c781 { 1.000000 0.964706 0.000000 sr} bdef
+c781
+4 0 3224 1945 2 MP stroke
+/c782 { 1.000000 0.960784 0.000000 sr} bdef
+c782
+3 0 3228 1945 2 MP stroke
+/c783 { 1.000000 0.956863 0.000000 sr} bdef
+c783
+3 0 3231 1945 2 MP stroke
+/c784 { 1.000000 0.952941 0.000000 sr} bdef
+c784
+3 0 3234 1945 2 MP stroke
+/c785 { 1.000000 0.949020 0.000000 sr} bdef
+c785
+4 0 3237 1945 2 MP stroke
+/c786 { 1.000000 0.945098 0.000000 sr} bdef
+c786
+3 0 3241 1945 2 MP stroke
+/c787 { 1.000000 0.941176 0.000000 sr} bdef
+c787
+3 0 3244 1945 2 MP stroke
+/c788 { 1.000000 0.937255 0.000000 sr} bdef
+c788
+3 0 3247 1945 2 MP stroke
+/c789 { 1.000000 0.933333 0.000000 sr} bdef
+c789
+4 0 3250 1945 2 MP stroke
+/c790 { 1.000000 0.929412 0.000000 sr} bdef
+c790
+3 0 3254 1945 2 MP stroke
+/c791 { 1.000000 0.925490 0.000000 sr} bdef
+c791
+3 0 3257 1945 2 MP stroke
+/c792 { 1.000000 0.921569 0.000000 sr} bdef
+c792
+3 0 3260 1945 2 MP stroke
+/c793 { 1.000000 0.917647 0.000000 sr} bdef
+c793
+4 0 3263 1945 2 MP stroke
+/c794 { 1.000000 0.913725 0.000000 sr} bdef
+c794
+3 0 3267 1945 2 MP stroke
+/c795 { 1.000000 0.909804 0.000000 sr} bdef
+c795
+3 0 3270 1945 2 MP stroke
+/c796 { 1.000000 0.905882 0.000000 sr} bdef
+c796
+4 0 3273 1945 2 MP stroke
+/c797 { 1.000000 0.901961 0.000000 sr} bdef
+c797
+3 0 3277 1945 2 MP stroke
+/c798 { 1.000000 0.898039 0.000000 sr} bdef
+c798
+3 0 3280 1945 2 MP stroke
+/c799 { 1.000000 0.894118 0.000000 sr} bdef
+c799
+3 0 3283 1945 2 MP stroke
+/c800 { 1.000000 0.890196 0.000000 sr} bdef
+c800
+4 0 3286 1945 2 MP stroke
+/c801 { 1.000000 0.886275 0.000000 sr} bdef
+c801
+3 0 3290 1945 2 MP stroke
+/c802 { 1.000000 0.882353 0.000000 sr} bdef
+c802
+3 0 3293 1945 2 MP stroke
+/c803 { 1.000000 0.878431 0.000000 sr} bdef
+c803
+3 0 3296 1945 2 MP stroke
+/c804 { 1.000000 0.874510 0.000000 sr} bdef
+c804
+4 0 3299 1945 2 MP stroke
+/c805 { 1.000000 0.870588 0.000000 sr} bdef
+c805
+3 0 3303 1945 2 MP stroke
+/c806 { 1.000000 0.866667 0.000000 sr} bdef
+c806
+3 0 3306 1945 2 MP stroke
+/c807 { 1.000000 0.862745 0.000000 sr} bdef
+c807
+3 0 3309 1945 2 MP stroke
+/c808 { 1.000000 0.858824 0.000000 sr} bdef
+c808
+4 0 3312 1945 2 MP stroke
+/c809 { 1.000000 0.854902 0.000000 sr} bdef
+c809
+3 0 3316 1945 2 MP stroke
+/c810 { 1.000000 0.850980 0.000000 sr} bdef
+c810
+3 0 3319 1945 2 MP stroke
+/c811 { 1.000000 0.847059 0.000000 sr} bdef
+c811
+4 0 3322 1945 2 MP stroke
+/c812 { 1.000000 0.843137 0.000000 sr} bdef
+c812
+3 0 3326 1945 2 MP stroke
+/c813 { 1.000000 0.839216 0.000000 sr} bdef
+c813
+3 0 3329 1945 2 MP stroke
+/c814 { 1.000000 0.835294 0.000000 sr} bdef
+c814
+3 0 3332 1945 2 MP stroke
+/c815 { 1.000000 0.831373 0.000000 sr} bdef
+c815
+4 0 3335 1945 2 MP stroke
+/c816 { 1.000000 0.827451 0.000000 sr} bdef
+c816
+3 0 3339 1945 2 MP stroke
+/c817 { 1.000000 0.823529 0.000000 sr} bdef
+c817
+3 0 3342 1945 2 MP stroke
+/c818 { 1.000000 0.819608 0.000000 sr} bdef
+c818
+3 0 3345 1945 2 MP stroke
+/c819 { 1.000000 0.815686 0.000000 sr} bdef
+c819
+4 0 3348 1945 2 MP stroke
+/c820 { 1.000000 0.811765 0.000000 sr} bdef
+c820
+3 0 3352 1945 2 MP stroke
+/c821 { 1.000000 0.807843 0.000000 sr} bdef
+c821
+3 0 3355 1945 2 MP stroke
+/c822 { 1.000000 0.803922 0.000000 sr} bdef
+c822
+3 0 3358 1945 2 MP stroke
+/c823 { 1.000000 0.800000 0.000000 sr} bdef
+c823
+4 0 3361 1945 2 MP stroke
+/c824 { 1.000000 0.796078 0.000000 sr} bdef
+c824
+3 0 3365 1945 2 MP stroke
+/c825 { 1.000000 0.792157 0.000000 sr} bdef
+c825
+3 0 3368 1945 2 MP stroke
+/c826 { 1.000000 0.788235 0.000000 sr} bdef
+c826
+4 0 3371 1945 2 MP stroke
+/c827 { 1.000000 0.784314 0.000000 sr} bdef
+c827
+3 0 3375 1945 2 MP stroke
+/c828 { 1.000000 0.780392 0.000000 sr} bdef
+c828
+3 0 3378 1945 2 MP stroke
+/c829 { 1.000000 0.776471 0.000000 sr} bdef
+c829
+3 0 3381 1945 2 MP stroke
+/c830 { 1.000000 0.772549 0.000000 sr} bdef
+c830
+4 0 3384 1945 2 MP stroke
+/c831 { 1.000000 0.768627 0.000000 sr} bdef
+c831
+3 0 3388 1945 2 MP stroke
+/c832 { 1.000000 0.764706 0.000000 sr} bdef
+c832
+3 0 3391 1945 2 MP stroke
+/c833 { 1.000000 0.760784 0.000000 sr} bdef
+c833
+3 0 3394 1945 2 MP stroke
+/c834 { 1.000000 0.756863 0.000000 sr} bdef
+c834
+4 0 3397 1945 2 MP stroke
+/c835 { 1.000000 0.752941 0.000000 sr} bdef
+c835
+3 0 3401 1945 2 MP stroke
+/c836 { 1.000000 0.749020 0.000000 sr} bdef
+c836
+3 0 3404 1945 2 MP stroke
+/c837 { 1.000000 0.745098 0.000000 sr} bdef
+c837
+3 0 3407 1945 2 MP stroke
+/c838 { 1.000000 0.741176 0.000000 sr} bdef
+c838
+4 0 3410 1945 2 MP stroke
+/c839 { 1.000000 0.737255 0.000000 sr} bdef
+c839
+3 0 3414 1945 2 MP stroke
+/c840 { 1.000000 0.733333 0.000000 sr} bdef
+c840
+3 0 3417 1945 2 MP stroke
+/c841 { 1.000000 0.729412 0.000000 sr} bdef
+c841
+4 0 3420 1945 2 MP stroke
+/c842 { 1.000000 0.725490 0.000000 sr} bdef
+c842
+3 0 3424 1945 2 MP stroke
+/c843 { 1.000000 0.721569 0.000000 sr} bdef
+c843
+3 0 3427 1945 2 MP stroke
+/c844 { 1.000000 0.717647 0.000000 sr} bdef
+c844
+3 0 3430 1945 2 MP stroke
+/c845 { 1.000000 0.713725 0.000000 sr} bdef
+c845
+4 0 3433 1945 2 MP stroke
+/c846 { 1.000000 0.709804 0.000000 sr} bdef
+c846
+3 0 3437 1945 2 MP stroke
+/c847 { 1.000000 0.705882 0.000000 sr} bdef
+c847
+3 0 3440 1945 2 MP stroke
+/c848 { 1.000000 0.701961 0.000000 sr} bdef
+c848
+3 0 3443 1945 2 MP stroke
+/c849 { 1.000000 0.698039 0.000000 sr} bdef
+c849
+4 0 3446 1945 2 MP stroke
+/c850 { 1.000000 0.694118 0.000000 sr} bdef
+c850
+3 0 3450 1945 2 MP stroke
+/c851 { 1.000000 0.690196 0.000000 sr} bdef
+c851
+3 0 3453 1945 2 MP stroke
+/c852 { 1.000000 0.686275 0.000000 sr} bdef
+c852
+3 0 3456 1945 2 MP stroke
+/c853 { 1.000000 0.682353 0.000000 sr} bdef
+c853
+4 0 3459 1945 2 MP stroke
+/c854 { 1.000000 0.678431 0.000000 sr} bdef
+c854
+3 0 3463 1945 2 MP stroke
+/c855 { 1.000000 0.674510 0.000000 sr} bdef
+c855
+3 0 3466 1945 2 MP stroke
+/c856 { 1.000000 0.670588 0.000000 sr} bdef
+c856
+4 0 3469 1945 2 MP stroke
+/c857 { 1.000000 0.666667 0.000000 sr} bdef
+c857
+3 0 3473 1945 2 MP stroke
+/c858 { 1.000000 0.662745 0.000000 sr} bdef
+c858
+3 0 3476 1945 2 MP stroke
+/c859 { 1.000000 0.658824 0.000000 sr} bdef
+c859
+3 0 3479 1945 2 MP stroke
+/c860 { 1.000000 0.654902 0.000000 sr} bdef
+c860
+4 0 3482 1945 2 MP stroke
+/c861 { 1.000000 0.650980 0.000000 sr} bdef
+c861
+3 0 3486 1945 2 MP stroke
+/c862 { 1.000000 0.647059 0.000000 sr} bdef
+c862
+3 0 3489 1945 2 MP stroke
+/c863 { 1.000000 0.643137 0.000000 sr} bdef
+c863
+3 0 3492 1945 2 MP stroke
+/c864 { 1.000000 0.639216 0.000000 sr} bdef
+c864
+4 0 3495 1945 2 MP stroke
+/c865 { 1.000000 0.635294 0.000000 sr} bdef
+c865
+3 0 3499 1945 2 MP stroke
+/c866 { 1.000000 0.631373 0.000000 sr} bdef
+c866
+3 0 3502 1945 2 MP stroke
+/c867 { 1.000000 0.627451 0.000000 sr} bdef
+c867
+4 0 3505 1945 2 MP stroke
+/c868 { 1.000000 0.623529 0.000000 sr} bdef
+c868
+3 0 3509 1945 2 MP stroke
+/c869 { 1.000000 0.619608 0.000000 sr} bdef
+c869
+3 0 3512 1945 2 MP stroke
+/c870 { 1.000000 0.615686 0.000000 sr} bdef
+c870
+3 0 3515 1945 2 MP stroke
+/c871 { 1.000000 0.611765 0.000000 sr} bdef
+c871
+4 0 3518 1945 2 MP stroke
+/c872 { 1.000000 0.607843 0.000000 sr} bdef
+c872
+3 0 3522 1945 2 MP stroke
+/c873 { 1.000000 0.603922 0.000000 sr} bdef
+c873
+3 0 3525 1945 2 MP stroke
+/c874 { 1.000000 0.600000 0.000000 sr} bdef
+c874
+3 0 3528 1945 2 MP stroke
+/c875 { 1.000000 0.596078 0.000000 sr} bdef
+c875
+4 0 3531 1945 2 MP stroke
+/c876 { 1.000000 0.592157 0.000000 sr} bdef
+c876
+3 0 3535 1945 2 MP stroke
+/c877 { 1.000000 0.588235 0.000000 sr} bdef
+c877
+3 0 3538 1945 2 MP stroke
+/c878 { 1.000000 0.584314 0.000000 sr} bdef
+c878
+3 0 3541 1945 2 MP stroke
+/c879 { 1.000000 0.580392 0.000000 sr} bdef
+c879
+4 0 3544 1945 2 MP stroke
+/c880 { 1.000000 0.576471 0.000000 sr} bdef
+c880
+3 0 3548 1945 2 MP stroke
+/c881 { 1.000000 0.572549 0.000000 sr} bdef
+c881
+3 0 3551 1945 2 MP stroke
+/c882 { 1.000000 0.568627 0.000000 sr} bdef
+c882
+4 0 3554 1945 2 MP stroke
+/c883 { 1.000000 0.564706 0.000000 sr} bdef
+c883
+3 0 3558 1945 2 MP stroke
+/c884 { 1.000000 0.560784 0.000000 sr} bdef
+c884
+3 0 3561 1945 2 MP stroke
+/c885 { 1.000000 0.556863 0.000000 sr} bdef
+c885
+3 0 3564 1945 2 MP stroke
+/c886 { 1.000000 0.552941 0.000000 sr} bdef
+c886
+4 0 3567 1945 2 MP stroke
+/c887 { 1.000000 0.549020 0.000000 sr} bdef
+c887
+3 0 3571 1945 2 MP stroke
+/c888 { 1.000000 0.545098 0.000000 sr} bdef
+c888
+3 0 3574 1945 2 MP stroke
+/c889 { 1.000000 0.541176 0.000000 sr} bdef
+c889
+3 0 3577 1945 2 MP stroke
+/c890 { 1.000000 0.537255 0.000000 sr} bdef
+c890
+4 0 3580 1945 2 MP stroke
+/c891 { 1.000000 0.533333 0.000000 sr} bdef
+c891
+3 0 3584 1945 2 MP stroke
+/c892 { 1.000000 0.529412 0.000000 sr} bdef
+c892
+3 0 3587 1945 2 MP stroke
+/c893 { 1.000000 0.525490 0.000000 sr} bdef
+c893
+3 0 3590 1945 2 MP stroke
+/c894 { 1.000000 0.521569 0.000000 sr} bdef
+c894
+4 0 3593 1945 2 MP stroke
+/c895 { 1.000000 0.517647 0.000000 sr} bdef
+c895
+3 0 3597 1945 2 MP stroke
+/c896 { 1.000000 0.513725 0.000000 sr} bdef
+c896
+3 0 3600 1945 2 MP stroke
+/c897 { 1.000000 0.509804 0.000000 sr} bdef
+c897
+4 0 3603 1945 2 MP stroke
+/c898 { 1.000000 0.505882 0.000000 sr} bdef
+c898
+3 0 3607 1945 2 MP stroke
+/c899 { 1.000000 0.501961 0.000000 sr} bdef
+c899
+3 0 3610 1945 2 MP stroke
+/c900 { 1.000000 0.498039 0.000000 sr} bdef
+c900
+3 0 3613 1945 2 MP stroke
+/c901 { 1.000000 0.494118 0.000000 sr} bdef
+c901
+4 0 3616 1945 2 MP stroke
+/c902 { 1.000000 0.490196 0.000000 sr} bdef
+c902
+3 0 3620 1945 2 MP stroke
+/c903 { 1.000000 0.486275 0.000000 sr} bdef
+c903
+3 0 3623 1945 2 MP stroke
+/c904 { 1.000000 0.482353 0.000000 sr} bdef
+c904
+3 0 3626 1945 2 MP stroke
+/c905 { 1.000000 0.478431 0.000000 sr} bdef
+c905
+4 0 3629 1945 2 MP stroke
+/c906 { 1.000000 0.474510 0.000000 sr} bdef
+c906
+3 0 3633 1945 2 MP stroke
+/c907 { 1.000000 0.470588 0.000000 sr} bdef
+c907
+3 0 3636 1945 2 MP stroke
+/c908 { 1.000000 0.466667 0.000000 sr} bdef
+c908
+3 0 3639 1945 2 MP stroke
+/c909 { 1.000000 0.462745 0.000000 sr} bdef
+c909
+4 0 3642 1945 2 MP stroke
+/c910 { 1.000000 0.458824 0.000000 sr} bdef
+c910
+3 0 3646 1945 2 MP stroke
+/c911 { 1.000000 0.454902 0.000000 sr} bdef
+c911
+3 0 3649 1945 2 MP stroke
+/c912 { 1.000000 0.450980 0.000000 sr} bdef
+c912
+4 0 3652 1945 2 MP stroke
+/c913 { 1.000000 0.447059 0.000000 sr} bdef
+c913
+3 0 3656 1945 2 MP stroke
+/c914 { 1.000000 0.443137 0.000000 sr} bdef
+c914
+3 0 3659 1945 2 MP stroke
+/c915 { 1.000000 0.439216 0.000000 sr} bdef
+c915
+3 0 3662 1945 2 MP stroke
+/c916 { 1.000000 0.435294 0.000000 sr} bdef
+c916
+4 0 3665 1945 2 MP stroke
+/c917 { 1.000000 0.431373 0.000000 sr} bdef
+c917
+3 0 3669 1945 2 MP stroke
+/c918 { 1.000000 0.427451 0.000000 sr} bdef
+c918
+3 0 3672 1945 2 MP stroke
+/c919 { 1.000000 0.423529 0.000000 sr} bdef
+c919
+3 0 3675 1945 2 MP stroke
+/c920 { 1.000000 0.419608 0.000000 sr} bdef
+c920
+4 0 3678 1945 2 MP stroke
+/c921 { 1.000000 0.415686 0.000000 sr} bdef
+c921
+3 0 3682 1945 2 MP stroke
+/c922 { 1.000000 0.411765 0.000000 sr} bdef
+c922
+3 0 3685 1945 2 MP stroke
+/c923 { 1.000000 0.407843 0.000000 sr} bdef
+c923
+3 0 3688 1945 2 MP stroke
+/c924 { 1.000000 0.403922 0.000000 sr} bdef
+c924
+4 0 3691 1945 2 MP stroke
+/c925 { 1.000000 0.400000 0.000000 sr} bdef
+c925
+3 0 3695 1945 2 MP stroke
+/c926 { 1.000000 0.396078 0.000000 sr} bdef
+c926
+3 0 3698 1945 2 MP stroke
+/c927 { 1.000000 0.392157 0.000000 sr} bdef
+c927
+4 0 3701 1945 2 MP stroke
+/c928 { 1.000000 0.388235 0.000000 sr} bdef
+c928
+3 0 3705 1945 2 MP stroke
+/c929 { 1.000000 0.384314 0.000000 sr} bdef
+c929
+3 0 3708 1945 2 MP stroke
+/c930 { 1.000000 0.380392 0.000000 sr} bdef
+c930
+3 0 3711 1945 2 MP stroke
+/c931 { 1.000000 0.376471 0.000000 sr} bdef
+c931
+4 0 3714 1945 2 MP stroke
+/c932 { 1.000000 0.372549 0.000000 sr} bdef
+c932
+3 0 3718 1945 2 MP stroke
+/c933 { 1.000000 0.368627 0.000000 sr} bdef
+c933
+3 0 3721 1945 2 MP stroke
+/c934 { 1.000000 0.364706 0.000000 sr} bdef
+c934
+3 0 3724 1945 2 MP stroke
+/c935 { 1.000000 0.360784 0.000000 sr} bdef
+c935
+4 0 3727 1945 2 MP stroke
+/c936 { 1.000000 0.356863 0.000000 sr} bdef
+c936
+3 0 3731 1945 2 MP stroke
+/c937 { 1.000000 0.352941 0.000000 sr} bdef
+c937
+3 0 3734 1945 2 MP stroke
+/c938 { 1.000000 0.349020 0.000000 sr} bdef
+c938
+3 0 3737 1945 2 MP stroke
+/c939 { 1.000000 0.345098 0.000000 sr} bdef
+c939
+4 0 3740 1945 2 MP stroke
+/c940 { 1.000000 0.341176 0.000000 sr} bdef
+c940
+3 0 3744 1945 2 MP stroke
+/c941 { 1.000000 0.337255 0.000000 sr} bdef
+c941
+3 0 3747 1945 2 MP stroke
+/c942 { 1.000000 0.333333 0.000000 sr} bdef
+c942
+4 0 3750 1945 2 MP stroke
+/c943 { 1.000000 0.329412 0.000000 sr} bdef
+c943
+3 0 3754 1945 2 MP stroke
+/c944 { 1.000000 0.325490 0.000000 sr} bdef
+c944
+3 0 3757 1945 2 MP stroke
+/c945 { 1.000000 0.321569 0.000000 sr} bdef
+c945
+3 0 3760 1945 2 MP stroke
+/c946 { 1.000000 0.317647 0.000000 sr} bdef
+c946
+4 0 3763 1945 2 MP stroke
+/c947 { 1.000000 0.313725 0.000000 sr} bdef
+c947
+3 0 3767 1945 2 MP stroke
+/c948 { 1.000000 0.309804 0.000000 sr} bdef
+c948
+3 0 3770 1945 2 MP stroke
+/c949 { 1.000000 0.305882 0.000000 sr} bdef
+c949
+3 0 3773 1945 2 MP stroke
+/c950 { 1.000000 0.301961 0.000000 sr} bdef
+c950
+4 0 3776 1945 2 MP stroke
+/c951 { 1.000000 0.298039 0.000000 sr} bdef
+c951
+3 0 3780 1945 2 MP stroke
+/c952 { 1.000000 0.294118 0.000000 sr} bdef
+c952
+3 0 3783 1945 2 MP stroke
+/c953 { 1.000000 0.290196 0.000000 sr} bdef
+c953
+4 0 3786 1945 2 MP stroke
+/c954 { 1.000000 0.286275 0.000000 sr} bdef
+c954
+3 0 3790 1945 2 MP stroke
+/c955 { 1.000000 0.282353 0.000000 sr} bdef
+c955
+3 0 3793 1945 2 MP stroke
+/c956 { 1.000000 0.278431 0.000000 sr} bdef
+c956
+3 0 3796 1945 2 MP stroke
+/c957 { 1.000000 0.274510 0.000000 sr} bdef
+c957
+4 0 3799 1945 2 MP stroke
+/c958 { 1.000000 0.270588 0.000000 sr} bdef
+c958
+3 0 3803 1945 2 MP stroke
+/c959 { 1.000000 0.266667 0.000000 sr} bdef
+c959
+3 0 3806 1945 2 MP stroke
+/c960 { 1.000000 0.262745 0.000000 sr} bdef
+c960
+3 0 3809 1945 2 MP stroke
+/c961 { 1.000000 0.258824 0.000000 sr} bdef
+c961
+4 0 3812 1945 2 MP stroke
+/c962 { 1.000000 0.254902 0.000000 sr} bdef
+c962
+3 0 3816 1945 2 MP stroke
+/c963 { 1.000000 0.250980 0.000000 sr} bdef
+c963
+3 0 3819 1945 2 MP stroke
+/c964 { 1.000000 0.247059 0.000000 sr} bdef
+c964
+3 0 3822 1945 2 MP stroke
+/c965 { 1.000000 0.243137 0.000000 sr} bdef
+c965
+4 0 3825 1945 2 MP stroke
+/c966 { 1.000000 0.239216 0.000000 sr} bdef
+c966
+3 0 3829 1945 2 MP stroke
+/c967 { 1.000000 0.235294 0.000000 sr} bdef
+c967
+3 0 3832 1945 2 MP stroke
+/c968 { 1.000000 0.231373 0.000000 sr} bdef
+c968
+4 0 3835 1945 2 MP stroke
+/c969 { 1.000000 0.227451 0.000000 sr} bdef
+c969
+3 0 3839 1945 2 MP stroke
+/c970 { 1.000000 0.223529 0.000000 sr} bdef
+c970
+3 0 3842 1945 2 MP stroke
+/c971 { 1.000000 0.219608 0.000000 sr} bdef
+c971
+3 0 3845 1945 2 MP stroke
+/c972 { 1.000000 0.215686 0.000000 sr} bdef
+c972
+4 0 3848 1945 2 MP stroke
+/c973 { 1.000000 0.211765 0.000000 sr} bdef
+c973
+3 0 3852 1945 2 MP stroke
+/c974 { 1.000000 0.207843 0.000000 sr} bdef
+c974
+3 0 3855 1945 2 MP stroke
+/c975 { 1.000000 0.203922 0.000000 sr} bdef
+c975
+3 0 3858 1945 2 MP stroke
+/c976 { 1.000000 0.200000 0.000000 sr} bdef
+c976
+4 0 3861 1945 2 MP stroke
+/c977 { 1.000000 0.196078 0.000000 sr} bdef
+c977
+3 0 3865 1945 2 MP stroke
+/c978 { 1.000000 0.192157 0.000000 sr} bdef
+c978
+3 0 3868 1945 2 MP stroke
+/c979 { 1.000000 0.188235 0.000000 sr} bdef
+c979
+3 0 3871 1945 2 MP stroke
+/c980 { 1.000000 0.184314 0.000000 sr} bdef
+c980
+4 0 3874 1945 2 MP stroke
+/c981 { 1.000000 0.180392 0.000000 sr} bdef
+c981
+3 0 3878 1945 2 MP stroke
+/c982 { 1.000000 0.176471 0.000000 sr} bdef
+c982
+3 0 3881 1945 2 MP stroke
+/c983 { 1.000000 0.172549 0.000000 sr} bdef
+c983
+4 0 3884 1945 2 MP stroke
+/c984 { 1.000000 0.168627 0.000000 sr} bdef
+c984
+3 0 3888 1945 2 MP stroke
+/c985 { 1.000000 0.164706 0.000000 sr} bdef
+c985
+3 0 3891 1945 2 MP stroke
+/c986 { 1.000000 0.160784 0.000000 sr} bdef
+c986
+3 0 3894 1945 2 MP stroke
+/c987 { 1.000000 0.156863 0.000000 sr} bdef
+c987
+4 0 3897 1945 2 MP stroke
+/c988 { 1.000000 0.152941 0.000000 sr} bdef
+c988
+3 0 3901 1945 2 MP stroke
+/c989 { 1.000000 0.149020 0.000000 sr} bdef
+c989
+3 0 3904 1945 2 MP stroke
+/c990 { 1.000000 0.145098 0.000000 sr} bdef
+c990
+3 0 3907 1945 2 MP stroke
+/c991 { 1.000000 0.141176 0.000000 sr} bdef
+c991
+4 0 3910 1945 2 MP stroke
+/c992 { 1.000000 0.137255 0.000000 sr} bdef
+c992
+3 0 3914 1945 2 MP stroke
+/c993 { 1.000000 0.133333 0.000000 sr} bdef
+c993
+3 0 3917 1945 2 MP stroke
+/c994 { 1.000000 0.129412 0.000000 sr} bdef
+c994
+3 0 3920 1945 2 MP stroke
+/c995 { 1.000000 0.125490 0.000000 sr} bdef
+c995
+4 0 3923 1945 2 MP stroke
+/c996 { 1.000000 0.121569 0.000000 sr} bdef
+c996
+3 0 3927 1945 2 MP stroke
+/c997 { 1.000000 0.117647 0.000000 sr} bdef
+c997
+3 0 3930 1945 2 MP stroke
+/c998 { 1.000000 0.113725 0.000000 sr} bdef
+c998
+4 0 3933 1945 2 MP stroke
+/c999 { 1.000000 0.109804 0.000000 sr} bdef
+c999
+3 0 3937 1945 2 MP stroke
+/c1000 { 1.000000 0.105882 0.000000 sr} bdef
+c1000
+3 0 3940 1945 2 MP stroke
+/c1001 { 1.000000 0.101961 0.000000 sr} bdef
+c1001
+3 0 3943 1945 2 MP stroke
+/c1002 { 1.000000 0.098039 0.000000 sr} bdef
+c1002
+4 0 3946 1945 2 MP stroke
+/c1003 { 1.000000 0.094118 0.000000 sr} bdef
+c1003
+3 0 3950 1945 2 MP stroke
+/c1004 { 1.000000 0.090196 0.000000 sr} bdef
+c1004
+3 0 3953 1945 2 MP stroke
+/c1005 { 1.000000 0.086275 0.000000 sr} bdef
+c1005
+3 0 3956 1945 2 MP stroke
+/c1006 { 1.000000 0.082353 0.000000 sr} bdef
+c1006
+4 0 3959 1945 2 MP stroke
+/c1007 { 1.000000 0.078431 0.000000 sr} bdef
+c1007
+3 0 3963 1945 2 MP stroke
+/c1008 { 1.000000 0.074510 0.000000 sr} bdef
+c1008
+3 0 3966 1945 2 MP stroke
+/c1009 { 1.000000 0.070588 0.000000 sr} bdef
+c1009
+3 0 3969 1945 2 MP stroke
+/c1010 { 1.000000 0.066667 0.000000 sr} bdef
+c1010
+4 0 3972 1945 2 MP stroke
+/c1011 { 1.000000 0.062745 0.000000 sr} bdef
+c1011
+3 0 3976 1945 2 MP stroke
+/c1012 { 1.000000 0.058824 0.000000 sr} bdef
+c1012
+3 0 3979 1945 2 MP stroke
+/c1013 { 1.000000 0.054902 0.000000 sr} bdef
+c1013
+4 0 3982 1945 2 MP stroke
+/c1014 { 1.000000 0.050980 0.000000 sr} bdef
+c1014
+3 0 3986 1945 2 MP stroke
+/c1015 { 1.000000 0.047059 0.000000 sr} bdef
+c1015
+3 0 3989 1945 2 MP stroke
+/c1016 { 1.000000 0.043137 0.000000 sr} bdef
+c1016
+3 0 3992 1945 2 MP stroke
+/c1017 { 1.000000 0.039216 0.000000 sr} bdef
+c1017
+4 0 3995 1945 2 MP stroke
+/c1018 { 1.000000 0.035294 0.000000 sr} bdef
+c1018
+3 0 3999 1945 2 MP stroke
+/c1019 { 1.000000 0.031373 0.000000 sr} bdef
+c1019
+3 0 4002 1945 2 MP stroke
+/c1020 { 1.000000 0.027451 0.000000 sr} bdef
+c1020
+3 0 4005 1945 2 MP stroke
+/c1021 { 1.000000 0.023529 0.000000 sr} bdef
+c1021
+4 0 4008 1945 2 MP stroke
+/c1022 { 1.000000 0.019608 0.000000 sr} bdef
+c1022
+3 0 4012 1945 2 MP stroke
+/c1023 { 1.000000 0.015686 0.000000 sr} bdef
+c1023
+3 0 4015 1945 2 MP stroke
+/c1024 { 1.000000 0.011765 0.000000 sr} bdef
+c1024
+3 0 4018 1945 2 MP stroke
+/c1025 { 1.000000 0.007843 0.000000 sr} bdef
+c1025
+4 0 4021 1945 2 MP stroke
+/c1026 { 1.000000 0.003922 0.000000 sr} bdef
+c1026
+3 0 4025 1945 2 MP stroke
+/c1027 { 1.000000 0.000000 0.000000 sr} bdef
+c1027
+3 0 4028 1945 2 MP stroke
+4 0 4031 1945 2 MP stroke
+3 0 4035 1945 2 MP stroke
+3 0 4038 1945 2 MP stroke
+3 0 4041 1945 2 MP stroke
+4 0 4044 1945 2 MP stroke
+3 0 4048 1945 2 MP stroke
+3 0 4051 1945 2 MP stroke
+3 0 4054 1945 2 MP stroke
+4 0 4057 1945 2 MP stroke
+3 0 4061 1945 2 MP stroke
+3 0 4064 1945 2 MP stroke
+4 0 4067 1945 2 MP stroke
+3 0 4071 1945 2 MP stroke
+3 0 4074 1945 2 MP stroke
+3 0 4077 1945 2 MP stroke
+4 0 4080 1945 2 MP stroke
+3 0 4084 1945 2 MP stroke
+3 0 4087 1945 2 MP stroke
+3 0 4090 1945 2 MP stroke
+4 0 4093 1945 2 MP stroke
+3 0 4097 1945 2 MP stroke
+3 0 4100 1945 2 MP stroke
+3 0 4103 1945 2 MP stroke
+4 0 4106 1945 2 MP stroke
+3 0 4110 1945 2 MP stroke
+3 0 4113 1945 2 MP stroke
+4 0 4116 1945 2 MP stroke
+3 0 4120 1945 2 MP stroke
+3 0 4123 1945 2 MP stroke
+3 0 4126 1945 2 MP stroke
+4 0 4129 1945 2 MP stroke
+3 0 4133 1945 2 MP stroke
+3 0 4136 1945 2 MP stroke
+3 0 4139 1945 2 MP stroke
+4 0 4142 1945 2 MP stroke
+3 0 4146 1945 2 MP stroke
+3 0 4149 1945 2 MP stroke
+3 0 4152 1945 2 MP stroke
+4 0 4155 1945 2 MP stroke
+3 0 4159 1945 2 MP stroke
+3 0 4162 1945 2 MP stroke
+4 0 4165 1945 2 MP stroke
+3 0 4169 1945 2 MP stroke
+3 0 4172 1945 2 MP stroke
+3 0 4175 1945 2 MP stroke
+4 0 4178 1945 2 MP stroke
+3 0 4182 1945 2 MP stroke
+3 0 4185 1945 2 MP stroke
+3 0 4188 1945 2 MP stroke
+4 0 4191 1945 2 MP stroke
+3 0 4195 1945 2 MP stroke
+3 0 4198 1945 2 MP stroke
+3 0 4201 1945 2 MP stroke
+4 0 4204 1945 2 MP stroke
+3 0 4208 1945 2 MP stroke
+3 0 4211 1945 2 MP stroke
+4 0 4214 1945 2 MP stroke
+3 0 4218 1945 2 MP stroke
+3 0 4221 1945 2 MP stroke
+3 0 4224 1945 2 MP stroke
+4 0 4227 1945 2 MP stroke
+3 0 4231 1945 2 MP stroke
+3 0 4234 1945 2 MP stroke
+3 0 4237 1945 2 MP stroke
+4 0 4240 1945 2 MP stroke
+3 0 4244 1945 2 MP stroke
+3 0 4247 1945 2 MP stroke
+3 0 4250 1945 2 MP stroke
+4 0 4253 1945 2 MP stroke
+3 0 4257 1945 2 MP stroke
+3 0 4260 1945 2 MP stroke
+4 0 4263 1945 2 MP stroke
+3 0 4267 1945 2 MP stroke
+3 0 4270 1945 2 MP stroke
+3 0 4273 1945 2 MP stroke
+4 0 4276 1945 2 MP stroke
+3 0 4280 1945 2 MP stroke
+3 0 4283 1945 2 MP stroke
+3 0 4286 1945 2 MP stroke
+4 0 4289 1945 2 MP stroke
+3 0 4293 1945 2 MP stroke
+3 0 4296 1945 2 MP stroke
+3 0 4299 1945 2 MP stroke
+4 0 4302 1945 2 MP stroke
+3 0 4306 1945 2 MP stroke
+3 0 4309 1945 2 MP stroke
+4 0 4312 1945 2 MP stroke
+3 0 4316 1945 2 MP stroke
+3 0 4319 1945 2 MP stroke
+3 0 4322 1945 2 MP stroke
+4 0 4325 1945 2 MP stroke
+3 0 4329 1945 2 MP stroke
+3 0 4332 1945 2 MP stroke
+3 0 4335 1945 2 MP stroke
+4 0 4338 1945 2 MP stroke
+3 0 4342 1945 2 MP stroke
+3 0 4345 1945 2 MP stroke
+4 0 4348 1945 2 MP stroke
+3 0 4352 1945 2 MP stroke
+3 0 4355 1945 2 MP stroke
+3 0 4358 1945 2 MP stroke
+4 0 4361 1945 2 MP stroke
+3 0 4365 1945 2 MP stroke
+3 0 4368 1945 2 MP stroke
+3 0 4371 1945 2 MP stroke
+4 0 4374 1945 2 MP stroke
+3 0 4378 1945 2 MP stroke
+3 0 4381 1945 2 MP stroke
+3 0 4384 1945 2 MP stroke
+4 0 4387 1945 2 MP stroke
+3 0 4391 1945 2 MP stroke
+3 0 4394 1945 2 MP stroke
+4 0 4397 1945 2 MP stroke
+3 0 4401 1945 2 MP stroke
+3 0 4404 1945 2 MP stroke
+3 0 4407 1945 2 MP stroke
+4 0 4410 1945 2 MP stroke
+3 0 4414 1945 2 MP stroke
+3 0 4417 1945 2 MP stroke
+3 0 4420 1945 2 MP stroke
+4 0 4423 1945 2 MP stroke
+3 0 4427 1945 2 MP stroke
+3 0 4430 1945 2 MP stroke
+3 0 4433 1945 2 MP stroke
+4 0 4436 1945 2 MP stroke
+3 0 4440 1945 2 MP stroke
+3 0 4443 1945 2 MP stroke
+4 0 4446 1945 2 MP stroke
+3 0 4450 1945 2 MP stroke
+3 0 4453 1945 2 MP stroke
+3 0 4456 1945 2 MP stroke
+4 0 4459 1945 2 MP stroke
+3 0 4463 1945 2 MP stroke
+3 0 4466 1945 2 MP stroke
+3 0 4469 1945 2 MP stroke
+4 0 4472 1945 2 MP stroke
+3 0 4476 1945 2 MP stroke
+3 0 4479 1945 2 MP stroke
+3 0 4482 1945 2 MP stroke
+4 0 4485 1945 2 MP stroke
+3 0 4489 1945 2 MP stroke
+3 0 4492 1945 2 MP stroke
+4 0 4495 1945 2 MP stroke
+3 0 4499 1945 2 MP stroke
+3 0 4502 1945 2 MP stroke
+3 0 4505 1945 2 MP stroke
+4 0 4508 1945 2 MP stroke
+3 0 4512 1945 2 MP stroke
+3 0 4515 1945 2 MP stroke
+3 0 4518 1945 2 MP stroke
+4 0 4521 1945 2 MP stroke
+3 0 4525 1945 2 MP stroke
+3 0 4528 1945 2 MP stroke
+3 0 4531 1945 2 MP stroke
+4 0 4534 1945 2 MP stroke
+3 0 4538 1945 2 MP stroke
+3 0 4541 1945 2 MP stroke
+4 0 4544 1945 2 MP stroke
+3 0 4548 1945 2 MP stroke
+3 0 4551 1945 2 MP stroke
+3 0 4554 1945 2 MP stroke
+4 0 4557 1945 2 MP stroke
+3 0 4561 1945 2 MP stroke
+3 0 4564 1945 2 MP stroke
+3 0 4567 1945 2 MP stroke
+4 0 4570 1945 2 MP stroke
+3 0 4574 1945 2 MP stroke
+3 0 4577 1945 2 MP stroke
+3 0 4580 1945 2 MP stroke
+4 0 4583 1945 2 MP stroke
+3 0 4587 1945 2 MP stroke
+3 0 4590 1945 2 MP stroke
+4 0 4593 1945 2 MP stroke
+3 0 4597 1945 2 MP stroke
+3 0 4600 1945 2 MP stroke
+3 0 4603 1945 2 MP stroke
+4 0 4606 1945 2 MP stroke
+3 0 4610 1945 2 MP stroke
+3 0 4613 1945 2 MP stroke
+3 0 4616 1945 2 MP stroke
+4 0 4619 1945 2 MP stroke
+3 0 4623 1945 2 MP stroke
+3 0 4626 1945 2 MP stroke
+4 0 4629 1945 2 MP stroke
+3 0 4633 1945 2 MP stroke
+3 0 4636 1945 2 MP stroke
+3 0 4639 1945 2 MP stroke
+4 0 4642 1945 2 MP stroke
+3 0 4646 1945 2 MP stroke
+3 0 4649 1945 2 MP stroke
+3 0 4652 1945 2 MP stroke
+4 0 4655 1945 2 MP stroke
+3 0 4659 1945 2 MP stroke
+3 0 4662 1945 2 MP stroke
+3 0 4665 1945 2 MP stroke
+4 0 4668 1945 2 MP stroke
+3 0 4672 1945 2 MP stroke
+3 0 4675 1945 2 MP stroke
+4 0 4678 1945 2 MP stroke
+3 0 4682 1945 2 MP stroke
+3 0 4685 1945 2 MP stroke
+3 0 4688 1945 2 MP stroke
+4 0 4691 1945 2 MP stroke
+3 0 4695 1945 2 MP stroke
+3 0 4698 1945 2 MP stroke
+3 0 4701 1945 2 MP stroke
+4 0 4704 1945 2 MP stroke
+3 0 4708 1945 2 MP stroke
+3 0 4711 1945 2 MP stroke
+3 0 4714 1945 2 MP stroke
+4 0 4717 1945 2 MP stroke
+3 0 4721 1945 2 MP stroke
+3 0 4724 1945 2 MP stroke
+4 0 4727 1945 2 MP stroke
+3 0 4731 1945 2 MP stroke
+3 0 4734 1945 2 MP stroke
+3 0 4737 1945 2 MP stroke
+4 0 4740 1945 2 MP stroke
+3 0 4744 1945 2 MP stroke
+3 0 4747 1945 2 MP stroke
+3 0 4750 1945 2 MP stroke
+4 0 4753 1945 2 MP stroke
+3 0 4757 1945 2 MP stroke
+3 0 4760 1945 2 MP stroke
+3 0 4763 1945 2 MP stroke
+4 0 4766 1945 2 MP stroke
+3 0 4770 1945 2 MP stroke
+3 0 4773 1945 2 MP stroke
+4 0 4776 1945 2 MP stroke
+3 0 4780 1945 2 MP stroke
+3 0 4783 1945 2 MP stroke
+3 0 4786 1945 2 MP stroke
+4 0 4789 1945 2 MP stroke
+3 0 4793 1945 2 MP stroke
+3 0 4796 1945 2 MP stroke
+3 0 4799 1945 2 MP stroke
+4 0 4802 1945 2 MP stroke
+3 0 4806 1945 2 MP stroke
+3 0 4809 1945 2 MP stroke
+3 0 4812 1945 2 MP stroke
+4 0 4815 1945 2 MP stroke
+3 0 4819 1945 2 MP stroke
+3 0 4822 1945 2 MP stroke
+4 0 4825 1945 2 MP stroke
+3 0 4829 1945 2 MP stroke
+3 0 4832 1945 2 MP stroke
+3 0 4835 1945 2 MP stroke
+4 0 4838 1945 2 MP stroke
+3 0 4842 1945 2 MP stroke
+3 0 4845 1945 2 MP stroke
+3 0 4848 1945 2 MP stroke
+4 0 4851 1945 2 MP stroke
+3 0 4855 1945 2 MP stroke
+3 0 4858 1945 2 MP stroke
+4 0 4861 1945 2 MP stroke
+6 w
+gr
+
+c1027
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

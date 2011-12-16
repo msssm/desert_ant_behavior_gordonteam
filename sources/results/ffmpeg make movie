@@ -1,0 +1,14 @@
+
+
+This is the command to make a movie from images with ffmpeg:
+
+ffmpeg -qscale 5 -r 20 -b 9600 -i img%04d.png movie.mp4
+
+The options are
+
+    * -qscale 5 … define fixed video quantizer scale (VBR) where 1 is the best and 31 the worst. Since mpeg/jpeg has problems to compress line graphics it’s a good idea to set this variable close 			to 1. You get a big movie file, but otherwise the movie doesn’t look, well, that good.
+    * -r … framerate
+    * -b … video bitrate
+    * -i input files, %04d says that we have four numbers in the filename where the number is filled with zeros left of it.
+    * movie.mp4 is the filename, the extension says that it is a quicktime movie. You can also create a Macromedia Flash movie by using the .flv extension.
+

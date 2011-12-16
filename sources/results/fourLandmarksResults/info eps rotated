@@ -1,0 +1,11 @@
+    nestLocation = [0;0];
+    landmarksLocation = [-2;2];
+    landmarksRotation = deg2rad(45);
+    foodSourceLocation = [0;-4];
+    tPhase1 = 2*60;
+    tPhase2 = 1*60;
+    tPhase3 = 3*60;
+    dt = 1;
+    printFlag = false;
+ht = ht.put('2',[0 0.3 20]);
+ht = ht.put('4',[0 0 40]);

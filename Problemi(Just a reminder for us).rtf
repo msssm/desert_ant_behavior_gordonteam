@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 Cose da cambiare nel codice:\
+
+\fs24 \
+i metodi della formica ritornano tutti "this" ma non \'e9 sempre giusto, controllare bene!\
+\
+updateLocation dovrebbe essere un handler?\
+\
+come si distrugge un oggetto? (problema \'e9 che nella funzione dove viene distrutto probabilmente \'e9 una copia)\
+\
+checkare come trasformo un angolo in un vettore.\
+\
+migliorare il loop per displayare la grid\
+\
+\
+
+\fs48 Problemi:\
+
+\fs24 \
+non trovo il vero decadimento nel deserto, se non trovo nulla uso quello della carta, che \'e9 quello che si avvicina di piu.\
+\
+usare una matrice per il ground? O semplicemente plottare  i punti?\
+la matrice facilita il similarit\'e0 check, il mapping dall intensit\'e0 al colore il controllo del feromone nelle vicinanze.\
+plotter i punti consente locations negative, lascia automaticamente la traccia da un punto all altro, pu\'f2 andare esattamente in ogni punto (non per forza interi), non c \'e9 bisogno della conversione tra \
+\
+un pheromone path deve essere linkato per far andare una formica dalla parte giusta.\
+\
+come fa una formica a capire dai landmark dove \'e9 il nido? un conto sono i 4 legni usati per dare la posizione al nido, un conto sono quelli per collegare nido e fonte di cibo.\
+\
+una formica che vede solo un pezzo di un landmark complesso come gestisce la cosa?\
+\
+non funzionano le funzioni booleane sugli array di oggetti. Siamo costretti ad usare i for.\
+\
+
+\fs48 Cose da sottolineare nella pres:
+\fs24 \
+\
+esempio di modelling: si potrebbe mantenere come global vector un vettore che punta dalla formica al nido invece di fare l update ogni volta; questo pero non \'e9 il vero comportamento della formica, quindi non sarebbe un buon modello.\
+\
+usare gli oggetti, molto pi\'f9 chiaro. Magari la gestione del codice rallenta la simulazione date le continue chiamate a delle nested function, ma la chiarezza conta di pi\'f9. Cerchiamo di ottimizzare il codice il pi\'f9 possibile nell accesso alle matrici non con le chiamate alle funzioni!\
+\
+non utilizzare mai i for-> lentissimi!! (vedi utilit\'e0 della funzione 
+\f1\fs20 isParticleAtSameLocation(this.particle) ATTENZIONE!! NON FUNZIONA UNA SEGA! GUARDA I PROBLEMI
+\fs24 \
+
+\f0 )-> ti permette di effetturare assegnamenti del tipo M(M > 0) = 1;\
+\
+usare degli handler per ogni funzione esterna (landmarkHandler, intensityHandler) per mantenere un po di ordine\
+\
+i landmark sono storati come matrici, cos\'ec da riconoscerli pi\'f9 facilmente\
+\
+i vettori devono sempre essere normalizzati!!\
+\
+la decisione degli angoli \'e9 distribuita normalmente\
+\
+la conversione tra intensit\'e0 e colore\
+\
+}

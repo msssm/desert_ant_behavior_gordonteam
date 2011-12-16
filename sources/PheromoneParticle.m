@@ -2,6 +2,7 @@ classdef PheromoneParticle
     properties
         intensity
         location
+        decayTime = 3;
         next
         prev
     end
@@ -55,7 +56,7 @@ classdef PheromoneParticle
         % behaviour. tc is the decay constant: smaller it is, faster the
         % particles decay.
         function this = decay(this,dt)
-            tc = 60;
+            tc = this.decayTime*30;
             this.intensity = this.intensity*exp(log(1/2)*dt/tc);
         end
     end

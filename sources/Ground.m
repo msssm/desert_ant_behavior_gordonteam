@@ -27,6 +27,24 @@ classdef Ground
             inRangeParticles = inRangeParticles(1:j-1);
         end
         
+        function inRangeLandmarks = getLandmarksInRange(this,ant)
+            % Allocate enough space far the landmarks that could be
+            % in range. Then remove the space not used. This approach
+            % allocates the array just 2 times instead of *the number of
+            % landmarks in range*.
+            inRangeLandmarks = zeros(size(this.landmarks));
+            j = 1;
+            for i = 1 : size(this.landmarks,2)
+                lm = this.landmarks(:,i);
+                if norm(lm - ant.location) <= ...
+                   ant.viewRange
+                    inRangeLandmarks(:,j) = lm;
+                    j = j+1;
+                end
+            end
+            inRangeLandmarks = inRangeLandmarks(:,1:j-1);
+        end
+        
         function [bool particle i] = hasPheromoneInLocation(this,locationPart)
             bool = false;
             particle = PheromoneParticle();

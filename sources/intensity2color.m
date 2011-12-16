@@ -1,6 +1,10 @@
 function [r g b] = intensity2color(intensity)
 intensity = 255*5-min(intensity,255*5);
-if intensity <= 255*2
+if intensity <= 255
+    r = 255;
+    g = 0;
+    b = 0;
+elseif intensity <= 255*2
     r = 255;
     g = intensity-255;
     b = 0;

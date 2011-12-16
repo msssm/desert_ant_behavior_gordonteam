@@ -1,11 +1,11 @@
 function pheromoneAnimation(nAnts,nestLocation,foodSourceLocation,dt,steps,printFlag)
 if nargin == 0
-    nAnts = 3;
+    nAnts = 4;
     nestLocation = zeros(2,1);
-    foodSourceLocation = [5;5];
+    foodSourceLocation = [7;7];
     dt = 5;
-    steps = 100;
-    printFlag = false;
+    steps = 500;
+    printFlag = true;
 end
 
 ground = Ground;
@@ -23,11 +23,7 @@ for i = 1 : length(ants)
     ants(i) = ant;
 end
 ground.ants = ants;
-disp('Put landmarks!');
 for i = 1 : steps
-    if i == 15
-        breakPoint = 1;
-    end
     for j = 1 : length(ground.ants)
         [a g] = ground.ants(j).performCompleteStep(ground,dt);
         ground = g;
@@ -36,8 +32,10 @@ for i = 1 : steps
     cla;
     hold on;
     axis([-15 15 -15 15]);
+    title('Pheromone-based orientation');
+    xlabel('length [m]');
+    ylabel('length [m]');
     ground = updateGround(ground,i,dt,printFlag);
+    
     drawnow;
 end
-
-brakPoint = 1;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 DEC 2011 18:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 DEC 2011 19:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -765,48 +765,36 @@ Overfull \hbox (5.3226pt too wide) in paragraph at lines 78--95
  [] 
  []
 
-[2]
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./plagiarism.pdf): PDF inclusion: fo
-und PDF version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./plagiarism.pdf): PDF inclusion: fo
-und PDF version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./plagiarism.pdf): PDF inclusion: fo
-und PDF version <1.6>, but at most version <1.5> allowed
-<plagiarism.pdf, id=18, page=1, 614.295pt x 794.97pt>
+[2] <plagiarism.pdf, id=18, page=1, 614.29622pt x 843.39261pt>
 File: plagiarism.pdf Graphic file (type pdf)
 
 <use plagiarism.pdf, page 1>
 Package pdftex.def Info: plagiarism.pdf, page1 used on input line 107.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+(pdftex.def)             Requested size: 614.29472pt x 843.39055pt.
 File: plagiarism.pdf Graphic file (type pdf)
  <use plagiarism.pdf, page 1>
 Package pdftex.def Info: plagiarism.pdf, page1 used on input line 107.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+(pdftex.def)             Requested size: 579.29446pt x 795.33725pt.
 File: plagiarism.pdf Graphic file (type pdf)
 
 <use plagiarism.pdf, page 1>
 Package pdftex.def Info: plagiarism.pdf, page1 used on input line 107.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+(pdftex.def)             Requested size: 579.29446pt x 795.33725pt.
 File: plagiarism.pdf Graphic file (type pdf)
  <use plagiarism.pdf, page 1>
 Package pdftex.def Info: plagiarism.pdf, page1 used on input line 107.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+(pdftex.def)             Requested size: 579.29446pt x 795.33725pt.
 File: plagiarism.pdf Graphic file (type pdf)
 
 <use plagiarism.pdf, page 1>
 Package pdftex.def Info: plagiarism.pdf, page1 used on input line 107.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+(pdftex.def)             Requested size: 579.29446pt x 795.33725pt.
  [3 <./plagiarism.pdf>] [4] (./report.toc [5])
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
 
-[6] [7] <images/TrailPheromone.jpg, id=41, 144.54pt x 75.52216pt>
+[6] [7] <images/TrailPheromone.jpg, id=47, 144.54pt x 75.52216pt>
 File: images/TrailPheromone.jpg Graphic file (type jpg)
 
 <use images/TrailPheromone.jpg>
@@ -830,7 +818,7 @@ y2color-eps-converted-to.pdf ../sources/results/intensity2color.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<../sources/results/intensity2color-eps-converted-to.pdf, id=45, 449.68pt x 338
+<../sources/results/intensity2color-eps-converted-to.pdf, id=51, 449.68pt x 338
 .26375pt>
 File: ../sources/results/intensity2color-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -840,20 +828,20 @@ f used on input line 164.
 (pdftex.def)             Requested size: 301.00192pt x 226.43422pt.
 
 [9 <../sources/results/intensity2color-eps-converted-to.pdf>] [10]
-<images/phase1.pdf, id=65, 159.59625pt x 268.00125pt>
+<images/phase1.pdf, id=71, 159.59625pt x 268.00125pt>
 File: images/phase1.pdf Graphic file (type pdf)
  <use images/phase1.pdf>
 Package pdftex.def Info: images/phase1.pdf used on input line 221.
 (pdftex.def)             Requested size: 107.50114pt x 180.52089pt.
 
-<images/phase3.pdf, id=66, 286.06876pt x 276.03125pt>
+<images/phase3.pdf, id=72, 286.06876pt x 276.03125pt>
 File: images/phase3.pdf Graphic file (type pdf)
  <use images/phase3.pdf>
 Package pdftex.def Info: images/phase3.pdf used on input line 229.
 (pdftex.def)             Requested size: 215.0023pt x 207.46095pt.
 
 [11 <./images/phase1.pdf>]
-<images/phase4.pdf, id=97, 286.06876pt x 162.6075pt>
+<images/phase4.pdf, id=103, 286.06876pt x 162.6075pt>
 File: images/phase4.pdf Graphic file (type pdf)
  <use images/phase4.pdf>
 Package pdftex.def Info: images/phase4.pdf used on input line 236.
@@ -869,7 +857,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 ) [13 <./images/phase4.pdf>] (./pseudocode/randomwalk.e) [14] [15]
-<images/ambiguous_direction.pdf, id=160, 286.06876pt x 243.91125pt>
+<images/ambiguous_direction.pdf, id=166, 286.06876pt x 243.91125pt>
 File: images/ambiguous_direction.pdf Graphic file (type pdf)
 
 <use images/ambiguous_direction.pdf>
@@ -877,7 +865,7 @@ Package pdftex.def Info: images/ambiguous_direction.pdf used on input line 306.
 
 (pdftex.def)             Requested size: 258.00539pt x 219.98703pt.
  [16 <./images/ambiguous_direction.pdf>]
-<../sources/results/pheromoneResults/snap_0001.png, id=176, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0001.png, id=183, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0001.png Graphic file (type png)
 
@@ -886,7 +874,7 @@ Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0001.png used
  on input line 320.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
-<../sources/results/pheromoneResults/snap_0036.png, id=177, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0036.png, id=184, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0036.png Graphic file (type png)
 
@@ -899,7 +887,7 @@ Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0036.png used
 LaTeX Warning: Float too large for page by 67.76517pt on input line 324.
 
 
-<../sources/results/pheromoneResults/snap_0097.png, id=178, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0097.png, id=185, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0097.png Graphic file (type png)
 
@@ -908,7 +896,7 @@ Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0097.png used
  on input line 328.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
-<../sources/results/pheromoneResults/snap_0154.png, id=179, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0154.png, id=186, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0154.png Graphic file (type png)
 
@@ -932,7 +920,7 @@ eDecay-eps-converted-to.pdf ../sources/results/pheromoneDecay.eps>
 (epstopdf)             \includegraphics on input line 338.
 Package epstopdf Info: Output file is already uptodate.
 
-<../sources/results/pheromoneDecay-eps-converted-to.pdf, id=180, 449.68pt x 338
+<../sources/results/pheromoneDecay-eps-converted-to.pdf, id=187, 449.68pt x 338
 .26375pt>
 File: ../sources/results/pheromoneDecay-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -959,7 +947,7 @@ nResults/animation.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf, id=1
-81, 449.68pt x 338.26375pt>
+88, 449.68pt x 338.26375pt>
 File: ../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -986,7 +974,7 @@ sResults/fourLandmarks.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf, id
-=182, 449.68pt x 338.26375pt>
+=189, 449.68pt x 338.26375pt>
 File: ../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -1010,7 +998,7 @@ andmarksResults/fourLandmarksRotated.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-converted-to.
-pdf, id=183, 449.68pt x 338.26375pt>
+pdf, id=190, 449.68pt x 338.26375pt>
 File: ../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-converte
 d-to.pdf Graphic file (type pdf)
 
@@ -1032,7 +1020,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [20 <../sources/results/pheromoneDecay-eps-converted-to.pdf>] [21 <../sources/r
 esults/pathIntegrationResults/animation-eps-converted-to.pdf>] [22 <../sources/
 results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf>]
-Overfull \hbox (4.7366pt too wide) in paragraph at lines 404--410
+Overfull \hbox (4.7366pt too wide) in paragraph at lines 405--411
 [] 
  []
 
@@ -1065,7 +1053,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 Here is how much of TeX's memory you used:
  7824 strings out of 493633
  106763 string characters out of 3143378
- 648305 words of memory out of 3000000
+ 647311 words of memory out of 3000000
  10914 multiletter control sequences out of 15000+200000
  16745 words of font info for 64 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
@@ -1090,10 +1078,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2011/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (42 pages, 567427 bytes).
+Output written on report.pdf (42 pages, 726179 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 361 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

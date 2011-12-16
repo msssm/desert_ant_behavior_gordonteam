@@ -257,6 +257,11 @@ This pseudocode represents the random walk implemented for the Ant class:
 
 \lstinputlisting[language=Eiffel]{pseudocode/randomwalk.e}
 
+\begin{figure}[h!]
+	\includegraphics[width=.9\textwidth]{../sources/results/constantAgainstDistance.eps}
+	\caption{}
+\end{figure}
+
 Furthermore, at each time step the ant keeps updating its global vector, releasing pheromone particles --- whose intensity changes depending on whether it is walking randomly or following a well known trail --- and looking for possible landmarks, although it will only make use of them in the third simulation.
 
 \subsection{Pheromone-based orientation}

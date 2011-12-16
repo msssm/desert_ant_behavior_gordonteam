@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 DEC 2011 23:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 DEC 2011 23:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -857,57 +857,89 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-(./pseudocode/randomwalk.e) [14] [15]
-<images/ambiguous_direction.pdf, id=166, 286.06876pt x 243.91125pt>
+(./pseudocode/randomwalk.e)
+Package epstopdf Info: Source file: <../sources/results/constantAgainstDistance
+.eps>
+(epstopdf)                    date: 2011-12-16 16:48:43
+(epstopdf)                    size: 9175 bytes
+(epstopdf)             Output file: <../sources/results/constantAgainstDistance
+-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=../sources/results/constant
+AgainstDistance-eps-converted-to.pdf ../sources/results/constantAgainstDistance
+.eps>
+(epstopdf)             \includegraphics on input line 261.
+runsystem(epstopdf --outfile=../sources/results/constantAgainstDistance-eps-con
+verted-to.pdf ../sources/results/constantAgainstDistance.eps)...executed.
+
+Package epstopdf Info: Result file: <../sources/results/constantAgainstDistance
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-16 23:59:08
+(epstopdf)                    size: 7434 bytes.
+
+<../sources/results/constantAgainstDistance-eps-converted-to.pdf, id=158, 449.6
+8pt x 338.26375pt>
+File: ../sources/results/constantAgainstDistance-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ../sources/results/constantAgainstDistance-eps-converted-to.pdf>
+Package pdftex.def Info: ../sources/results/constantAgainstDistance-eps-convert
+ed-to.pdf used on input line 261.
+(pdftex.def)             Requested size: 301.00192pt x 226.43422pt.
+ [14 <../sources/results/constantAgainstDistance-eps-converted-to.pdf>] [15]
+<images/ambiguous_direction.pdf, id=172, 286.06876pt x 243.91125pt>
 File: images/ambiguous_direction.pdf Graphic file (type pdf)
 
 <use images/ambiguous_direction.pdf>
-Package pdftex.def Info: images/ambiguous_direction.pdf used on input line 305.
+Package pdftex.def Info: images/ambiguous_direction.pdf used on input line 309.
 
 (pdftex.def)             Requested size: 258.00539pt x 219.98703pt.
- [16 <./images/ambiguous_direction.pdf>]
-<../sources/results/pheromoneResults/snap_0001.png, id=183, 289.08pt x 216.81pt
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16]
+<../sources/results/pheromoneResults/snap_0001.png, id=176, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0001.png Graphic file (type png)
 
  <use ../sources/results/pheromoneResults/snap_0001.png>
 Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0001.png used
- on input line 319.
+ on input line 323.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
-<../sources/results/pheromoneResults/snap_0036.png, id=184, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0036.png, id=177, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0036.png Graphic file (type png)
 
  <use ../sources/results/pheromoneResults/snap_0036.png>
 Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0036.png used
- on input line 320.
+ on input line 324.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
 
-LaTeX Warning: Float too large for page by 67.76517pt on input line 323.
+LaTeX Warning: Float too large for page by 67.76517pt on input line 327.
 
 
-<../sources/results/pheromoneResults/snap_0097.png, id=185, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0097.png, id=178, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0097.png Graphic file (type png)
 
  <use ../sources/results/pheromoneResults/snap_0097.png>
 Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0097.png used
- on input line 327.
+ on input line 331.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
-<../sources/results/pheromoneResults/snap_0154.png, id=186, 289.08pt x 216.81pt
+<../sources/results/pheromoneResults/snap_0154.png, id=179, 289.08pt x 216.81pt
 >
 File: ../sources/results/pheromoneResults/snap_0154.png Graphic file (type png)
 
  <use ../sources/results/pheromoneResults/snap_0154.png>
 Package pdftex.def Info: ../sources/results/pheromoneResults/snap_0154.png used
- on input line 328.
+ on input line 332.
 (pdftex.def)             Requested size: 387.00153pt x 290.26584pt.
 
 
-LaTeX Warning: Float too large for page by 78.01935pt on input line 331.
+LaTeX Warning: Float too large for page by 78.01935pt on input line 335.
 
 Package epstopdf Info: Source file: <../sources/results/pheromoneDecay.eps>
 (epstopdf)                    date: 2011-12-16 17:52:02
@@ -918,21 +950,25 @@ erted-to.pdf>
 (epstopdf)                    size: 6693 bytes
 (epstopdf)             Command: <epstopdf --outfile=../sources/results/pheromon
 eDecay-eps-converted-to.pdf ../sources/results/pheromoneDecay.eps>
-(epstopdf)             \includegraphics on input line 337.
+(epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
 
-<../sources/results/pheromoneDecay-eps-converted-to.pdf, id=187, 449.68pt x 338
+<../sources/results/pheromoneDecay-eps-converted-to.pdf, id=180, 449.68pt x 338
 .26375pt>
 File: ../sources/results/pheromoneDecay-eps-converted-to.pdf Graphic file (type
  pdf)
  <use ../sources/results/pheromoneDecay-eps-converted-to.pdf>
 Package pdftex.def Info: ../sources/results/pheromoneDecay-eps-converted-to.pdf
- used on input line 337.
+ used on input line 341.
 (pdftex.def)             Requested size: 344.005pt x 258.78123pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[17 <./images/ambiguous_direction.pdf>] [18 <../sources/results/pheromoneResult
+s/snap_0001.png (PNG copy)> <../sources/results/pheromoneResults/snap_0036.png 
+(PNG copy)>] [19 <../sources/results/pheromoneResults/snap_0097.png (PNG copy)>
+ <../sources/results/pheromoneResults/snap_0154.png (PNG copy)>]
 Package epstopdf Info: Source file: <../sources/results/pathIntegrationResults/
 animation.eps>
 (epstopdf)                    date: 2011-12-16 16:47:15
@@ -944,17 +980,17 @@ animation-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=../sources/results/pathInte
 grationResults/animation-eps-converted-to.pdf ../sources/results/pathIntegratio
 nResults/animation.eps>
-(epstopdf)             \includegraphics on input line 348.
+(epstopdf)             \includegraphics on input line 352.
 Package epstopdf Info: Output file is already uptodate.
 
-<../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf, id=1
-88, 449.68pt x 338.26375pt>
+<../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf, id=2
+04, 449.68pt x 338.26375pt>
 File: ../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use ../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf>
 Package pdftex.def Info: ../sources/results/pathIntegrationResults/animation-ep
-s-converted-to.pdf used on input line 348.
+s-converted-to.pdf used on input line 352.
 (pdftex.def)             Requested size: 344.005pt x 258.78123pt.
 
 
@@ -971,18 +1007,18 @@ urLandmarks-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=../sources/results/fourLand
 marksResults/fourLandmarks-eps-converted-to.pdf ../sources/results/fourLandmark
 sResults/fourLandmarks.eps>
-(epstopdf)             \includegraphics on input line 358.
+(epstopdf)             \includegraphics on input line 362.
 Package epstopdf Info: Output file is already uptodate.
 
 <../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf, id
-=189, 449.68pt x 338.26375pt>
+=205, 449.68pt x 338.26375pt>
 File: ../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pd
 f Graphic file (type pdf)
 
 <use ../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf
 >
 Package pdftex.def Info: ../sources/results/fourLandmarksResults/fourLandmarks-
-eps-converted-to.pdf used on input line 358.
+eps-converted-to.pdf used on input line 362.
 (pdftex.def)             Requested size: 344.005pt x 258.78123pt.
 Package epstopdf Info: Source file: <../sources/results/fourLandmarksResults/fo
 urLandmarksRotated.eps>
@@ -995,35 +1031,32 @@ urLandmarksRotated-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=../sources/results/fourLand
 marksResults/fourLandmarksRotated-eps-converted-to.pdf ../sources/results/fourL
 andmarksResults/fourLandmarksRotated.eps>
-(epstopdf)             \includegraphics on input line 363.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
 
 <../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-converted-to.
-pdf, id=190, 449.68pt x 338.26375pt>
+pdf, id=206, 449.68pt x 338.26375pt>
 File: ../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-converte
 d-to.pdf Graphic file (type pdf)
 
 <use ../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-converted
 -to.pdf>
 Package pdftex.def Info: ../sources/results/fourLandmarksResults/fourLandmarksR
-otated-eps-converted-to.pdf used on input line 363.
+otated-eps-converted-to.pdf used on input line 367.
 (pdftex.def)             Requested size: 344.005pt x 258.78123pt.
- [17] [18 <../sources/results/pheromoneResults/snap_0001.png (PNG copy)> <../so
-urces/results/pheromoneResults/snap_0036.png (PNG copy)>] [19 <../sources/resul
-ts/pheromoneResults/snap_0097.png (PNG copy)> <../sources/results/pheromoneResu
-lts/snap_0154.png (PNG copy)>]
+ [20 <../sources/results/pheromoneDecay-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20 <../sources/results/pheromoneDecay-eps-converted-to.pdf>] [21 <../sources/r
-esults/pathIntegrationResults/animation-eps-converted-to.pdf>] [22 <../sources/
-results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf>] [23 <../sourc
-es/results/fourLandmarksResults/fourLandmarksRotated-eps-converted-to.pdf>]
-Overfull \hbox (4.7366pt too wide) in paragraph at lines 404--410
+[21 <../sources/results/pathIntegrationResults/animation-eps-converted-to.pdf>]
+[22 <../sources/results/fourLandmarksResults/fourLandmarks-eps-converted-to.pdf
+>] [23 <../sources/results/fourLandmarksResults/fourLandmarksRotated-eps-conver
+ted-to.pdf>]
+Overfull \hbox (4.7366pt too wide) in paragraph at lines 408--414
 [] 
  []
 
-[24] (../sources/Ant.m [25] [26]
+[24] [25] (../sources/Ant.m [26] [27]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 123.
 
 
@@ -1040,19 +1073,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 159.
- [27] [28]
-[29] [30] [31]) (../sources/Ground.m [32] [33]) (../sources/intensity2color.m)
-(../sources/Hashtable.m [34]) (../sources/pheromoneAnimation.m [35])
-(../sources/PheromoneParticle.m [36]) (../sources/projectPointOnLine.m [37])
+ [28] [29]
+[30] [31] [32]) (../sources/Ground.m [33] [34]) (../sources/intensity2color.m)
+(../sources/Hashtable.m [35]) (../sources/pheromoneAnimation.m [36])
+(../sources/PheromoneParticle.m [37]) (../sources/projectPointOnLine.m [38])
 (../sources/randomWalkTest.m) (../sources/twoArmGlobalVectorAnimation.m
-[38]) [39] (../sources/twoArmGlobalVectorTest.m [40])
-(../sources/updateGround.m [41]) (../sources/vector2angle.m) [42] (./report.aux
+[39]) [40] (../sources/twoArmGlobalVectorTest.m [41])
+(../sources/updateGround.m [42]) (../sources/vector2angle.m) [43] (./report.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 7824 strings out of 493633
- 106763 string characters out of 3143378
- 648302 words of memory out of 3000000
- 10914 multiletter control sequences out of 15000+200000
+ 7829 strings out of 493633
+ 107061 string characters out of 3143378
+ 648356 words of memory out of 3000000
+ 10918 multiletter control sequences out of 15000+200000
  16745 words of font info for 64 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  42i,18n,46p,1124b,2187s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1076,10 +1109,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2011/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (42 pages, 725536 bytes).
+Output written on report.pdf (43 pages, 730210 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
+ 371 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

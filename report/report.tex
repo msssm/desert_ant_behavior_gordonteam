@@ -173,7 +173,7 @@ Using the available experiments (see reference [2]) we have determined the evapo
 The pheromone decay is one variable to take into account for this first simulation, although the most important issue is the strategy adopted by ants to find a food source.
 
 \subsubsection{Strategy}
-As they leave the nest, ants do not have an effective strategy for finding food: they just start walking randomly with the hope of running into a food supply. However, they always make sure not to walk too far away from the nest: if the search is unsuccessful for a given distance, they go back to the nest and start walking in a different direction. Since the walk's length cannot be computed relying just on pheromone trails it is deducible that ants must have a complementary mean to keep track of the distance from the nest. This method is called path integration and is the subject of the next subsection.
+As they leave the nest, ants do not have an effective strategy for finding food: they just start walking randomly with the hope of running into a food supply. However, they always make sure not to walk too far away from the nest: if the search is unsuccessful for a given distance, they turn back to the nest direction and start walking in a different one. Since the walk's length cannot be computed relying just on pheromone trails it is deducible that ants must have a complementary mean to keep track of the distance from the nest. This method is called path integration and is the subject of the next subsection.
 
 \subsection{Path integration}
 
@@ -188,7 +188,7 @@ Similar to techniques used by men in the past centuries to find out their curren
 At a time step $n$, an ant computes
 \begin{enumerate}
 \item the distance $l_n$ that separates the ant from the nest to its current location
-\item the direction $\phi_n$ in which the ant has covered the distance $l_n$
+\item the angle $\phi_n$ the ant needs to turn to (with respect to its current position) to point towards the nest
 \end{enumerate}
 
 using the following formulas
@@ -200,7 +200,7 @@ $\phi_{n+1} = \phi_n + k*\frac{(180^{\circ} - \delta)(180^{\circ} + \delta) \del
 $l_{n+1} = l_n + 1 - \frac{\delta}{90^{\circ}}$
 \end{center}
 
-These formulas have been derived from the results of several tests on desert ants, which have showed that ants are not able to solve the problem of path integration correctly most likely because of their limited brain functions. $\phi_n$ and $l_n$ are always pointing to the nest and together they form what is called the \textbf{global vector}.
+where $k$ is the fitting constant and $1$ is the unit length walked at each step. These formulas have been derived from the results of several tests on desert ants, which have showed that ants are not able to solve the problem of path integration correctly most likely because of their limited brain functions. $\phi_n$ and $l_n$ are always pointing to the nest and together they form what is called the \textbf{global vector}.
 
 The drawback of path integration is that being an estimated computation it inherently has an approximation error that grows with time. In extreme cases the ant might even walk home in a completely different direction from the actual one because of sharp turns causing large approximation errors of the angle $\phi_n$. If that's the case, the ant usually walks the whole distance $l_n$ in the direction that it believes to be correct and then, not finding the nest, will start searching for it in the neighborhood with a random walk.
 
@@ -243,7 +243,7 @@ The test carried out by Knaden and Wehner showed that ants actually never reset 
 \section{Implementation}
 
 \subsection{General implementation}
-The three simulations all take place on the same discrete two dimensional space defined as \textbf{ground}, where ants can freely move within the boundaries. The ground keeps track of the nest and food source locations, as well as the landmarks, the ants moving on it and the pheromone particles they have released on the ground.
+The three simulations all take place on the same continuous two dimensional space defined as \textbf{ground}, where ants can freely move within the boundaries. The ground keeps track of the nest and food source locations, as well as the landmarks, the ants moving on it and the pheromone particles they have released on the ground.
 
 \subsubsection {Ants' random walk}
 As we previously mentioned that ants walk randomly to find a food source, we also observed that they never venture too far away from their nest. Additionally, ants rarely perform sharp turns and because of these two reasons implementing a simple random walk would have not produced a realistic simulation of how actual ants solve the task of finding a food source. We thus opted for a random walk with the following constraints:
@@ -251,7 +251,6 @@ As we previously mentioned that ants walk randomly to find a food source, we als
 \begin{itemize}
 \item at each time step, the ant will change its direction of an angle chosen from a normal random distribution. This constraint makes sure that the ant will not abruptly change direction.
 \item the mean of the normal distribution for the angle is based on a weighted distance from the nest location, which we assume the ant can estimate thanks to path integration. Put it simple, the farther the ant walks, the greater is the probability that it will eventually turn around and start walking in another direction.
-%TODO: spiegare meglio?
 \end{itemize}
 
 This pseudocode represents the random walk implemented for the Ant class:
@@ -350,7 +349,7 @@ The simulation ran for the path integration model was the same as the test condu
 	\caption{The ant, marked as ``\#1'', should return to the nest (red circle) after it left the food source (green circle). However, the angle computed with the formulas for path integration is not computed correctly.}
 \end{figure}
 
-We could not find out the reason of this strange behavior; even changing the fitting constant in the formula for computing $phi_n$ did not help the simulation to improve. It is very likely that the bug resides somewhere in our code, yet we were not able to catch it before handing in this paper. In the other two simulations we therefore haven't used this particular implementation of path integration.
+We could not find out the reason of this strange behavior; even changing the fitting constant in the formula for computing $\phi_n$ did not help the simulation to improve. It is very likely that the bug resides somewhere in our code, yet we were not able to catch it before handing in this paper. In the other two simulations we therefore haven't used this particular implementation of path integration.
 
 \subsection{Landmark orientation}
 The test described in the third section has been simulated once using the same locations as in the original paper (see [3]) and once using a different location for the fictitious nest and rotating the landmarks. This procedure ensured that our implementation worked in different situations. Both the results of the first and second simulation match the ones in the original paper (except for the coordinates of the second test, of course) as shown below:
@@ -359,7 +358,7 @@ The test described in the third section has been simulated once using the same l
 	\includegraphics[width=.8\textwidth]{../sources/results/fourLandmarksResults/fourLandmarks.eps}
 	\caption{The first test is the same as the one in [3]. The circle on the bottom represents the location at which the ant was released; the circles on the left represent the landmarks; the different colors of the ant's path, namely orange, dark red and blue represent the three phases (return to the nest, landmarks placed, landmarks removed). The blue circle in the middle represents the original position of the nest.}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=.8\textwidth]{../sources/results/fourLandmarksResults/fourLandmarksRotated.eps}
 	\caption{This test is similar to the one above, except for the fact that the landmarks have been placed higher with respect to the original position of the nest and it has also been rotated.}

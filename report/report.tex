@@ -155,7 +155,17 @@ As stated above, pheromone is a chemical that evaporates fairly quickly. More pr
 $I(t)=I(t-\Delta t)*exp((log(\frac{1}{2})/t_c)\Delta t)$
 \end{center}
 (see reference [1])
-where $t_c$ represents the characteristic evaporation time of the pheromone in a particular environment. Using the available experiments (see reference [2]) we have determined the evaporation time to be around 2 minutes in a very hot environment such as the Sahara desert. We chose this evaporation time because we want to find an answer to the following question:
+where $t_c$ represents the characteristic evaporation time of the pheromone in a particular environment.
+
+In our simulations the intensity of the pheromone will be represented by the following color map:
+
+\begin{figure}[h!]
+	\centering
+    \includegraphics[width=.7\textwidth]{../sources/results/intensity2color.eps}
+     \caption{The color associated to the pheromone's intensity.}
+\end{figure}
+
+Using the available experiments (see reference [2]) we have determined the evaporation time to be around 2 minutes in a very hot environment such as the Sahara desert. We chose this evaporation time because we want to find an answer to the following question:
 \begin{center}
 \emph{Which method, out of the three described in this article, is more suitable for desert ants (Cataglyphis fortis)?}
 \end{center}
@@ -297,30 +307,65 @@ One problem we had to deal with in the implementation of this simulation is that
      \caption{The artificial ant needs to compute the direction in which it should walk. For both artificial and real ants, however, the point of view from 1 and 2 is indistinguishable.}
 \end{figure}
 
-The solution is to project the coordinates (y-coordinates in this case) on the dashed line between the two landmarks and depending on whether the projected coordinates are smaller or bigger than the original values, we set the ant's direction to point downwards or upwards, respectively.
+The solution is to project the coordinates --- y-coordinates in the picture --- on the dashed line between the two landmarks (as shown below) and depending on whether the projected coordinates are smaller or bigger than the original values, we set the ant's direction to point downwards or upwards, respectively.
 \newpage
 \section{Simulation Results and Discussion}
 
 \subsection{Pheromone-based orientation}
 The obtained videos of different runs of the simulation clearly showed that there's a strong cooperation between ants belonging to the same nest. As soon as one of them discovers a reliable food source, it increases the pheromone's intensity to alert its peers that the path on which it is moving leads to a food source. This fact is in accordance with the papers that describe the pheromone-based orientation (see references), but unfortunately they did not provide pictures or videos of an actual ants' cooperation. The number of foraging ants was limited to a maximum of 7 for computational limit reasons; in reality a much bigger number of ants is employed to find a food source.
-% TODO: put 4 screenshots of pheromone cooperation
 
-We also tested the pheromone's decay for different environments and materials (based on [1]) and here we present our results:
-% TODO: put screenshot of pheromone's decay for different environment/materials.
+\begin{figure}
+\centering
+\begin{tabular}{c}
+	\includegraphics[width=.9\textwidth]{../sources/results/pheromoneResults/snap_0001.png} \\
+	\includegraphics[width=.9\textwidth]{../sources/results/pheromoneResults/snap_0036.png}
+\end{tabular}
+\caption{Above: four ants depart from the nest (red circle) and start looking for a food source (green circle). Below: random walk of the four ants.}
+\end{figure}
+\begin{figure}
+\centering
+\begin{tabular}{c}
+	\includegraphics[width=.9\textwidth]{../sources/results/pheromoneResults/snap_0097.png} \\
+	\includegraphics[width=.9\textwidth]{../sources/results/pheromoneResults/snap_0154.png}
+\end{tabular}
+\caption{Above: one ant has found a food source and its peers, smelling the pheromone, walk along that path. Below: all the ants are now walking on the path that connects the nest to the food source.}
+\end{figure}
+In the figures above, the color of the pheromone track left by ants changes depending on the intensity (blue represents low intensity, while red represent a high intensity).
+
+We also show a plot of the pheromone's decay in the Sahara desert. This graph gives us an idea of how fast the pheromone track left by a desert ant disappear.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\textwidth]{../sources/results/pheromoneDecay.eps}
+	\caption{Pheromone decay in the Sahara desert.}
+\end{figure}
 
 It is important to point out that in hostile environments such as the Sahara desert, the pheromone evaporates so quickly that ants would only have a very limited amount of time (a couple of minutes) to venture out of the nest and make return before they lost track of their own pheromone and get lost. In the next section we will explain why this does not happen in reality.
 
 \subsection{Path integration}
-The simulation ran for the path integration model was the same as the test conducted in [4]. Our test yielded a graph which has the same trend as the reference paper, but whose values are in strong disagreement. We notice in the comparison below that the error angle (in degrees) measured in our simulation is at least twice as big as the original one:
-% TODO: put graphs comparison of path integration
-We could not find out the reason of this strange behavior; even changing the fitting constant in the formula for computing $phi_n$ did not help the simulation to improve. In the other two simulations we therefore haven't used this particular implementation of path integration.
+The simulation ran for the path integration model was the same as the test conducted in [4]. Our test yielded a graph which has the same trend as the reference paper, but whose values are in strong disagreement. Comparing the differences between the results of the paper and our simulations, the error angle (in degrees) measured in our simulation resulted at least twice as big as the original one.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\textwidth]{../sources/results/pathIntegrationResults/animation.eps}
+	\caption{The ant, marked as ``\#1'', should return to the nest (red circle) after it left the food source (green circle). However, the angle computed with the formulas for path integration is not computed correctly.}
+\end{figure}
+
+We could not find out the reason of this strange behavior; even changing the fitting constant in the formula for computing $phi_n$ did not help the simulation to improve. It is very likely that the bug resides somewhere in our code, yet we were not able to catch it before handing in this paper. In the other two simulations we therefore haven't used this particular implementation of path integration.
 
 \subsection{Landmark orientation}
 The test described in the third section has been simulated once using the same locations as in the original paper (see [3]) and once using a different location for the fictitious nest and rotating the landmarks. This procedure ensured that our implementation worked in different situations. Both the results of the first and second simulation match the ones in the original paper (except for the coordinates of the second test, of course) as shown below:
-% TODO: put screenshots of our 2 simulations and the actual result.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\textwidth]{../sources/results/fourLandmarksResults/fourLandmarks.eps}
+	\caption{The first test is the same as the one in [3]. The circle on the bottom represents the location at which the ant was released; the circles on the left represent the landmarks; the different colors of the ant's path, namely orange, dark red and blue represent the three phases (return to the nest, landmarks placed, landmarks removed). The blue circle in the middle represents the original position of the nest.}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\textwidth]{../sources/results/fourLandmarksResults/fourLandmarksRotated.eps}
+	\caption{This test is similar to the one above, except for the fact that the landmarks have been placed higher with respect to the original position of the nest and it has also been rotated.}
+\end{figure}
 We found really interesting the fact that a random walk (slightly constrained as explained above) closely represents how ants actually perform a search for their nest. The relatively simple structure of the ant's brain could justify the lack of a more elaborated strategy. On a different paper\footnote{\emph{The hidden spiral: systematic search and path integration in desert ants, Cataglyphis fortis}, M. M\"{u}ller and R. Wehner, http://www.springerlink.com/content/l21217t6pw686314/} is observed that desert ants perform a search for the nest in a spiral course around the point where the ant believed the nest was at.
-% TODO: we used ffmpeg to create the videos
-% http://www.miscdebris.net/blog/2008/04/28/create-a-movie-file-from-single-image-files-png-jpegs/
+\newpage
 \section{Summary and Outlook}
 
 In this section we would like to answer the questions we had asked ourselves at the beginning of this research and those who later arose when developing the models and implementations.
@@ -351,6 +396,8 @@ Ants do not communicate directly with each other. They indirectly transmit infor
 \end{center}
 
 They don't. An old conjecture assumed that ants could retrace their way back to the nest by reversing the order and direction in which they previously took their steps. This mechanism is simply not applicable to ants as it would require the insect to store an enormous amount of information. Since ants have a very small brain, this conjecture can be easily rejected.
+
+%TODO: write conclusion? further work: add mixed techniques
 
 \section{References}
 
